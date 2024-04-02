@@ -1,0 +1,4504 @@
+[
+  {
+    "id": 6719,
+    "name": "The Graph",
+    "symbol": "GRT",
+    "slug": "the-graph",
+    "cmc_rank": 40,
+    "circulating_supply": 9456808200.428484,
+    "total_supply": 10796023029.85911,
+    "tags": [
+      "ai-big-data",
+      "enterprise-solutions",
+      "defi",
+      "coinbase-ventures-portfolio",
+      "solana-ecosystem",
+      "analytics",
+      "coinfund-portfolio",
+      "dcg-portfolio",
+      "fabric-ventures-portfolio",
+      "framework-ventures-portfolio",
+      "ledgerprime-portfolio",
+      "multicoin-capital-portfolio",
+      "parafi-capital",
+      "polygon-ecosystem",
+      "fantom-ecosystem",
+      "web3",
+      "near-protocol-ecosystem",
+      "arbitrum-ecosytem",
+      "spartan-group",
+      "injective-ecosystem"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xc944e90c64b2c07662a292be6244bdf05cda44a7"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.3879842647379022,
+        "market_cap_dominance": 0.1373,
+        "percent_change_1h": -0.05697097,
+        "percent_change_24h": -1.19446613,
+        "percent_change_7d": 5.17449801,
+        "percent_change_30d": 22.87132165,
+        "volume_24h": 69525067.4074134,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 22974,
+    "name": "Bittensor",
+    "symbol": "TAO",
+    "slug": "bittensor",
+    "cmc_rank": 43,
+    "circulating_supply": 6513919,
+    "total_supply": 6513919,
+    "max_supply": 21000000,
+    "tags": [
+      "ai-big-data",
+      "distributed-computing",
+      "oracles",
+      "dao",
+      "polkadot-ecosystem",
+      "polychain-capital-portfolio",
+      "dcg-portfolio",
+      "open-source",
+      "generative-ai",
+      "depin"
+    ],
+    "platform": null,
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 523.4165872439843,
+        "market_cap_dominance": 0.1276,
+        "percent_change_1h": 0.62817308,
+        "percent_change_24h": 6.84264435,
+        "percent_change_7d": -8.35162044,
+        "percent_change_30d": -23.52575846,
+        "volume_24h": 54219783.99037115,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 23711,
+    "name": "Echelon Prime",
+    "symbol": "PRIME",
+    "slug": "echelon-prime",
+    "cmc_rank": 123,
+    "circulating_supply": 35773841,
+    "total_supply": 111111111.1,
+    "max_supply": 111111112,
+    "tags": [
+      "ai-big-data",
+      "collectibles-nfts",
+      "gaming",
+      "paradigm-portfolio",
+      "generative-ai",
+      "base-ecosystem"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xb23d80f5fefcddaa212212f028021b41ded428cf"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 21.089643032023048,
+        "market_cap_dominance": 0.0282,
+        "percent_change_1h": -0.33539725,
+        "percent_change_24h": -4.75261229,
+        "percent_change_7d": -7.46630239,
+        "percent_change_30d": 28.56761521,
+        "volume_24h": 9837727.35645187,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 27178,
+    "name": "PAAL AI",
+    "symbol": "PAAL",
+    "slug": "paal-ai",
+    "cmc_rank": 220,
+    "circulating_supply": 799655821,
+    "total_supply": 1000000000,
+    "max_supply": 1000000000,
+    "tags": [
+      "ai-big-data",
+      "generative-ai",
+      "telegram-bot",
+      "discord-bots",
+      "paal-ecosystem"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x14fee680690900ba0cccfc76ad70fd1b95d10e16"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.6582525833950111,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -1.23544274,
+        "percent_change_24h": 5.90906865,
+        "percent_change_7d": 15.86735401,
+        "percent_change_30d": 54.15716632,
+        "volume_24h": 7917337.18401479,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 23355,
+    "name": "0x0.ai",
+    "symbol": "0x0",
+    "slug": "0x0-ai-ai-smart-contract",
+    "cmc_rank": 223,
+    "circulating_supply": 868563455,
+    "total_supply": 1000000000,
+    "max_supply": 1000000000,
+    "tags": [
+      "ai-big-data",
+      "privacy",
+      "generative-ai"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x5a3e6a77ba2f983ec0d371ea3b475f8bc0811ad5"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.4348070809623948,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.24585704,
+        "percent_change_24h": 17.27349624,
+        "percent_change_7d": 19.78038491,
+        "percent_change_30d": 46.05512094,
+        "volume_24h": 2434909.45837257,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 24007,
+    "name": "Delysium",
+    "symbol": "AGI",
+    "slug": "delysium",
+    "cmc_rank": 270,
+    "circulating_supply": 662071582.9101,
+    "total_supply": 3000000000,
+    "tags": [
+      "ai-big-data",
+      "metaverse",
+      "generative-ai"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x7dA2641000Cbb407C329310C461b2cB9c70C3046"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.430228637021715,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.34288476,
+        "percent_change_24h": 0.29300069,
+        "percent_change_7d": -5.24290187,
+        "percent_change_30d": 51.0416985,
+        "volume_24h": 12127758.45012409,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 28846,
+    "name": "Sleepless AI",
+    "symbol": "AI",
+    "slug": "sleepless-ai",
+    "cmc_rank": 298,
+    "circulating_supply": 140937500,
+    "total_supply": 1000000000,
+    "max_supply": 1000000000,
+    "tags": [
+      "ai-big-data",
+      "binance-smart-chain",
+      "binance-launchpool",
+      "web3",
+      "generative-ai"
+    ],
+    "platform": {
+      "name": "BNB Smart Chain (BEP20)",
+      "symbol": "BNB",
+      "token_address": "0xBDA011D7F8EC00F66C1923B049B94c67d148d8b2"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 1.7271623108472343,
+        "market_cap_dominance": 0.0091,
+        "percent_change_1h": -0.17433273,
+        "percent_change_24h": -0.90460023,
+        "percent_change_7d": 6.40286179,
+        "percent_change_30d": -4.20203802,
+        "volume_24h": 28080728.58035592,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 7411,
+    "name": "Covalent",
+    "symbol": "CQT",
+    "slug": "covalent",
+    "cmc_rank": 312,
+    "circulating_supply": 686658970.391746,
+    "total_supply": 1000000000,
+    "max_supply": 1000000000,
+    "tags": [
+      "ai-big-data",
+      "enterprise-solutions",
+      "defi",
+      "polkadot-ecosystem",
+      "coinbase-ventures-portfolio",
+      "binance-labs-portfolio",
+      "avalanche-ecosystem",
+      "solana-ecosystem",
+      "polygon-ecosystem",
+      "fantom-ecosystem",
+      "web3",
+      "arbitrum-ecosytem",
+      "injective-ecosystem",
+      "optimism-ecosystem",
+      "bitcoin-ecosystem",
+      "data-availability"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xD417144312DbF50465b1C641d016962017Ef6240"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.31125243345817666,
+        "market_cap_dominance": 0.008,
+        "percent_change_1h": -0.1050433,
+        "percent_change_24h": -0.31030915,
+        "percent_change_7d": 0.4563473,
+        "percent_change_30d": -25.32263219,
+        "volume_24h": 1206300.09403395,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 28778,
+    "name": "NFPrompt",
+    "symbol": "NFP",
+    "slug": "nfprompt",
+    "cmc_rank": 319,
+    "circulating_supply": 250000000,
+    "total_supply": 1000000000,
+    "max_supply": 1000000000,
+    "tags": [
+      "ai-big-data",
+      "content-creation",
+      "payments",
+      "staking",
+      "binance-smart-chain",
+      "binance-launchpool",
+      "governance",
+      "web3",
+      "generative-ai"
+    ],
+    "platform": {
+      "name": "BNB Smart Chain (BEP20)",
+      "symbol": "BNB",
+      "token_address": "0x75e8ddb518bb757b4282cd5b83bb70d4101d12fb"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.8118982879679343,
+        "market_cap_dominance": 0.0076,
+        "percent_change_1h": 0.33174672,
+        "percent_change_24h": -1.06894715,
+        "percent_change_7d": 5.90922328,
+        "percent_change_30d": -2.26261308,
+        "volume_24h": 16403155.02249293,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 6841,
+    "name": "Phala Network",
+    "symbol": "PHA",
+    "slug": "phala-network",
+    "cmc_rank": 325,
+    "circulating_supply": 707568288.8222108,
+    "total_supply": 1000000000,
+    "tags": [
+      "ai-big-data",
+      "distributed-computing",
+      "privacy",
+      "zero-knowledge-proofs",
+      "interoperability",
+      "oracles",
+      "scaling",
+      "smart-contracts",
+      "ethereum-ecosystem",
+      "substrate",
+      "polkadot",
+      "polkadot-ecosystem",
+      "rollups",
+      "metaverse",
+      "polygon-ecosystem",
+      "web3",
+      "generative-ai",
+      "dwf-labs-portfolio",
+      "account-abstraction",
+      "data-availability",
+      "depin"
+    ],
+    "platform": null,
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.2806470370273153,
+        "market_cap_dominance": 0.0074,
+        "percent_change_1h": -0.75285398,
+        "percent_change_24h": 2.23464305,
+        "percent_change_7d": -6.58147178,
+        "percent_change_30d": 67.37661133,
+        "volume_24h": 21805890.96550987,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 29513,
+    "name": "Node AI",
+    "symbol": "GPU",
+    "slug": "node-ai",
+    "cmc_rank": 328,
+    "circulating_supply": 90264133,
+    "total_supply": 99809763,
+    "max_supply": 100000000,
+    "tags": [
+      "ai-big-data",
+      "distributed-computing",
+      "masternodes",
+      "ethereum-ecosystem",
+      "telegram-bot",
+      "depin"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x1258d60b224c0c5cd888d37bbf31aa5fcfb7e870"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 2.177034657225732,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.04566672,
+        "percent_change_24h": 10.26759752,
+        "percent_change_7d": 105.75012528,
+        "percent_change_30d": 972.63584497,
+        "volume_24h": 6947745.15226342,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 5908,
+    "name": "dKargo",
+    "symbol": "DKA",
+    "slug": "dkargo",
+    "cmc_rank": 384,
+    "circulating_supply": 3716250000,
+    "total_supply": 5000000000,
+    "max_supply": 5000000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x5dc60C4D5e75D22588FA17fFEB90A63E535efCE0"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.04122198075307561,
+        "market_cap_dominance": 0.0057,
+        "percent_change_1h": -0.17973006,
+        "percent_change_24h": 8.30403785,
+        "percent_change_7d": 14.0437335,
+        "percent_change_30d": 8.30466624,
+        "volume_24h": 4331457.48428615,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 5113,
+    "name": "inSure DeFi",
+    "symbol": "SURE",
+    "slug": "insure",
+    "cmc_rank": 385,
+    "circulating_supply": 26790063174.642704,
+    "total_supply": 88000000000,
+    "max_supply": 88000000000,
+    "tags": [
+      "ai-big-data",
+      "collectibles-nfts",
+      "defi",
+      "dao",
+      "insurance",
+      "avalanche-ecosystem",
+      "metaverse",
+      "bnb-chain"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xcb86c6a22cb56b6cf40cafedb06ba0df188a416e"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.005717988726578243,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.00872194,
+        "percent_change_24h": -8.7841521,
+        "percent_change_7d": -7.93108846,
+        "percent_change_30d": -11.7987661,
+        "volume_24h": 533108.60880829,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 19055,
+    "name": "Solidus Ai Tech",
+    "symbol": "AITECH",
+    "slug": "solidus-ai-tech",
+    "cmc_rank": 402,
+    "circulating_supply": 515778284,
+    "total_supply": 1993002130,
+    "max_supply": 2000000000,
+    "tags": [
+      "ai-big-data",
+      "binance-chain",
+      "seedify"
+    ],
+    "platform": {
+      "name": "BNB Smart Chain (BEP20)",
+      "symbol": "BNB",
+      "token_address": "0x2d060ef4d6bf7f9e5edde373ab735513c0e4f944"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.2804309316547586,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.56704833,
+        "percent_change_24h": -2.82443604,
+        "percent_change_7d": -9.29557659,
+        "percent_change_30d": 116.47365368,
+        "volume_24h": 7741813.56637375,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 9720,
+    "name": "PlatON",
+    "symbol": "LAT",
+    "slug": "platon",
+    "cmc_rank": 478,
+    "circulating_supply": 5325934551.416459,
+    "total_supply": 10250000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": null,
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.019452212064844692,
+        "market_cap_dominance": 0.0039,
+        "percent_change_1h": 0.86693272,
+        "percent_change_24h": 3.13174849,
+        "percent_change_7d": 1.23333111,
+        "percent_change_30d": 5.68947038,
+        "volume_24h": 7724470.56328507,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 15463,
+    "name": "SIDUS",
+    "symbol": "SIDUS",
+    "slug": "sidus",
+    "cmc_rank": 490,
+    "circulating_supply": 9356868845,
+    "total_supply": 22671048806.88617,
+    "tags": [
+      "ai-big-data",
+      "collectibles-nfts",
+      "gaming",
+      "metaverse",
+      "play-to-earn",
+      "animoca-brands-portfolio",
+      "okx-ventures-portfolio"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x549020a9Cb845220D66d3E9c6D9F9eF61C981102"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.010508745123239523,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.52670564,
+        "percent_change_24h": -0.83048979,
+        "percent_change_7d": 24.78234747,
+        "percent_change_30d": 69.17698251,
+        "volume_24h": 1890233.90490124,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 3816,
+    "name": "Verasity",
+    "symbol": "VRA",
+    "slug": "verasity",
+    "cmc_rank": 507,
+    "circulating_supply": 10249906818,
+    "total_supply": 100249906818,
+    "max_supply": 100249906818,
+    "tags": [
+      "ai-big-data",
+      "collectibles-nfts",
+      "gaming",
+      "entertainment",
+      "payments",
+      "staking",
+      "video",
+      "metaverse"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xf411903cbc70a74d22900a5de66a2dda66507255"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.008857319523816456,
+        "market_cap_dominance": 0.0034,
+        "percent_change_1h": 0.11082366,
+        "percent_change_24h": 2.48404362,
+        "percent_change_7d": -7.98621258,
+        "percent_change_30d": -7.30845497,
+        "volume_24h": 32636172.84163101,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 9638,
+    "name": "SingularityDAO",
+    "symbol": "SDAO",
+    "slug": "singularitydao",
+    "cmc_rank": 535,
+    "circulating_supply": 82733203.76,
+    "total_supply": 100000000,
+    "max_supply": 100000000,
+    "tags": [
+      "ai-big-data",
+      "defi",
+      "poolz-finance-portfolio",
+      "exnetwork-capital-portfolio",
+      "cross-chain-dex-aggregator"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x993864e43caa7f7f12953ad6feb1d1ca635b875f"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.994075090846434,
+        "market_cap_dominance": 0.0031,
+        "percent_change_1h": -0.65299847,
+        "percent_change_24h": -4.04568755,
+        "percent_change_7d": 5.80262808,
+        "percent_change_30d": 52.60634683,
+        "volume_24h": 1652610.71892657,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 28567,
+    "name": "PaLM AI",
+    "symbol": "PALM",
+    "slug": "palm-ai",
+    "cmc_rank": 550,
+    "circulating_supply": 79000000,
+    "total_supply": 79000000,
+    "tags": [
+      "ai-big-data",
+      "generative-ai",
+      "telegram-bot"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xf1df7305E4BAB3885caB5B1e4dFC338452a67891"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.9735021400211036,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.83433854,
+        "percent_change_24h": 9.76018273,
+        "percent_change_7d": -17.1860187,
+        "percent_change_30d": 40.6630628,
+        "volume_24h": 2998997.17655078,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 1037,
+    "name": "Agoras: Currency of Tau",
+    "symbol": "AGRS",
+    "slug": "agoras-tokens",
+    "cmc_rank": 557,
+    "circulating_supply": 18000000,
+    "total_supply": 42000000,
+    "tags": [
+      "ai-big-data",
+      "ethereum-ecosystem"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x738865301a9b7dd80dc3666dd48cf034ec42bdda"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 4.194607300100593,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.34288031,
+        "percent_change_24h": -5.29877578,
+        "percent_change_7d": -24.10128004,
+        "percent_change_30d": -61.0462425,
+        "volume_24h": 928937.72488753,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 4710,
+    "name": "Cere Network",
+    "symbol": "CERE",
+    "slug": "cere-network",
+    "cmc_rank": 580,
+    "circulating_supply": 6939923952,
+    "total_supply": 10000000000,
+    "tags": [
+      "ai-big-data",
+      "distributed-computing",
+      "gaming",
+      "substrate",
+      "social-token",
+      "binance-labs-portfolio",
+      "polkastarter",
+      "dao-maker",
+      "arrington-xrp-capital-portfolio",
+      "okx-ventures-portfolio",
+      "depin"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x2da719db753dfa10a62e140f436e1d67f2ddb0d6"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.01006856910659234,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -2.42219878,
+        "percent_change_24h": 5.53071856,
+        "percent_change_7d": 15.52237462,
+        "percent_change_30d": 33.86532111,
+        "volume_24h": 1238004.17268402,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 29734,
+    "name": "Zero1 Labs",
+    "symbol": "DEAI",
+    "slug": "zero1-labs",
+    "cmc_rank": 593,
+    "circulating_supply": 91221244,
+    "total_supply": 1000000000,
+    "max_supply": 1000000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x1495bc9e44Af1F8BCB62278D2bEC4540cF0C05ea"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.7405941781815496,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 1.02492663,
+        "percent_change_24h": 5.71583504,
+        "percent_change_7d": 1.26063985,
+        "percent_change_30d": 141.95158909,
+        "volume_24h": 5027750.22005594,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 14345,
+    "name": "Botto",
+    "symbol": "BOTTO",
+    "slug": "botto",
+    "cmc_rank": 600,
+    "circulating_supply": 45733868.21691369,
+    "total_supply": 100000000,
+    "max_supply": 100000000,
+    "tags": [
+      "ai-big-data",
+      "collectibles-nfts",
+      "olympus-pro-ecosystem",
+      "generative-ai"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x9dfad1b7102d46b1b197b90095b5c4e9f5845bba"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 1.4311395918439151,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.69817594,
+        "percent_change_24h": 7.02502296,
+        "percent_change_7d": 49.78809809,
+        "percent_change_30d": 97.74241509,
+        "volume_24h": 588508.54591707,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 2866,
+    "name": "Sentinel Protocol",
+    "symbol": "UPP",
+    "slug": "sentinel-protocol",
+    "cmc_rank": 650,
+    "circulating_supply": 497834800.2862929,
+    "total_supply": 500000000.00000006,
+    "tags": [
+      "ai-big-data",
+      "dwf-labs-portfolio"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xc86d054809623432210c107af2e3f619dcfbf652"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.1112639383242078,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.13333433,
+        "percent_change_24h": -0.1357061,
+        "percent_change_7d": 1.43352415,
+        "percent_change_30d": 10.47118615,
+        "volume_24h": 1625138.83009306,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 17231,
+    "name": "Synesis One",
+    "symbol": "SNS",
+    "slug": "synesis-one",
+    "cmc_rank": 652,
+    "circulating_supply": 456252758.06,
+    "total_supply": 999996689,
+    "max_supply": 1000000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Solana",
+      "symbol": "SOL",
+      "token_address": "SNSNkV9zfG5ZKWQs6x4hxvBRV6s8SqMfSGCtECDvdMd"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.1207580976249157,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.2156829,
+        "percent_change_24h": -1.86765847,
+        "percent_change_7d": -3.31942157,
+        "percent_change_30d": 28.71213307,
+        "volume_24h": 21972873.88325832,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 4441,
+    "name": "Vectorspace AI",
+    "symbol": "VXV",
+    "slug": "vectorspace-ai",
+    "cmc_rank": 662,
+    "circulating_supply": 49917054.12464035,
+    "total_supply": 50000000,
+    "tags": [
+      "ai-big-data",
+      "ethereum-ecosystem"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x7D29A64504629172a429e64183D6673b9dAcbFCe"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 1.068530931322397,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.51210638,
+        "percent_change_24h": -2.49051093,
+        "percent_change_7d": -11.48416154,
+        "percent_change_30d": 60.87074496,
+        "volume_24h": 257160.2296808,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 2675,
+    "name": "Dock",
+    "symbol": "DOCK",
+    "slug": "dock",
+    "cmc_rank": 725,
+    "circulating_supply": 876417166.395055,
+    "total_supply": 912944740.366312,
+    "max_supply": 1000000000,
+    "tags": [
+      "ai-big-data",
+      "polkadot-ecosystem",
+      "governance"
+    ],
+    "platform": null,
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.04736924292102478,
+        "market_cap_dominance": 0.0016,
+        "percent_change_1h": -0.07760219,
+        "percent_change_24h": 0.37304866,
+        "percent_change_7d": 11.96761482,
+        "percent_change_30d": 26.36213214,
+        "volume_24h": 1153866.26699158,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 13198,
+    "name": "NuNet",
+    "symbol": "NTX",
+    "slug": "nunet",
+    "cmc_rank": 740,
+    "circulating_supply": 504084665,
+    "total_supply": 1000000000,
+    "max_supply": 1000000000,
+    "tags": [
+      "ai-big-data",
+      "distributed-computing",
+      "cardano-ecosystem",
+      "depin"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xf0d33beda4d734c72684b5f9abbebf715d0a7935"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.07826181128272675,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.34686916,
+        "percent_change_24h": -1.43295881,
+        "percent_change_7d": 24.7204657,
+        "percent_change_30d": 28.07846093,
+        "volume_24h": 253478.00610359,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 29331,
+    "name": "OORT",
+    "symbol": "OORT",
+    "slug": "oortech",
+    "cmc_rank": 764,
+    "circulating_supply": 45564134,
+    "total_supply": 2000000000,
+    "max_supply": 2000000000,
+    "tags": [
+      "ai-big-data",
+      "distributed-computing",
+      "depin"
+    ],
+    "platform": null,
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.8080671929884466,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.80437492,
+        "percent_change_24h": -3.65460587,
+        "percent_change_7d": -2.84157833,
+        "percent_change_30d": 83.97718705,
+        "volume_24h": 3845836.49077016,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 23794,
+    "name": "Optimus AI",
+    "symbol": "OPTI",
+    "slug": "optimus-ai",
+    "cmc_rank": 770,
+    "circulating_supply": 95034939,
+    "total_supply": 100000000,
+    "max_supply": 100000000,
+    "tags": [
+      "ai-big-data",
+      "memes"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x562e362876c8aee4744fc2c6aac8394c312d215d"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.3793709663030165,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.866675,
+        "percent_change_24h": -1.84852076,
+        "percent_change_7d": 21.99303487,
+        "percent_change_30d": 48.62382052,
+        "volume_24h": 631197.84960777,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 20009,
+    "name": "DexCheck AI",
+    "symbol": "DCK",
+    "slug": "dexcheck",
+    "cmc_rank": 793,
+    "circulating_supply": 339422186,
+    "total_supply": 975171228.456,
+    "tags": [
+      "ai-big-data",
+      "ethereum-ecosystem",
+      "binance-smart-chain",
+      "launchpad",
+      "analytics",
+      "seedify",
+      "telegram-bot"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x672f4fa517894496b8a958b4b3fca068ce513a39"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.09689206634633696,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.27669502,
+        "percent_change_24h": -3.10175226,
+        "percent_change_7d": -6.29787453,
+        "percent_change_30d": -7.03068854,
+        "volume_24h": 1714545.36247534,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 16711,
+    "name": "GT Protocol",
+    "symbol": "GTAI",
+    "slug": "gt-protocol",
+    "cmc_rank": 845,
+    "circulating_supply": 7732754.1690453,
+    "total_supply": 75000000,
+    "tags": [
+      "ai-big-data",
+      "web3",
+      "generative-ai"
+    ],
+    "platform": {
+      "name": "BNB Smart Chain (BEP20)",
+      "symbol": "BNB",
+      "token_address": "0x003d87d02A2A01E9E8a20f507C83E15DD83A33d1"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 3.5018195030758306,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.45251133,
+        "percent_change_24h": -0.78995555,
+        "percent_change_7d": 9.60775528,
+        "percent_change_30d": -18.08211519,
+        "volume_24h": 14844570.43447885,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 22977,
+    "name": "Image Generation AI",
+    "symbol": "IMGNAI",
+    "slug": "image-generation-ai",
+    "cmc_rank": 856,
+    "circulating_supply": 776833333,
+    "total_supply": 1000000000,
+    "max_supply": 1000000000,
+    "tags": [
+      "ai-big-data",
+      "generative-ai",
+      "telegram-bot",
+      "discord-bots"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xA735A3AF76CC30791C61c10d585833829d36CBe0"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.03315351566795168,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.01466228,
+        "percent_change_24h": 3.60448957,
+        "percent_change_7d": -15.23901061,
+        "percent_change_30d": 16.84048326,
+        "volume_24h": 391452.92819486,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 28868,
+    "name": "GameGPT",
+    "symbol": "DUEL",
+    "slug": "duel",
+    "cmc_rank": 873,
+    "circulating_supply": 1186345431,
+    "total_supply": 9979000000,
+    "max_supply": 10000000000,
+    "tags": [
+      "ai-big-data",
+      "collectibles-nfts",
+      "gaming",
+      "entertainment",
+      "staking",
+      "cms-holdings-portfolio",
+      "animoca-brands-portfolio"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x943Af2ece93118B973c95c2F698EE9D15002e604"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.020885558091160654,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.55831664,
+        "percent_change_24h": -2.11116338,
+        "percent_change_7d": 55.28040832,
+        "percent_change_30d": 137.07343383,
+        "volume_24h": 8047520.94847098,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 22892,
+    "name": "Atlas Navi",
+    "symbol": "NAVI",
+    "slug": "atlas-navi",
+    "cmc_rank": 877,
+    "circulating_supply": 51997981.62,
+    "total_supply": 300000000,
+    "max_supply": 300000000,
+    "tags": [
+      "ai-big-data",
+      "distributed-computing",
+      "depin"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xfc1c93a2507975e98b9d0e9260ded61a00152bf1"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.4675781817791918,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 1.69972094,
+        "percent_change_24h": -7.08067854,
+        "percent_change_7d": 15.83521081,
+        "percent_change_30d": 162.6317576,
+        "volume_24h": 1305184.44426847,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 12148,
+    "name": "Swash",
+    "symbol": "SWASH",
+    "slug": "swash",
+    "cmc_rank": 912,
+    "circulating_supply": 959713481.874804,
+    "total_supply": 995752335.874804,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xa130e3a33a4d84b04c3918c4e5762223ae252f80"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.022687319339649178,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.01003868,
+        "percent_change_24h": 0.28904233,
+        "percent_change_7d": 7.58453002,
+        "percent_change_30d": 56.29755122,
+        "volume_24h": 232378.7296701,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 23300,
+    "name": "AIPAD",
+    "symbol": "AIPAD",
+    "slug": "aipad",
+    "cmc_rank": 928,
+    "circulating_supply": 113657541.0972249,
+    "total_supply": 199049334.2921128,
+    "max_supply": 200000000,
+    "tags": [
+      "ai-big-data",
+      "launchpad",
+      "bluezilla"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xE55d97A97ae6A17706ee281486E98A84095d8AAf"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.17856523461066745,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.82398329,
+        "percent_change_24h": 7.10614381,
+        "percent_change_7d": -8.24005734,
+        "percent_change_30d": 24.84594251,
+        "volume_24h": 355446.30000051,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 8708,
+    "name": "Big Data Protocol",
+    "symbol": "BDP",
+    "slug": "big-data-protocol",
+    "cmc_rank": 1005,
+    "circulating_supply": 52278856.08827953,
+    "total_supply": 64923252.85185185,
+    "max_supply": 80000000,
+    "tags": [
+      "ai-big-data",
+      "solana-ecosystem",
+      "polygon-ecosystem",
+      "web3",
+      "injective-ecosystem"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xf3dcbc6D72a4E1892f7917b7C43b74131Df8480e"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.29827026055902445,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 1.00452474,
+        "percent_change_24h": -11.02223778,
+        "percent_change_7d": -16.32781504,
+        "percent_change_30d": 21.75248569,
+        "volume_24h": 616170.44805859,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 29517,
+    "name": "Lush AI",
+    "symbol": "LUSH",
+    "slug": "lush-ai",
+    "cmc_rank": 1006,
+    "circulating_supply": 4773886658,
+    "total_supply": 20000000000,
+    "max_supply": 20000000000,
+    "tags": [
+      "ai-big-data",
+      "ethereum-ecosystem"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xdc247546a6551117c8ea82db2cc0ad6e048e5f6e"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.003269776569247925,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.28231657,
+        "percent_change_24h": 20.55738406,
+        "percent_change_7d": 71.25063539,
+        "percent_change_30d": 114.48241182,
+        "volume_24h": 124850.54958192,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 8963,
+    "name": "UnMarshal",
+    "symbol": "MARSH",
+    "slug": "unmarshal",
+    "cmc_rank": 1014,
+    "circulating_supply": 50640268,
+    "total_supply": 100000000,
+    "tags": [
+      "ai-big-data",
+      "defi",
+      "ethereum-ecosystem",
+      "polkastarter",
+      "polygon-ecosystem",
+      "bnb-chain",
+      "dwf-labs-portfolio"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x5a666c7d92E5fA7Edcb6390E4efD6d0CDd69cF37"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.2965421091761485,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.48143884,
+        "percent_change_24h": 2.65747283,
+        "percent_change_7d": 0.88984852,
+        "percent_change_30d": 41.0942775,
+        "volume_24h": 908283.33250031,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 3768,
+    "name": "PIBBLE",
+    "symbol": "PIB",
+    "slug": "pibble",
+    "cmc_rank": 1021,
+    "circulating_supply": 21913860893,
+    "total_supply": 29709860893,
+    "max_supply": 30000000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x1864ce27e9f7517047933caae530674e8c70b8a7"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.0006750753769201194,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.085745,
+        "percent_change_24h": 0.79718541,
+        "percent_change_7d": -9.92050955,
+        "percent_change_30d": 25.55224536,
+        "volume_24h": 32922.99158414,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 15240,
+    "name": "SENATE",
+    "symbol": "SENATE",
+    "slug": "senate",
+    "cmc_rank": 1035,
+    "circulating_supply": 109830063.67373034,
+    "total_supply": 191852462.88821703,
+    "tags": [
+      "ai-big-data",
+      "collectibles-nfts",
+      "gaming",
+      "dao",
+      "metaverse",
+      "play-to-earn",
+      "animoca-brands-portfolio",
+      "vbc-ventures-portfolio"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x34Be5b8C30eE4fDe069DC878989686aBE9884470"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.1288330007298179,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.03325273,
+        "percent_change_24h": -0.57192978,
+        "percent_change_7d": -9.98558645,
+        "percent_change_30d": 0.34823504,
+        "volume_24h": 62441.67481194,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 10527,
+    "name": "Lithium",
+    "symbol": "LITH",
+    "slug": "lithium",
+    "cmc_rank": 1093,
+    "circulating_supply": 5242220240,
+    "total_supply": 10000000000,
+    "tags": [
+      "ai-big-data",
+      "collectibles-nfts",
+      "petrock-capital-portfolio",
+      "web3",
+      "okx-ventures-portfolio",
+      "injective-ecosystem"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x188e817b02e635d482ae4d81e25dda98a97c4a42"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.002224167197205515,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.37477423,
+        "percent_change_24h": -2.88968632,
+        "percent_change_7d": -5.98216084,
+        "percent_change_30d": 26.50671584,
+        "volume_24h": 696007.98898779,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 9865,
+    "name": "Ispolink",
+    "symbol": "ISP",
+    "slug": "ispolink",
+    "cmc_rank": 1111,
+    "circulating_supply": 2756425784.89,
+    "total_supply": 10000000000,
+    "tags": [
+      "ai-big-data",
+      "metaverse",
+      "polygon-ecosystem",
+      "bnb-chain"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xc8807f0f5ba3fa45ffbdc66928d71c5289249014"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.003883531048085137,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.46464042,
+        "percent_change_24h": 8.47314514,
+        "percent_change_7d": 8.73175227,
+        "percent_change_30d": 151.32646025,
+        "volume_24h": 1177825.88026995,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 4757,
+    "name": "Robonomics.network",
+    "symbol": "XRT",
+    "slug": "robonomics-network",
+    "cmc_rank": 1140,
+    "circulating_supply": 1665450.75033165,
+    "total_supply": 1915498.09331752,
+    "tags": [
+      "ai-big-data",
+      "iot",
+      "polkadot-ecosystem"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x7de91b204c1c737bcee6f000aaa6569cf7061cb7"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 5.844817257004703,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.09260275,
+        "percent_change_24h": 2.50599628,
+        "percent_change_7d": -16.23189587,
+        "percent_change_30d": -35.7684464,
+        "volume_24h": 138128.0432041,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 2666,
+    "name": "Effect Network",
+    "symbol": "EFX",
+    "slug": "effect-ai",
+    "cmc_rank": 1146,
+    "circulating_supply": 252168527.315999,
+    "total_supply": 650000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "EOS",
+      "symbol": "EOS",
+      "token_address": "effecttokens"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.03795009384551307,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.07666297,
+        "percent_change_24h": -6.22862293,
+        "percent_change_7d": -11.18356944,
+        "percent_change_30d": -22.94615221,
+        "volume_24h": 61075.87441804,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 7096,
+    "name": "Bridge Oracle",
+    "symbol": "BRG",
+    "slug": "bridge-oracle",
+    "cmc_rank": 1186,
+    "circulating_supply": 8002167205,
+    "total_supply": 10000000000,
+    "max_supply": 10000000000,
+    "tags": [
+      "ai-big-data",
+      "defi",
+      "e-commerce",
+      "oracles",
+      "payments",
+      "smart-contracts",
+      "staking",
+      "ethereum-ecosystem",
+      "token",
+      "arbitrum-ecosytem",
+      "cross-chain",
+      "bnb-chain",
+      "telegram-bot"
+    ],
+    "platform": {
+      "name": "BNB Smart Chain (BEP20)",
+      "symbol": "BNB",
+      "token_address": "0x6e4a971B81CA58045a2AA982EaA3d50C4Ac38F42"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.001054597097957513,
+        "market_cap_dominance": 0.0003,
+        "percent_change_1h": 0.20886217,
+        "percent_change_24h": 1.71810099,
+        "percent_change_7d": 11.92136882,
+        "percent_change_30d": 64.15252558,
+        "volume_24h": 702536.14196187,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 9553,
+    "name": "B-cube.ai",
+    "symbol": "BCUBE",
+    "slug": "b-cube-ai",
+    "cmc_rank": 1223,
+    "circulating_supply": 27787614.84189279,
+    "total_supply": 49623660.9,
+    "max_supply": 50000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x93C9175E26F57d2888c7Df8B470C9eeA5C0b0A93"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.2701529858828532,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0,
+        "percent_change_24h": -3.41785641,
+        "percent_change_7d": -14.20951074,
+        "percent_change_30d": -54.01734678,
+        "volume_24h": 19278.43122594,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 7860,
+    "name": "ClinTex CTi",
+    "symbol": "CTI",
+    "slug": "clintex-cti",
+    "cmc_rank": 1253,
+    "circulating_supply": 124445175.17229618,
+    "total_supply": 181311840,
+    "max_supply": 191311840,
+    "tags": [
+      "ai-big-data",
+      "ethereum-ecosystem",
+      "binance-smart-chain",
+      "polygon-ecosystem",
+      "desci"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xcB8fb2438A805664cD8c3e640b85AC473DA5BE87"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.05254545561766677,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.35868593,
+        "percent_change_24h": -4.03993615,
+        "percent_change_7d": -29.89921923,
+        "percent_change_30d": 7.22101033,
+        "volume_24h": 338175.57643149,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 4804,
+    "name": "ROOBEE",
+    "symbol": "ROOBEE",
+    "slug": "roobee",
+    "cmc_rank": 1328,
+    "circulating_supply": 4102063740.4038,
+    "total_supply": 5400000000,
+    "tags": [
+      "ai-big-data",
+      "arbitrum-ecosytem",
+      "bnb-chain"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xa31b1767e09f842ecfd4bc471fe44f830e3891aa"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.0012178907108025745,
+        "market_cap_dominance": 0.0002,
+        "percent_change_1h": -0.3143373,
+        "percent_change_24h": 0.09668627,
+        "percent_change_7d": -1.97347352,
+        "percent_change_30d": -10.79387063,
+        "volume_24h": 172542.20117518,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 8320,
+    "name": "PolkaBridge",
+    "symbol": "PBR",
+    "slug": "polkabridge",
+    "cmc_rank": 1329,
+    "circulating_supply": 75160145.87873337,
+    "total_supply": 75160145.87873337,
+    "max_supply": 100000000,
+    "tags": [
+      "ai-big-data",
+      "decentralized-exchange-dex-token",
+      "defi",
+      "ethereum-ecosystem",
+      "yield-farming",
+      "amm",
+      "binance-smart-chain",
+      "dex",
+      "launchpad",
+      "polygon-ecosystem",
+      "web3"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x298d492e8c1d909d3f63bc4a36c66c64acb3d695"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.06649822478218122,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.87484537,
+        "percent_change_24h": -2.32138407,
+        "percent_change_7d": -4.5833582,
+        "percent_change_30d": -26.66138327,
+        "volume_24h": 785744.5676415,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 29157,
+    "name": "ApeBond",
+    "symbol": "ABOND",
+    "slug": "apebond",
+    "cmc_rank": 1331,
+    "circulating_supply": 144282791.62166193,
+    "total_supply": 455803142.6928761,
+    "max_supply": 650000000,
+    "tags": [
+      "ai-big-data",
+      "collectibles-nfts",
+      "defi",
+      "staking",
+      "dao",
+      "ethereum-ecosystem",
+      "binance-smart-chain",
+      "launchpad",
+      "polygon-ecosystem",
+      "real-world-assets"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xe6828d65bf5023ae1851d90d8783cc821ba7eee1"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.03435599613390085,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 2.63507226,
+        "percent_change_24h": 2.05064218,
+        "percent_change_7d": 33.02098141,
+        "percent_change_30d": 12.97400464,
+        "volume_24h": 101242.42590367,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 3139,
+    "name": "DxChain Token",
+    "symbol": "DX",
+    "slug": "dxchain-token",
+    "cmc_rank": 1378,
+    "circulating_supply": 49999999999.686195,
+    "total_supply": 100000000000,
+    "tags": [
+      "ai-big-data",
+      "payments"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x973e52691176d36453868D9d86572788d27041A9"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.00008238352706954151,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.05291589,
+        "percent_change_24h": -4.04585041,
+        "percent_change_7d": 0.94307782,
+        "percent_change_30d": 18.77251702,
+        "volume_24h": 19671.20874773,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 8849,
+    "name": "AXIS Token",
+    "symbol": "AXIS",
+    "slug": "axis-token",
+    "cmc_rank": 1442,
+    "circulating_supply": 320303188.40289,
+    "total_supply": 1500000000,
+    "tags": [
+      "ai-big-data",
+      "ethereum-ecosystem"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xF0c5831EC3Da15f3696B4DAd8B21c7Ce2f007f28"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.010249312120720442,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.09815967,
+        "percent_change_24h": -6.40623529,
+        "percent_change_7d": -0.45729646,
+        "percent_change_30d": -22.68281364,
+        "volume_24h": 73.23696207,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 24839,
+    "name": "Mozaic",
+    "symbol": "MOZ",
+    "slug": "mozaic",
+    "cmc_rank": 1449,
+    "circulating_supply": 68927833.52,
+    "total_supply": 921268059.2189674,
+    "max_supply": 1000000000,
+    "tags": [
+      "ai-big-data",
+      "arbitrum-ecosytem",
+      "generative-ai"
+    ],
+    "platform": {
+      "name": "Arbitrum",
+      "symbol": "ARB",
+      "token_address": "0x20547341e58fb558637fa15379c92e11f7b7f710"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.046455956515333525,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.12618192,
+        "percent_change_24h": -2.25398298,
+        "percent_change_7d": -30.06454721,
+        "percent_change_30d": -61.20268996,
+        "volume_24h": 39085.07520392,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 5836,
+    "name": "Idena",
+    "symbol": "IDNA",
+    "slug": "idena",
+    "cmc_rank": 1519,
+    "circulating_supply": 66052008.15899887,
+    "total_supply": 116113728.88405149,
+    "tags": [
+      "ai-big-data",
+      "identity",
+      "oracles",
+      "sharding",
+      "smart-contracts",
+      "bnb-chain"
+    ],
+    "platform": null,
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.03819727958463386,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.87019966,
+        "percent_change_24h": 0.11954059,
+        "percent_change_7d": 3.44212431,
+        "percent_change_30d": 10.97494513,
+        "volume_24h": 61843.04475167,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 11578,
+    "name": "Cirus Foundation",
+    "symbol": "CIRUS",
+    "slug": "cirus-foundation",
+    "cmc_rank": 1533,
+    "circulating_supply": 62590209,
+    "total_supply": 250000000,
+    "tags": [
+      "ai-big-data",
+      "wallet",
+      "web3"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xa01199c61841fce3b3dafb83fefc1899715c8756"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.03816876407165595,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.3674505,
+        "percent_change_24h": -0.10744901,
+        "percent_change_7d": -1.31379295,
+        "percent_change_30d": -9.37694652,
+        "volume_24h": 559588.79154959,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 7795,
+    "name": "Bird.Money",
+    "symbol": "BIRD",
+    "slug": "bird-money",
+    "cmc_rank": 1567,
+    "circulating_supply": 94941.98263988,
+    "total_supply": 140000,
+    "max_supply": 140000,
+    "tags": [
+      "ai-big-data",
+      "oracles",
+      "analytics"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x70401dfd142a16dc7031c56e862fc88cb9537ce0"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 23.003223032874683,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.214075,
+        "percent_change_24h": -3.17619187,
+        "percent_change_7d": 5.68515071,
+        "percent_change_30d": -8.15867203,
+        "volume_24h": 42135.41551949,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 3052,
+    "name": "GoCrypto Token",
+    "symbol": "GOC",
+    "slug": "gocrypto-token",
+    "cmc_rank": 1579,
+    "circulating_supply": 245278437.79,
+    "total_supply": 299095759,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "BNB Smart Chain (BEP20)",
+      "symbol": "BNB",
+      "token_address": "0x4b85a666dec7c959e88b97814e46113601b07e57"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.008344243899580326,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.21641833,
+        "percent_change_24h": 3.0024626,
+        "percent_change_7d": 0.61939289,
+        "percent_change_30d": -5.64951957,
+        "volume_24h": 254112.1103257,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 11563,
+    "name": "aiRight",
+    "symbol": "AIRI",
+    "slug": "airight",
+    "cmc_rank": 1608,
+    "circulating_supply": 256262564.64,
+    "total_supply": 1860000000,
+    "max_supply": 1900000000,
+    "tags": [
+      "ai-big-data",
+      "generative-ai"
+    ],
+    "platform": {
+      "name": "BNB Smart Chain (BEP20)",
+      "symbol": "BNB",
+      "token_address": "0x7e2a35c746f2f7c240b664f1da4dd100141ae71f"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.006951177575898204,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.26457804,
+        "percent_change_24h": -1.55427949,
+        "percent_change_7d": 7.52556986,
+        "percent_change_30d": -14.04059554,
+        "volume_24h": 246354.40036993,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 22919,
+    "name": "All In",
+    "symbol": "ALLIN",
+    "slug": "all-in",
+    "cmc_rank": 1631,
+    "circulating_supply": 951587.63223962,
+    "total_supply": 960724.373261,
+    "max_supply": 1000000,
+    "tags": [
+      "ai-big-data",
+      "telegram-bot"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x9B2b931d6AB97B6A887b2C5d8529537E6FE73Ebe"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 1.6851939717762765,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.58287519,
+        "percent_change_24h": 4.70790607,
+        "percent_change_7d": 10.61885061,
+        "percent_change_30d": 7.72982803,
+        "volume_24h": 145236.57333838,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 8509,
+    "name": "XMON",
+    "symbol": "XMON",
+    "slug": "xmon",
+    "cmc_rank": 1666,
+    "circulating_supply": 1494.91777,
+    "total_supply": 10000,
+    "max_supply": 10000,
+    "tags": [
+      "ai-big-data",
+      "collectibles-nfts"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x3aaDA3e213aBf8529606924d8D1c55CbDc70Bf74"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 946.2081146302718,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 2.67632956,
+        "percent_change_24h": 7.99163328,
+        "percent_change_7d": 3.44198724,
+        "percent_change_30d": 2.49929494,
+        "volume_24h": 15003.68053871,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 22487,
+    "name": "Artisse",
+    "symbol": "CATHEON",
+    "slug": "catheon-gaming",
+    "cmc_rank": 1669,
+    "circulating_supply": 968534281,
+    "total_supply": 10000000000,
+    "max_supply": 10000000000,
+    "tags": [
+      "ai-big-data",
+      "gaming"
+    ],
+    "platform": {
+      "name": "Polygon",
+      "symbol": "MATIC",
+      "token_address": "0x7e7737C40878e720b32e7bC9CD096259f876d69f"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.0014572777797691079,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -2.51050757,
+        "percent_change_24h": 11.82535152,
+        "percent_change_7d": -2.38093454,
+        "percent_change_30d": -25.66710528,
+        "volume_24h": 37913.70422327,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 11209,
+    "name": "TRAVA.FINANCE",
+    "symbol": "TRAVA",
+    "slug": "trava-finance",
+    "cmc_rank": 1685,
+    "circulating_supply": 2470336550.9973087,
+    "total_supply": 4745402992.914396,
+    "max_supply": 5000000000,
+    "tags": [
+      "ai-big-data",
+      "defi",
+      "ethereum-ecosystem",
+      "lending-borowing",
+      "fantom-ecosystem",
+      "web3",
+      "bnb-chain"
+    ],
+    "platform": {
+      "name": "BNB Smart Chain (BEP20)",
+      "symbol": "BNB",
+      "token_address": "0x0391be54e72f7e001f6bbc331777710b4f2999ef"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.0005401248446632618,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.09341669,
+        "percent_change_24h": -5.06607508,
+        "percent_change_7d": -11.43621508,
+        "percent_change_30d": -46.98738378,
+        "volume_24h": 362101.24402555,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 24742,
+    "name": "BullBear AI",
+    "symbol": "AIBB",
+    "slug": "bullbear-ai",
+    "cmc_rank": 1706,
+    "circulating_supply": 2045833899998990,
+    "total_supply": 2244256284280259,
+    "max_supply": 100000000000000000,
+    "tags": [
+      "ai-big-data",
+      "gaming",
+      "memes",
+      "governance",
+      "web3",
+      "arbitrum-ecosytem"
+    ],
+    "platform": {
+      "name": "Arbitrum",
+      "symbol": "ARB",
+      "token_address": "0xb9af4762c039d63e30039f1712dfab77026408c7"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 5.97285784625066E-10,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 1.53184876,
+        "percent_change_24h": -22.84568064,
+        "percent_change_7d": -38.37548151,
+        "percent_change_30d": 95.34699702,
+        "volume_24h": 505107.5772059,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 6218,
+    "name": "Arcona",
+    "symbol": "ARCONA",
+    "slug": "arcona",
+    "cmc_rank": 1735,
+    "circulating_supply": 15335469.78334842,
+    "total_supply": 16696707,
+    "max_supply": 16699878,
+    "tags": [
+      "ai-big-data",
+      "metaverse"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x0f71b8de197a1c84d31de0f1fa7926c365f052b3"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.07163172878496556,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -1.19990598,
+        "percent_change_24h": -1.18216885,
+        "percent_change_7d": 18.94047582,
+        "percent_change_30d": 53.37920447,
+        "volume_24h": 4353.42391853,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 12778,
+    "name": "Ojamu",
+    "symbol": "OJA",
+    "slug": "ojamu",
+    "cmc_rank": 1764,
+    "circulating_supply": 99996080,
+    "total_supply": 100000000,
+    "max_supply": 100000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x0aa7efe4945db24d95ca6e117bba65ed326e291a"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.00958759827842035,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -7.06890859,
+        "percent_change_24h": -4.63995061,
+        "percent_change_7d": -28.57213345,
+        "percent_change_30d": -25.9771278,
+        "volume_24h": 19492.34066063,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 21731,
+    "name": "MetamonkeyAi",
+    "symbol": "MMAI",
+    "slug": "metamonkeyai",
+    "cmc_rank": 1770,
+    "circulating_supply": 6099376989,
+    "total_supply": 10000000000,
+    "max_supply": 10000000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xaa0c5B3567fd1BAC8a2a11EB16c3F81a49eea90F"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.00015175845622596265,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.00785257,
+        "percent_change_24h": 1.88415956,
+        "percent_change_7d": -1.54161362,
+        "percent_change_30d": -12.19692522,
+        "volume_24h": 38785.74267708,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 3880,
+    "name": "OceanEx Token",
+    "symbol": "OCE",
+    "slug": "oceanex-token",
+    "cmc_rank": 1799,
+    "circulating_supply": 1788038022.4,
+    "total_supply": 8811756112.4,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "VeChain",
+      "symbol": "VET",
+      "token_address": "0x0ce6661b4ba86a0ea7ca2bd86a0de87b0b860f14"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.0004288006605028843,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.01537419,
+        "percent_change_24h": 9.12357152,
+        "percent_change_7d": 17.27059503,
+        "percent_change_30d": 22.52020013,
+        "volume_24h": 752.94126785,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 28436,
+    "name": "Neurashi",
+    "symbol": "NEI",
+    "slug": "neurashi",
+    "cmc_rank": 1851,
+    "circulating_supply": 38049122,
+    "total_supply": 45000000000,
+    "max_supply": 45000000000,
+    "tags": [
+      "ai-big-data",
+      "binance-chain",
+      "telegram-bot"
+    ],
+    "platform": {
+      "name": "BNB Smart Chain (BEP20)",
+      "symbol": "BNB",
+      "token_address": "0x6cda2862fd4B88CCFA522FFeD66bC4277e7D9Cc9"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.016017499727781163,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.25234962,
+        "percent_change_24h": -6.70623164,
+        "percent_change_7d": 14.53984146,
+        "percent_change_30d": 52.91100996,
+        "volume_24h": 1834770.93476829,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 4060,
+    "name": "TrustVerse",
+    "symbol": "TRV",
+    "slug": "trustverse",
+    "cmc_rank": 1854,
+    "circulating_supply": 1000000000,
+    "total_supply": 1000000000,
+    "tags": [
+      "ai-big-data",
+      "dwf-labs-portfolio"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x72955ecff76e48f2c8abcce11d54e5734d6f3657"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.0006054316621746314,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.41351455,
+        "percent_change_24h": 1.13376171,
+        "percent_change_7d": 15.61387951,
+        "percent_change_30d": -39.46790789,
+        "volume_24h": 0,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 9173,
+    "name": "Raze Network",
+    "symbol": "RAZE",
+    "slug": "raze-network",
+    "cmc_rank": 1903,
+    "circulating_supply": 118690910,
+    "total_supply": 120000000,
+    "max_supply": 120000000,
+    "tags": [
+      "ai-big-data",
+      "defi",
+      "privacy",
+      "polkadot-ecosystem",
+      "duckstarter",
+      "poolz-finance-portfolio",
+      "polygon-ecosystem",
+      "bounce-launchpad",
+      "web3",
+      "vbc-ventures-portfolio",
+      "okx-ventures-portfolio",
+      "bnb-chain"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x5Eaa69B29f99C84Fe5dE8200340b4e9b4Ab38EaC"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.004056378163981746,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -2.11107646,
+        "percent_change_24h": -11.01564733,
+        "percent_change_7d": 46.28383879,
+        "percent_change_30d": 124.46688813,
+        "volume_24h": 49578.88451278,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 3140,
+    "name": "Ubex",
+    "symbol": "UBEX",
+    "slug": "ubex",
+    "cmc_rank": 2082,
+    "circulating_supply": 3306258739.3973255,
+    "total_supply": 3923877491.5183,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x6704b673c70de9bf74c8fba4b4bd748f0e2190e1"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.00006456553081357585,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.1292671,
+        "percent_change_24h": -46.99705248,
+        "percent_change_7d": -16.08976154,
+        "percent_change_30d": -24.66635948,
+        "volume_24h": 1539.98162046,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 6938,
+    "name": "YFDAI.FINANCE",
+    "symbol": "YF-DAI",
+    "slug": "yfdai-finance",
+    "cmc_rank": 2090,
+    "circulating_supply": 3986,
+    "total_supply": 21000,
+    "max_supply": 21000,
+    "tags": [
+      "ai-big-data",
+      "defi",
+      "dao",
+      "yield-farming",
+      "governance"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xf4CD3d3Fda8d7Fd6C5a500203e38640A70Bf9577"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 50.73816552972012,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.27033051,
+        "percent_change_24h": -1.36098917,
+        "percent_change_7d": -10.98258503,
+        "percent_change_30d": -15.31100369,
+        "volume_24h": 39120.08744563,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 5086,
+    "name": "Pawtocol",
+    "symbol": "UPI",
+    "slug": "pawtocol",
+    "cmc_rank": 2098,
+    "circulating_supply": 257924377.0837,
+    "total_supply": 1000000000,
+    "max_supply": 1000000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x70d2b7c19352bb76e4409858ff5746e500f2b67c"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.0007485738980147803,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.29200348,
+        "percent_change_24h": 1.73273001,
+        "percent_change_7d": -7.69207618,
+        "percent_change_30d": 36.64930166,
+        "volume_24h": 44010.92365985,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 7255,
+    "name": "Aitra",
+    "symbol": "AITRA",
+    "slug": "aitra",
+    "cmc_rank": 2266,
+    "circulating_supply": 6598686.1473248,
+    "total_supply": 6984850.8473248,
+    "max_supply": 360000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": null,
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.007366926290788704,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0,
+        "percent_change_24h": 0,
+        "percent_change_7d": -84.01768661,
+        "percent_change_30d": -82.44363513,
+        "volume_24h": 0,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 6039,
+    "name": "Connectome",
+    "symbol": "CNTM",
+    "slug": "connectome",
+    "cmc_rank": 2356,
+    "circulating_supply": 1210675,
+    "total_supply": 1213183,
+    "max_supply": 140000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x9a1bf361798ef6538ccb8137ea900c4d4b48ca3d"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.007300521914097017,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.00692975,
+        "percent_change_24h": 10.53948153,
+        "percent_change_7d": -7.8053189,
+        "percent_change_30d": 92.91121551,
+        "volume_24h": 2997.4720519,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 23846,
+    "name": "LayerAI",
+    "symbol": "LAI",
+    "slug": "cryptogpt",
+    "cmc_rank": 2448,
+    "circulating_supply": 0,
+    "total_supply": 3000000000,
+    "tags": [
+      "ai-big-data",
+      "privacy",
+      "zero-knowledge-proofs",
+      "layer-2",
+      "dao-maker"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x168e209d7b2f58f1f24b8ae7b7d35e662bbf11cc"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.057395662419393166,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 2.06414401,
+        "percent_change_24h": -6.241612,
+        "percent_change_7d": -4.12538539,
+        "percent_change_30d": 106.55011681,
+        "volume_24h": 13977398.06109358,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 29576,
+    "name": "QnA3.AI",
+    "symbol": "GPT",
+    "slug": "qna3ai",
+    "cmc_rank": 2482,
+    "circulating_supply": 0,
+    "total_supply": 1000000000,
+    "max_supply": 1000000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "BNB Smart Chain (BEP20)",
+      "symbol": "BNB",
+      "token_address": "0x30842a9c941d9DE3AF582c41ad12b11D776ba69e"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.5111878037034777,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.73603395,
+        "percent_change_24h": -2.76115857,
+        "percent_change_7d": 1.89876165,
+        "percent_change_30d": -19.22919829,
+        "volume_24h": 7029170.62179445,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 29433,
+    "name": "Arbius",
+    "symbol": "AIUS",
+    "slug": "arbius",
+    "cmc_rank": 2489,
+    "circulating_supply": 0,
+    "total_supply": 1000000,
+    "tags": [
+      "ai-big-data",
+      "ethereum-ecosystem"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x8AFE4055Ebc86Bd2AFB3940c0095C9aca511d852"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 255.66520536839468,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 1.48501917,
+        "percent_change_24h": 63.16931728,
+        "percent_change_7d": 503.0028117,
+        "percent_change_30d": 43.87051558,
+        "volume_24h": 6540157.92371141,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 29447,
+    "name": "NetMind Token",
+    "symbol": "NMT",
+    "slug": "netmind-token",
+    "cmc_rank": 2511,
+    "circulating_supply": 0,
+    "total_supply": 9999999992.48,
+    "max_supply": 10000000000,
+    "tags": [
+      "ai-big-data",
+      "binance-smart-chain"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x03AA6298F1370642642415EDC0db8b957783e8D6"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 8.351384996652902,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -1.68103157,
+        "percent_change_24h": 7.57654807,
+        "percent_change_7d": 33.74508502,
+        "percent_change_30d": 26.03232081,
+        "volume_24h": 4787265.29283906,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 28458,
+    "name": "Autonolas",
+    "symbol": "OLAS",
+    "slug": "autonolas",
+    "cmc_rank": 2516,
+    "circulating_supply": 0,
+    "total_supply": 536256363.04,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x0001a500a6b18995b03f44bb040a5ffc28e45cb0"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 3.9848751425745013,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.46508018,
+        "percent_change_24h": -4.27065591,
+        "percent_change_7d": -7.98384199,
+        "percent_change_30d": -28.70258574,
+        "volume_24h": 4497097.80641532,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 16612,
+    "name": "Nosana",
+    "symbol": "NOS",
+    "slug": "nosana",
+    "cmc_rank": 2559,
+    "circulating_supply": 0,
+    "total_supply": 100000000,
+    "max_supply": 100000000,
+    "tags": [
+      "ai-big-data",
+      "distributed-computing",
+      "depin"
+    ],
+    "platform": {
+      "name": "Solana",
+      "symbol": "SOL",
+      "token_address": "nosXBVoaCTtYdLvKY6Csb4AC8JCdQKKAaWYtx2ZMoo7"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 4.418283382287739,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.28655575,
+        "percent_change_24h": -6.49365679,
+        "percent_change_7d": -10.6706278,
+        "percent_change_30d": -28.82517847,
+        "volume_24h": 3151828.06990938,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 20286,
+    "name": "XANA",
+    "symbol": "XETA",
+    "slug": "xana",
+    "cmc_rank": 2607,
+    "circulating_supply": 0,
+    "total_supply": 125000000,
+    "max_supply": 5000000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Avalanche C-Chain",
+      "symbol": "AVAX",
+      "token_address": "0x31c994AC062C1970C086260Bc61babB708643fAc"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.028483769863552853,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.36971077,
+        "percent_change_24h": -5.43012603,
+        "percent_change_7d": -8.16968458,
+        "percent_change_30d": 37.72678143,
+        "volume_24h": 2421079.97381313,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 26016,
+    "name": "Cogito Finance",
+    "symbol": "CGV",
+    "slug": "cogito-protocol",
+    "cmc_rank": 2624,
+    "circulating_supply": 0,
+    "total_supply": 1000000000,
+    "max_supply": 1000000000,
+    "tags": [
+      "ai-big-data",
+      "defi",
+      "seedify",
+      "real-world-assets"
+    ],
+    "platform": {
+      "name": "BNB Smart Chain (BEP20)",
+      "symbol": "BNB",
+      "token_address": "0x1bDaF9ddD7658d8049391971d1fd48c0484F66EC"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.22727310767113698,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.34491044,
+        "percent_change_24h": 10.67738604,
+        "percent_change_7d": 102.582716,
+        "percent_change_30d": 610.23791014,
+        "volume_24h": 2074173.1790751,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 29837,
+    "name": "Ring AI",
+    "symbol": "RING",
+    "slug": "ring-ai",
+    "cmc_rank": 2647,
+    "circulating_supply": 0,
+    "total_supply": 100000000,
+    "max_supply": 100000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xc092A137df3cF2B9e5971ba1874D26487C12626d"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.7184657268043653,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 6.04332354,
+        "percent_change_24h": 30.80794879,
+        "percent_change_7d": 205.44725725,
+        "percent_change_30d": 1342.04452046,
+        "volume_24h": 1842508.18900525,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 29510,
+    "name": "Balance AI",
+    "symbol": "BAI",
+    "slug": "balance-ai",
+    "cmc_rank": 2666,
+    "circulating_supply": 0,
+    "total_supply": 2967382,
+    "max_supply": 2967382,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x8ccd897ca6160ed76755383b201c1948394328c7"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 17.474801686178544,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -1.26809606,
+        "percent_change_24h": 3.65842227,
+        "percent_change_7d": 73.14776832,
+        "percent_change_30d": 30.85890909,
+        "volume_24h": 1655127.69865225,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 24489,
+    "name": "enqAI",
+    "symbol": "enqAI",
+    "slug": "noisegpt",
+    "cmc_rank": 2684,
+    "circulating_supply": 0,
+    "total_supply": 1000000000,
+    "tags": [
+      "ai-big-data",
+      "generative-ai",
+      "telegram-bot"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x710287D1D39DCf62094A83EBB3e736e79400068a"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.07101658794920285,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -3.20672419,
+        "percent_change_24h": 6.50868958,
+        "percent_change_7d": -19.57585065,
+        "percent_change_30d": -15.05975511,
+        "volume_24h": 1519266.92475602,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 29169,
+    "name": "Qubic",
+    "symbol": "QUBIC",
+    "slug": "qubic",
+    "cmc_rank": 2721,
+    "circulating_supply": 0,
+    "total_supply": 89403076230161,
+    "max_supply": 1000000000000000,
+    "tags": [
+      "ai-big-data",
+      "generative-ai",
+      "layer-1"
+    ],
+    "platform": null,
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.000007470969368008436,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 1.15314457,
+        "percent_change_24h": 3.33030689,
+        "percent_change_7d": 0.59466597,
+        "percent_change_30d": -22.72680763,
+        "volume_24h": 1280994.46884618,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 28882,
+    "name": "AIT Protocol",
+    "symbol": "AIT",
+    "slug": "ait-protocol",
+    "cmc_rank": 2729,
+    "circulating_supply": 0,
+    "total_supply": 832461386,
+    "tags": [
+      "ai-big-data",
+      "web3",
+      "paal-ecosystem"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x89d584A1EDB3A70B3B07963F9A3eA5399E38b136"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.659703480716088,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.60868332,
+        "percent_change_24h": 2.74731008,
+        "percent_change_7d": -2.08134311,
+        "percent_change_30d": -0.77616601,
+        "volume_24h": 1228264.20868481,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 15584,
+    "name": "Humans.ai",
+    "symbol": "HEART",
+    "slug": "humans-ai",
+    "cmc_rank": 2737,
+    "circulating_supply": 0,
+    "total_supply": 7800000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x8FAc8031e079F409135766C7d5De29cf22EF897C"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.040806025657896976,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.62741323,
+        "percent_change_24h": -2.35941494,
+        "percent_change_7d": 21.77956042,
+        "percent_change_30d": 96.29963354,
+        "volume_24h": 1203844.43222325,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 29420,
+    "name": "Virtual Protocol",
+    "symbol": "VIRTUAL",
+    "slug": "virtual-protocol",
+    "cmc_rank": 2763,
+    "circulating_supply": 0,
+    "total_supply": 1000000000,
+    "max_supply": 1000000000,
+    "tags": [
+      "ai-big-data",
+      "metaverse",
+      "generative-ai"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x44ff8620b8cA30902395A7bD3F2407e1A091BF73"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.11889491113496607,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -1.00017898,
+        "percent_change_24h": 3.2617303,
+        "percent_change_7d": -12.14706566,
+        "percent_change_30d": 116.84225999,
+        "volume_24h": 1089466.53883491,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 26873,
+    "name": "CorgiAI",
+    "symbol": "CORGIAI",
+    "slug": "corgiai",
+    "cmc_rank": 2821,
+    "circulating_supply": 0,
+    "total_supply": 372459723999,
+    "max_supply": 500000000000,
+    "tags": [
+      "ai-big-data",
+      "memes"
+    ],
+    "platform": {
+      "name": "Cronos",
+      "symbol": "CRO",
+      "token_address": "0x6b431B8a964BFcf28191b07c91189fF4403957D0"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.0026329614786964797,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.24125163,
+        "percent_change_24h": -1.2104974,
+        "percent_change_7d": -11.63153438,
+        "percent_change_30d": -9.43726131,
+        "volume_24h": 847858.70131625,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 26590,
+    "name": "DeepFakeAI",
+    "symbol": "FAKEAI",
+    "slug": "deepfakeai",
+    "cmc_rank": 2849,
+    "circulating_supply": 0,
+    "total_supply": 954907649.6,
+    "max_supply": 1000000000,
+    "tags": [
+      "ai-big-data",
+      "telegram-bot"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x5aef5bba19e6a1644805bd4f5c93c8557b87c62c"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.01993041428200824,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -6.43454922,
+        "percent_change_24h": -21.60103997,
+        "percent_change_7d": 48.02760372,
+        "percent_change_30d": 137.82530339,
+        "volume_24h": 762589.22604601,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 16001,
+    "name": "DarkShield Games Studio",
+    "symbol": "DKS",
+    "slug": "darkshield",
+    "cmc_rank": 2901,
+    "circulating_supply": 0,
+    "total_supply": 2960503000,
+    "max_supply": 2960503000,
+    "tags": [
+      "ai-big-data",
+      "gaming",
+      "gaming-guild"
+    ],
+    "platform": {
+      "name": "BNB Smart Chain (BEP20)",
+      "symbol": "BNB",
+      "token_address": "0x121235cff4c59eec80b14c1d38b44e7de3a18287"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.0003417582414374247,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -1.11407599,
+        "percent_change_24h": -3.90884129,
+        "percent_change_7d": 0.13411178,
+        "percent_change_30d": 3.45498787,
+        "volume_24h": 642682.54640354,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 29488,
+    "name": "Octavia AI",
+    "symbol": "VIA",
+    "slug": "octavia",
+    "cmc_rank": 2916,
+    "circulating_supply": 0,
+    "total_supply": 100000000,
+    "max_supply": 100000000,
+    "tags": [
+      "ai-big-data",
+      "binance-chain"
+    ],
+    "platform": {
+      "name": "BNB Smart Chain (BEP20)",
+      "symbol": "BNB",
+      "token_address": "0x21ac3bB914f90A2Bb1a16088E673a9fdDa641434"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 1.1838734790199166,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -3.28190148,
+        "percent_change_24h": 6.05038441,
+        "percent_change_7d": 11.94603936,
+        "percent_change_30d": -15.92970567,
+        "volume_24h": 614182.82925423,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 28559,
+    "name": "bitsCrunch",
+    "symbol": "BCUT",
+    "slug": "bitscrunch",
+    "cmc_rank": 2935,
+    "circulating_supply": 0,
+    "total_supply": 1000000000,
+    "max_supply": 1000000000,
+    "tags": [
+      "ai-big-data",
+      "distributed-computing",
+      "collectibles-nfts",
+      "dapp",
+      "ethereum-ecosystem",
+      "binance-smart-chain",
+      "coinbase-ventures-portfolio",
+      "avalanche-ecosystem",
+      "solana-ecosystem",
+      "hashkey-capital-portfolio",
+      "polygon-ecosystem",
+      "web3",
+      "animoca-brands-portfolio",
+      "cross-chain",
+      "shima-capital",
+      "polygon-ventures-portfolio",
+      "depin"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xBEF26Bd568e421D6708CCA55Ad6e35f8bfA0C406"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.28096492245647636,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.1787317,
+        "percent_change_24h": -3.15268544,
+        "percent_change_7d": -2.74886254,
+        "percent_change_30d": -21.13170584,
+        "volume_24h": 580482.69481471,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 28902,
+    "name": "AI PIN",
+    "symbol": "AI",
+    "slug": "ai-pin",
+    "cmc_rank": 2984,
+    "circulating_supply": 0,
+    "total_supply": 100000000,
+    "max_supply": 100000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xbc544207ff1c5b2bc47a35f745010b603b97e99e"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.18622441024218558,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -13.86127539,
+        "percent_change_24h": 44.30514854,
+        "percent_change_7d": 140.85029203,
+        "percent_change_30d": 82.06535251,
+        "volume_24h": 503109.74849863,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 29509,
+    "name": "Commune AI",
+    "symbol": "COMAI",
+    "slug": "commune-ai",
+    "cmc_rank": 3008,
+    "circulating_supply": 0,
+    "total_supply": 1000000000,
+    "max_supply": 1000000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xc78b628b060258300218740b1a7a5b3c82b3bd9f"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 1.5817404941386695,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.14839131,
+        "percent_change_24h": -1.17253916,
+        "percent_change_7d": 1.81241176,
+        "percent_change_30d": -42.58377596,
+        "volume_24h": 475796.8586372,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 9537,
+    "name": "EpiK Protocol",
+    "symbol": "AIEPK",
+    "slug": "epik-protocol",
+    "cmc_rank": 3058,
+    "circulating_supply": 0,
+    "total_supply": 400000000,
+    "max_supply": 1000000000,
+    "tags": [
+      "ai-big-data",
+      "storage",
+      "dwf-labs-portfolio"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xac5b038058bcd0424c9c252c6487c25f032e5ddc"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.01873828780507891,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.67362474,
+        "percent_change_24h": -7.71122645,
+        "percent_change_7d": -28.00263907,
+        "percent_change_30d": -1.44798154,
+        "volume_24h": 410443.78229414,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 19225,
+    "name": "Hera Finance",
+    "symbol": "HERA",
+    "slug": "hera-finance",
+    "cmc_rank": 3102,
+    "circulating_supply": 0,
+    "total_supply": 10000000,
+    "max_supply": 10000000,
+    "tags": [
+      "ai-big-data",
+      "metisdao-ecosystem",
+      "generative-ai"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xA2c2C937333165d4c5f2dC5f31a43E1239FeCfeB"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 4.5746951844509605,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.08042781,
+        "percent_change_24h": -6.36272081,
+        "percent_change_7d": -17.50625518,
+        "percent_change_30d": -4.37627696,
+        "volume_24h": 361314.60671793,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 29608,
+    "name": "Grow Token",
+    "symbol": "GROW",
+    "slug": "grow-token",
+    "cmc_rank": 3104,
+    "circulating_supply": 0,
+    "total_supply": 10000000,
+    "max_supply": 10000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "BNB Smart Chain (BEP20)",
+      "symbol": "BNB",
+      "token_address": "0x0C9aD20802E89BeA858ae2E8594843fAfA887CB3"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.6229453604706252,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 3.3094919,
+        "percent_change_24h": -5.45011019,
+        "percent_change_7d": -5.76479987,
+        "percent_change_30d": 34.59779046,
+        "volume_24h": 360680.47447707,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 29370,
+    "name": "Ta-da",
+    "symbol": "TADA",
+    "slug": "ta-da",
+    "cmc_rank": 3201,
+    "circulating_supply": 0,
+    "total_supply": 1000000000,
+    "max_supply": 1000000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Elrond",
+      "symbol": "EGLD",
+      "token_address": "TADA-5c032c"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.20331021152572343,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.15073118,
+        "percent_change_24h": 8.75619658,
+        "percent_change_7d": -9.78554144,
+        "percent_change_30d": -45.87536277,
+        "volume_24h": 283043.33307238,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 28446,
+    "name": "SPECTRE AI",
+    "symbol": "SPECTRE",
+    "slug": "spectre-ai",
+    "cmc_rank": 3209,
+    "circulating_supply": 0,
+    "total_supply": 10000000,
+    "max_supply": 10000000,
+    "tags": [
+      "ai-big-data",
+      "ethereum-ecosystem",
+      "telegram-bot"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x9Cf0ED013e67DB12cA3AF8e7506fE401aA14dAd6"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.8964148867937877,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -9.44114559,
+        "percent_change_24h": 16.59900077,
+        "percent_change_7d": 50.31537388,
+        "percent_change_30d": 185.61490911,
+        "volume_24h": 276197.33829216,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 29536,
+    "name": "Oracle AI",
+    "symbol": "ORACLE",
+    "slug": "oracle-ai",
+    "cmc_rank": 3289,
+    "circulating_supply": 0,
+    "total_supply": 1000000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x57B49219614859176Ddb029298486B6c30193Cbd"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.006888621600746165,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 2.30563797,
+        "percent_change_24h": 0.91605583,
+        "percent_change_7d": -4.92541026,
+        "percent_change_30d": 138.14883285,
+        "volume_24h": 223371.67134771,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 10347,
+    "name": "Human",
+    "symbol": "HMT",
+    "slug": "human",
+    "cmc_rank": 3295,
+    "circulating_supply": 0,
+    "total_supply": 1000000000,
+    "max_supply": 1000000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xd1ba9BAC957322D6e8c07a160a3A8dA11A0d2867"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.045574079544904465,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.34884387,
+        "percent_change_24h": 1.07469008,
+        "percent_change_7d": 7.97686519,
+        "percent_change_30d": 17.17799804,
+        "volume_24h": 222696.1220903,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 16914,
+    "name": "Metafluence",
+    "symbol": "METO",
+    "slug": "metafluence",
+    "cmc_rank": 3429,
+    "circulating_supply": 0,
+    "total_supply": 4800000000,
+    "max_supply": 4800000000,
+    "tags": [
+      "ai-big-data",
+      "collectibles-nfts",
+      "metaverse"
+    ],
+    "platform": {
+      "name": "BNB Smart Chain (BEP20)",
+      "symbol": "BNB",
+      "token_address": "0xa78775bba7a542F291e5ef7f13C6204E704A90Ba"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.0008755604406429649,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.16353892,
+        "percent_change_24h": -8.31949903,
+        "percent_change_7d": 4.3015634,
+        "percent_change_30d": 29.27388767,
+        "volume_24h": 171292.80011857,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 29646,
+    "name": "PaladinAI",
+    "symbol": "PALAI",
+    "slug": "paladinai",
+    "cmc_rank": 3452,
+    "circulating_supply": 0,
+    "total_supply": 100000000,
+    "max_supply": 100000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x3Cb48AeB3D1abaDc23d2D8a6894B3A68338381C2"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.10709792686873768,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.86852421,
+        "percent_change_24h": 16.74424213,
+        "percent_change_7d": -6.77120762,
+        "percent_change_30d": 39.08148824,
+        "volume_24h": 165851.3078424,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 23922,
+    "name": "Roko",
+    "symbol": "ROKO",
+    "slug": "roko",
+    "cmc_rank": 3498,
+    "circulating_supply": 0,
+    "total_supply": 369369369369,
+    "max_supply": 369369369369,
+    "tags": [
+      "ai-big-data",
+      "generative-ai"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x6f222E04F6c53Cc688FfB0Abe7206aAc66A8FF98"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.00006754547236010332,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -1.99626787,
+        "percent_change_24h": -6.11288651,
+        "percent_change_7d": -20.59090831,
+        "percent_change_30d": -35.38026583,
+        "volume_24h": 148792.71591337,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 28953,
+    "name": "Purple AI",
+    "symbol": "PAI",
+    "slug": "purple-ai",
+    "cmc_rank": 3578,
+    "circulating_supply": 0,
+    "total_supply": 1000000,
+    "max_supply": 1000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xa0cc4428fbb652c396f28dce8868b8743742a71c"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 12.208133336005593,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 1.2123796,
+        "percent_change_24h": -0.18302135,
+        "percent_change_7d": 0.91545173,
+        "percent_change_30d": 3.02947132,
+        "volume_24h": 127492.33456291,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 11061,
+    "name": "Multiverse",
+    "symbol": "AI",
+    "slug": "multiverse",
+    "cmc_rank": 3579,
+    "circulating_supply": 0,
+    "total_supply": 0,
+    "max_supply": 25000000000,
+    "tags": [
+      "ai-big-data",
+      "metaverse",
+      "arrington-xrp-capital-portfolio"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xc91b523a59acc63a64f61fc7bbfb4bfc82dd25f2"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.0010877578111474218,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -2.3121032,
+        "percent_change_24h": -4.38042228,
+        "percent_change_7d": -20.14684086,
+        "percent_change_30d": 1.68769247,
+        "volume_24h": 127265.74973454,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 8230,
+    "name": "AI Network",
+    "symbol": "AIN",
+    "slug": "ai-network",
+    "cmc_rank": 3597,
+    "circulating_supply": 0,
+    "total_supply": 700000000,
+    "max_supply": 700000000,
+    "tags": [
+      "ai-big-data",
+      "generative-ai"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x3A810ff7211b40c4fA76205a14efe161615d0385"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.04598666271884372,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -5.25879986,
+        "percent_change_24h": -8.47815532,
+        "percent_change_7d": -32.80513834,
+        "percent_change_30d": 73.7576158,
+        "volume_24h": 123761.16668103,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 29514,
+    "name": "BuildAI",
+    "symbol": "BUILD",
+    "slug": "buildai",
+    "cmc_rank": 3751,
+    "circulating_supply": 0,
+    "total_supply": 10000000,
+    "max_supply": 10000000,
+    "tags": [
+      "ai-big-data",
+      "ethereum-ecosystem",
+      "telegram-bot"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x73454acfddb7a36a3cd8eb171fbea86c6a55e550"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.4231298334223902,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -8.39305586,
+        "percent_change_24h": 7.48799867,
+        "percent_change_7d": -37.25444858,
+        "percent_change_30d": 97.22040359,
+        "volume_24h": 94924.20131302,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 29591,
+    "name": "Website AI",
+    "symbol": "WEBAI",
+    "slug": "website-ai",
+    "cmc_rank": 3783,
+    "circulating_supply": 0,
+    "total_supply": 1000000,
+    "max_supply": 1000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xc73abe8d7a0da644743fe2ad24f4e16bb7ed43f8"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 6.324300691007898,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 8.37843459,
+        "percent_change_24h": 0.69668453,
+        "percent_change_7d": -7.32074015,
+        "percent_change_30d": -55.86211372,
+        "volume_24h": 87189.75728589,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 28982,
+    "name": "Grok",
+    "symbol": "GROK",
+    "slug": "grokcoin-co",
+    "cmc_rank": 3984,
+    "circulating_supply": 0,
+    "total_supply": 1000000000000,
+    "max_supply": 1000000000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x742F6F19CCCf9b4115b08c104Bb308196c0Fa224"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.000004045132621768428,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.72369512,
+        "percent_change_24h": 7.55553773,
+        "percent_change_7d": 7.53537473,
+        "percent_change_30d": 48.68554919,
+        "volume_24h": 60464.12169571,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 27925,
+    "name": "AlphaScan AI",
+    "symbol": "ASCN",
+    "slug": "alphascan",
+    "cmc_rank": 3994,
+    "circulating_supply": 0,
+    "total_supply": 50000000,
+    "max_supply": 100000000,
+    "tags": [
+      "ai-big-data",
+      "oracles",
+      "generative-ai",
+      "telegram-bot"
+    ],
+    "platform": {
+      "name": "Arbitrum",
+      "symbol": "ARB",
+      "token_address": "0x1B8d516E2146D7a32Aca0FcBf9482db85fD42c3a"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.09978897601087922,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.26655415,
+        "percent_change_24h": 6.89766841,
+        "percent_change_7d": 7.22218905,
+        "percent_change_30d": 47.20370358,
+        "volume_24h": 59916.70623693,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 29748,
+    "name": "Vuzz AI",
+    "symbol": "VUZZ",
+    "slug": "vuzz-mind",
+    "cmc_rank": 4032,
+    "circulating_supply": 0,
+    "total_supply": 100000000,
+    "max_supply": 100000000,
+    "tags": [
+      "ai-big-data",
+      "telegram-bot",
+      "discord-bots"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xE469699F617bfd0FBfFcd575970d34c2CeCfFA9f"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.014647992215037193,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.22293059,
+        "percent_change_24h": -10.69144033,
+        "percent_change_7d": -19.05585429,
+        "percent_change_30d": -25.85209291,
+        "volume_24h": 57199.43214822,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 27852,
+    "name": "AimBot AI",
+    "symbol": "AIMBOT",
+    "slug": "aimbot",
+    "cmc_rank": 4088,
+    "circulating_supply": 0,
+    "total_supply": 1000000,
+    "max_supply": 1000000,
+    "tags": [
+      "ai-big-data",
+      "generative-ai",
+      "telegram-bot"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x0c48250Eb1f29491F1eFBeEc0261eb556f0973C7"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 5.334201874620927,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.78961545,
+        "percent_change_24h": -4.10777536,
+        "percent_change_7d": 1.75848245,
+        "percent_change_30d": 9.29347656,
+        "volume_24h": 51896.01197428,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 4024,
+    "name": "Raven Protocol",
+    "symbol": "RAVEN",
+    "slug": "raven-protocol",
+    "cmc_rank": 4159,
+    "circulating_supply": 0,
+    "total_supply": 10000000000,
+    "tags": [
+      "ai-big-data",
+      "bnb-chain"
+    ],
+    "platform": {
+      "name": "BNB Beacon Chain (BEP2)",
+      "symbol": "BNB",
+      "token_address": "RAVEN-F66"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.001828436497903453,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.79715113,
+        "percent_change_24h": 13.57988315,
+        "percent_change_7d": 130.39447536,
+        "percent_change_30d": 163.60679411,
+        "volume_24h": 46678.82543161,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 10712,
+    "name": "Flourishing AI",
+    "symbol": "AI",
+    "slug": "flourishing-ai",
+    "cmc_rank": 4217,
+    "circulating_supply": 0,
+    "total_supply": 53402950,
+    "tags": [
+      "ai-big-data",
+      "bullperks-launchpad",
+      "ferrum-network"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x6ab4ce36260f201e4e2391eca2fd7538f71e4131"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.033370445174985754,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0.00690419,
+        "percent_change_24h": -0.70184621,
+        "percent_change_7d": -4.3602624,
+        "percent_change_30d": -9.61549626,
+        "volume_24h": 41994.61128572,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 29518,
+    "name": "VectorChat.ai",
+    "symbol": "CHAT",
+    "slug": "vectorchat-ai",
+    "cmc_rank": 4236,
+    "circulating_supply": 0,
+    "total_supply": 100000000,
+    "max_supply": 100000000,
+    "tags": [
+      "ai-big-data",
+      "generative-ai"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xbb3d7f42c58abd83616ad7c8c72473ee46df2678"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.07765835195482734,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0,
+        "percent_change_24h": -1.86221766,
+        "percent_change_7d": -9.13190567,
+        "percent_change_30d": 45.44768343,
+        "volume_24h": 40970.25972143,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 29593,
+    "name": "AstraAI",
+    "symbol": "ASTRA",
+    "slug": "astraai",
+    "cmc_rank": 4245,
+    "circulating_supply": 0,
+    "total_supply": 10000000,
+    "max_supply": 10000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x0aA8A7D1fB4c64B3b1DcEa9A7ADe81C59C25b95b"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 2.627931703750905,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.91297222,
+        "percent_change_24h": 2.10276745,
+        "percent_change_7d": -7.84276289,
+        "percent_change_30d": -20.56243012,
+        "volume_24h": 40661.09603718,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 23354,
+    "name": "Neuroni AI",
+    "symbol": "NEURONI",
+    "slug": "neuroni-ai",
+    "cmc_rank": 4248,
+    "circulating_supply": 0,
+    "total_supply": 8499000,
+    "max_supply": 8499000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x922e2708462c7a3d014d8344f7c4d92b27ecf332"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.5758468623623187,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0,
+        "percent_change_24h": 2.7912176,
+        "percent_change_7d": -36.55986487,
+        "percent_change_30d": 33.76186256,
+        "volume_24h": 40600.33669646,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 17724,
+    "name": "Trace Network Labs",
+    "symbol": "TRACE",
+    "slug": "trace-network-labs",
+    "cmc_rank": 4254,
+    "circulating_supply": 0,
+    "total_supply": 100000000,
+    "max_supply": 100000000,
+    "tags": [
+      "ai-big-data",
+      "ethereum-ecosystem",
+      "metaverse",
+      "polygon-ecosystem"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x9F7fC686CfD64aA5Ae15b351d03071e91533094b"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.007501663592900916,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 1.14331722,
+        "percent_change_24h": 0.0817187,
+        "percent_change_7d": -8.96388503,
+        "percent_change_30d": -17.86739661,
+        "volume_24h": 39975.94921405,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 28834,
+    "name": "Mind",
+    "symbol": "MND",
+    "slug": "mind",
+    "cmc_rank": 4267,
+    "circulating_supply": 0,
+    "total_supply": 100000000,
+    "max_supply": 100000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0xa0Dd6dd7775E93EB842Db0AA142c9c581031Ed3B"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.10593227654829729,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.35217385,
+        "percent_change_24h": 0.37686422,
+        "percent_change_7d": -8.9294811,
+        "percent_change_30d": -21.41152065,
+        "volume_24h": 38676.58265648,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 8278,
+    "name": "VEROX",
+    "symbol": "VRX",
+    "slug": "verox",
+    "cmc_rank": 4348,
+    "circulating_supply": 0,
+    "total_supply": 47500,
+    "max_supply": 47500,
+    "tags": [
+      "ai-big-data",
+      "polygon-ecosystem"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x87DE305311D5788e8da38D19bb427645b09CB4e5"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 69.4652428260447,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.51468652,
+        "percent_change_24h": -4.80332108,
+        "percent_change_7d": -19.4673995,
+        "percent_change_30d": 151.35253053,
+        "volume_24h": 34143.65526472,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 29516,
+    "name": "AlphaKEK.AI",
+    "symbol": "AIKEK",
+    "slug": "alphakek-ai",
+    "cmc_rank": 4467,
+    "circulating_supply": 0,
+    "total_supply": 244945233.746,
+    "max_supply": 256000000,
+    "tags": [
+      "ai-big-data",
+      "ethereum-ecosystem"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x8dce83eca4af45dbe618da1779f9aaca43201084"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.009097151034800128,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0,
+        "percent_change_24h": 6.5578582,
+        "percent_change_7d": -59.03897175,
+        "percent_change_30d": 220.32217441,
+        "volume_24h": 28206.55836442,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 27591,
+    "name": "Liza",
+    "symbol": "LIZA",
+    "slug": "liza",
+    "cmc_rank": 4475,
+    "circulating_supply": 0,
+    "total_supply": 762964046,
+    "max_supply": 777777777,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x8b227d72570d3ead66014bca8305cbef7f90d1ee"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.011794543911009266,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0,
+        "percent_change_24h": -7.19654299,
+        "percent_change_7d": 46.88919043,
+        "percent_change_30d": 32.62135631,
+        "volume_24h": 27948.45770871,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 28670,
+    "name": "Crypto-AI-Robo.com",
+    "symbol": "CAIR",
+    "slug": "crypto-ai-robo",
+    "cmc_rank": 4480,
+    "circulating_supply": 0,
+    "total_supply": 888000000,
+    "max_supply": 888000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "BNB Smart Chain (BEP20)",
+      "symbol": "BNB",
+      "token_address": "0x48A8Ba1754FE84E2f9dfA97982e524F18E5b4Bd3"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.0005417952893353771,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -2.10831623,
+        "percent_change_24h": -18.6147198,
+        "percent_change_7d": -32.30234546,
+        "percent_change_30d": 28.57330758,
+        "volume_24h": 27861.58006497,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 29565,
+    "name": "InspireAI",
+    "symbol": "INSP",
+    "slug": "inspireai",
+    "cmc_rank": 4561,
+    "circulating_supply": 0,
+    "total_supply": 10000000,
+    "max_supply": 10000000,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "token_address": "0x179f782d7fbe745f40b20e0c7dbb6205d43fa4b9"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.22297322002120673,
+        "market_cap_dominance": 0,
+        "percent_change_1h": 0,
+        "percent_change_24h": 20.21331852,
+        "percent_change_7d": 36.6357448,
+        "percent_change_30d": 38.57575767,
+        "volume_24h": 25162.13621253,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  },
+  {
+    "id": 6771,
+    "name": "DataHighway",
+    "symbol": "DHX",
+    "slug": "datahighway",
+    "cmc_rank": 4664,
+    "circulating_supply": 0,
+    "total_supply": 100000000,
+    "max_supply": 100000000,
+    "tags": [
+      "ai-big-data",
+      "iot",
+      "substrate",
+      "polkadot"
+    ],
+    "platform": null,
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.0647642680417631,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -0.20133106,
+        "percent_change_24h": -2.45215481,
+        "percent_change_7d": -9.29693623,
+        "percent_change_30d": 44.45329223,
+        "volume_24h": 21220.14053114,
+        "last_updated": "2024-03-31T17:35:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:35:00.000Z"
+  },
+  {
+    "id": 29856,
+    "name": "AITK",
+    "symbol": "AITK",
+    "slug": "aitk",
+    "cmc_rank": 4713,
+    "circulating_supply": 0,
+    "total_supply": 99999999,
+    "max_supply": 99999999,
+    "tags": [
+      "ai-big-data"
+    ],
+    "platform": {
+      "name": "BNB Smart Chain (BEP20)",
+      "symbol": "BNB",
+      "token_address": "0x08080B4Da7857E523453b140af3fF7277f81bb26"
+    },
+    "quote": {
+      "USD": {
+        "market_cap": "",
+        "price": 0.0000233520333441816,
+        "market_cap_dominance": 0,
+        "percent_change_1h": -8.06785175,
+        "percent_change_24h": -51.54943544,
+        "percent_change_7d": -97.51846429,
+        "percent_change_30d": -99.99533168,
+        "volume_24h": 19680.0176819,
+        "last_updated": "2024-03-31T17:34:00.000Z"
+      }
+    },
+    "last_updated": "2024-03-31T17:34:00.000Z"
+  }
+]
