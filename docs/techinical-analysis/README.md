@@ -46,6 +46,37 @@ When prices repeatedly return to the same level, without breaking above it, the 
 ![](https://beincrypto.com/wp-content/uploads/2023/03/supportresistance.jpg.optimal.jpg)
 *Support and resistance on BTC chart – Tradingview.com*
 
+## Fibonacci
+Fibonacci retracement levels are also an important tool for the crypto trader’s armory.
+
+The series of numbers gave rise to ratios (0.236, 0.382, 0.500, 0.618, 0.764) that can be applied to crypto charts in order to identify retracement levels. These levels are then used to predict areas of support and resistance.
+
+Fibonacci retracement levels work on the theory that after a big price move in one direction, the price will retrace or return part of the way back to a previous price level, before resuming in the original direction.
+
+![](https://beincrypto.com/wp-content/uploads/2023/03/btcfibochart.jpg.optimal.jpg)
+*Fibonacci retracement levels on 2017 BTC chart – Investdiva.com*
+
+## Other techinical indicators
+
+### RSI
+### MACD
+### Stochastic
+### Parabolic SAR
+### Bollinger Bands
+
+
+## Candlesticks
+A basic understanding of the Japanese candlesticks that make up crypto charts is also an advantage. Each candle is used to describe the price action during the given time frame. The solid portion of the candle is called the body and the extended stalks, the wick. They are formed using the open, high, low, and close prices of the chosen time (OHLC).
+
+* Open — the first trade made during the specified time period.
+* High — the highest traded price.
+* Low — the lowest traded price.
+* Close — the last trade made during the specified time period.
+
+Candlesticks represent a time frame. This means that if the chart is for one hour, each candlestick body will show the opening and closing price for that hour. The candlestick’s wicks at the top and bottom show the highest and lowest price reached during that one hour period.
+
+There are many different patterns and signals that these candles make which can also help determine price direction when combined with some of the technical indicators described above. The infographic below shows some of these common patterns.
+
 
 ## References
 
