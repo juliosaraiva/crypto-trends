@@ -1,7 +1,7 @@
 package types
 
-type ListingLatest Coin
+type ListingLatest CoinLatest
 
 type Data struct {
-	Data []*Coin `json:"data"`
+	Data []*CoinLatest `json:"data"`
 }

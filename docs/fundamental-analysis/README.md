@@ -26,6 +26,8 @@ Market Sentiment and Adoption:
 
 * Investment horizon: Consider your investment time frame; a longer horizon may be more suitable for riding out price fluctuations.
 
+## Momentum
+
 
 
 ## References

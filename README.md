@@ -7,6 +7,11 @@
 > * Always conduct your own research and due diligence before investing.
 > * The developers of this tool are not liable for any losses incurred from its use.
 
+
+## Tools
+- [Coinmarketcap](https://coinmarketcap.com)
+- [Google AI Studio](https://aistudio.google.com)
+
 <!-- ## Features
 - Chatbot to integrate on Telegram/Discord.
 -  -->

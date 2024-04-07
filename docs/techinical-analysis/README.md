@@ -82,6 +82,8 @@ There are many different patterns and signals that these candles make which can 
 
 * [How to Read Crypto Charts](https://beincrypto.com/learn/how-to-read-crypto-charts/)
 
+* [Best Ways to Learn Technical Analysis](https://www.investopedia.com/trading/best-ways-learn-technical-analysis/)
+
 * [Web3 Tokens: Strategies for Analyzing Decentralized Assets with Technical Analysis](https://www.linkedin.com/pulse/web3-tokens-strategies-analyzing-decentralized-assets-sebastian-mobif/)
 
 * [What is a Momentum Indicator? Definition and Common Indicators](https://www.investopedia.com/investing/momentum-and-relative-strength-index/)

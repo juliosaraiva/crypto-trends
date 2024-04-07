@@ -9,6 +9,7 @@
 Analyze the chart using EMA 14 and 21 weekly
 Identify overbought and overselling using RSI
 Identify Volume in some give period
+
 ### Fundamental Analyzes
 * On-chain metrics: Network usage, transaction activity, developer activity (GitHub).
 * Tokenomics: Token distribution, inflation/deflation mechanisms, vesting schedules.
@@ -28,3 +29,5 @@ Risk Assessment Framework:
 # References:
 
 [Automate public website indexing for efficient semantic search with Vertex AI](https://cloud.google.com/blog/products/ai-machine-learning/indexing-with-cloud-run-langchain-and-vector-search)
+
+[Gemini API Cookbook](https://github.com/google-gemini/cookbook)
