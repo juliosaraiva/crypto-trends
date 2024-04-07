@@ -1,25 +1,26 @@
 package main
 
 import (
-	"encoding/json"
-	"fmt"
 	"log"
-	"net/url"
 
-	coinmarketcap "github.com/juliosaraiva/crypto-trends/coinmarketcap/historical"
+	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/cors"
+	"github.com/juliosaraiva/crypto-trends/coinmarketcap/router"
 )
 
-func main() {
-	histData := coinmarketcap.CoinHistorical{}
-	query := url.Values{}
-	resp, err := histData.Get(&query)
-	if err != nil {
-		log.Fatal(err)
-	}
-	result, err := json.Marshal(resp)
-	if err != nil {
-		log.Fatal(err)
-	}
+var config = fiber.Config{
+	ErrorHandler: func(c *fiber.Ctx, err error) error {
+		code := fiber.StatusInternalServerError
+		return c.Status(code).JSON(fiber.Map{"status_code": code, "error": err.Error()})
+	},
+}
 
-	fmt.Println(string(result))
+func main() {
+	var port string = ":8000"
+	app := fiber.New(config)
+	app.Use(cors.New())
+
+	router.SetupRoutes(app)
+
+	log.Fatal(app.Listen(port))
 }
