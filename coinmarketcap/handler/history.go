@@ -1,7 +1,10 @@
 package handler
 
 import (
+	"net/url"
+
 	"github.com/gofiber/fiber/v2"
+	"github.com/juliosaraiva/crypto-trends/coinmarketcap"
 )
 
 type HistoricalQueryParam struct {
@@ -16,5 +19,17 @@ type HistoricalQueryParam struct {
 }
 
 func GetHistory(c *fiber.Ctx) error {
-	return c.JSON(fiber.Map{"msg": "OK"})
+	q := url.Values{}
+	queries := c.Queries()
+
+	for k, v := range queries {
+		q[k] = []string{v}
+	}
+
+	history, err := coinmarketcap.GetHistory(c.Context(), &q)
+	if err != nil {
+		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err})
+	}
+
+	return c.JSON(&history)
 }

@@ -1,16 +1,7 @@
 package model
 
-import (
-	"context"
-	"net/url"
-)
-
-type QuoteHistoryer interface {
-	Get(ctx context.Context, query *url.Values) (*Crypto, error)
-}
-
 type HistoricalData struct {
-	Data *Crypto `json:"data"`
+	Data map[string][]*CoinHistorical `json:"data"`
 }
 
 type CoinHistorical struct {
@@ -20,10 +11,6 @@ type CoinHistorical struct {
 	IsActive int                 `json:"is_active"`
 	IsFiat   int                 `json:"is_fiat"`
 	Quotes   []*HistoricalQuotes `json:"quotes"`
-}
-
-type Crypto struct {
-	CORE []*CoinHistorical `json:"core"`
 }
 
 type HistoricalQuotes struct {
