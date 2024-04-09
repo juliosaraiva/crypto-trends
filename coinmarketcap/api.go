@@ -3,6 +3,7 @@ package coinmarketcap
 import (
 	"context"
 	"encoding/json"
+	"errors"
 	"fmt"
 	"io"
 	"log"
@@ -14,6 +15,10 @@ import (
 	"github.com/juliosaraiva/crypto-trends/coinmarketcap/model"
 	"github.com/juliosaraiva/crypto-trends/config"
 )
+
+type error interface {
+	Error() string
+}
 
 const (
 	URL = "https://pro-api.coinmarketcap.com"
@@ -27,19 +32,10 @@ const (
 	TrendingLatestEndpoint  = "/v1/cryptocurrency/trending/latest"
 	CategoryEndpoint        = "/v1/cryptocurrency/category"
 	QuoteHistoricalEndpoint = "/v2/cryptocurrency/quotes/historical"
-	CryptoCurrencyEndpoint  = "/v2/cryptocurrency/map"
+	CryptoCurrencyEndpoint  = "/v1/cryptocurrency/map"
 )
 
-const (
-	ListingLatest int = iota
-	Categories
-	Category
-	TrendingLatest
-	ListingsHistory
-	CryptoCurrency
-)
-
-func searchTags(tags []*model.ListingTags, k string) int {
+func searchTags(tags []*model.Tags, k string) int {
 	for i, v := range tags {
 		if v.Slug == k {
 			return i
@@ -48,81 +44,74 @@ func searchTags(tags []*model.ListingTags, k string) int {
 	return 0
 }
 
-func FilterByTag(trends map[string][]*model.Listing, filter string) ([]*model.Listing, error) {
+func FilterByTag(categories map[string][]*model.Listing, filter string) ([]*model.Listing, error) {
 	keywords := strings.Split(filter, ",")
-	filteredTrends := []*model.Listing{}
-	for _, v := range trends {
+	filteredCategories := []*model.Listing{}
+	for _, v := range categories {
 		tags := v[0].Tags
 		for _, keyword := range keywords {
 			tag := searchTags(tags, keyword)
 			if tag > 0 {
-				filteredTrends = append(filteredTrends, v[0])
+				filteredCategories = append(filteredCategories, v[0])
 				break
 			}
 		}
 	}
-	return filteredTrends, nil
+	return filteredCategories, nil
 }
 
-func GetLatest(ctx context.Context, query url.Values) ([]*model.Listing, *map[string][]*model.Listing, error) {
+func GetListing(ctx context.Context, query url.Values, headers map[string][]string) (map[string][]*model.Listing, error) {
 	ListingEndpoint := URL + ListingLatestEndpoint
 
 	client := &http.Client{}
 	req, err := http.NewRequest("GET", ListingEndpoint, nil)
 	if err != nil {
-		log.Print(err)
-		os.Exit(1)
+		return nil, err
 	}
 
-	q := query
-
-	if len(q) == 0 {
-		q.Add("aux", "num_market_pairs,cmc_rank,date_added,tags,platform,max_supply,circulating_supply,total_supply,market_cap_by_total_supply,volume_24h_reported,volume_7d,volume_7d_reported,volume_30d,volume_30d_reported,is_market_cap_included_in_calc")
-		q.Add("start", "1")
-		q.Add("limit", "5000")
-		q.Add("convert", "USD")
+	if len(query) == 0 {
+		query.Add("aux", "num_market_pairs,cmc_rank,date_added,tags,platform,max_supply,circulating_supply,total_supply,market_cap_by_total_supply,volume_24h_reported,volume_7d,volume_7d_reported,volume_30d,volume_30d_reported,is_market_cap_included_in_calc")
+		query.Add("start", "1")
+		query.Add("limit", "5000")
+		query.Add("convert", "USD")
 	}
 
-	req.Header.Set("Accept", "application/json")
-	req.Header.Set("Accept-Encoding", "deflare,gzip")
+	if len(headers) == 0 {
+		req.Header.Set("Accept", "application/json")
+		req.Header.Set("Accept-Encoding", "'deflare,gzip'")
+	}
+
+	for k, v := range headers {
+		req.Header.Set(k, v[0])
+	}
+
 	req.Header.Add("X-CMC_PRO_API_KEY", apiKey)
-	req.URL.RawQuery = q.Encode()
+	req.URL.RawQuery = query.Encode()
 
 	resp, err := client.Do(req)
 	if err != nil {
-		fmt.Println(err)
-		os.Exit(1)
+		return nil, err
+	} else if resp.StatusCode >= 400 {
+		respError, _ := io.ReadAll(resp.Body)
+		return nil, errors.New(string(respError))
 	}
 
 	respBody, err := io.ReadAll(resp.Body)
-	if err != nil || resp.StatusCode != 200 {
-		fmt.Println(string(respBody))
-		os.Exit(1)
+	if err != nil {
+		return nil, err
 	}
 
 	defer resp.Body.Close()
 
 	var tokens *model.ListingData
-	categories := q.Get("categories")
 	if err = json.Unmarshal(respBody, &tokens); err != nil {
-		fmt.Println(err)
+		return nil, err
 	}
 
-	// parse, _ := json.Marshal(tokens)
-	fmt.Println(string(respBody))
-
-	if len(categories) > 0 {
-		filteredTokens, err := FilterByTag(tokens.Data, categories)
-		if err != nil {
-			return nil, nil, err
-		}
-		return filteredTokens, nil, nil
-	}
-
-	return nil, &tokens.Data, nil
+	return tokens.Data, nil
 }
 
-func GetHistory(ctx context.Context, query *url.Values) (map[string][]*model.CoinHistorical, error) {
+func GetHistory(ctx context.Context, query url.Values, headers map[string][]string) (map[string][]*model.CoinHistorical, error) {
 	HistoricalEndpoint := URL + QuoteHistoricalEndpoint
 	client := &http.Client{}
 	req, err := http.NewRequest("GET", HistoricalEndpoint, nil)
@@ -131,15 +120,22 @@ func GetHistory(ctx context.Context, query *url.Values) (map[string][]*model.Coi
 		os.Exit(1)
 	}
 
-	req.Header.Set("Accept", "application/json")
-	req.Header.Set("Accept-Encoding", "deflate,gzip")
+	if len(headers) == 0 {
+		req.Header.Set("Accept", "application/json")
+		req.Header.Set("Accept-Encoding", "'deflate,gzip'")
+	}
+
 	req.Header.Add("X-CMC_PRO_API_KEY", apiKey)
+
+	for k, v := range headers {
+		req.Header.Set(k, v[0])
+	}
+
 	req.URL.RawQuery = query.Encode()
 
 	resp, err := client.Do(req)
 	if err != nil {
-		fmt.Println(err)
-		os.Exit(1)
+		return nil, err
 	}
 
 	respBody, err := io.ReadAll(resp.Body)
@@ -158,8 +154,7 @@ func GetHistory(ctx context.Context, query *url.Values) (map[string][]*model.Coi
 	return hist.Data, nil
 }
 
-func ListingCrypto(ctx context.Context, query url.Values) ([]*model.Cryptocurrency, error) {
-	var cryptocurrencies []*model.Cryptocurrency = []*model.Cryptocurrency{}
+func GetCrypto(ctx context.Context, query url.Values, headers map[string][]string) ([]*model.Cryptocurrency, error) {
 	CryptoEndpoint := URL + CryptoCurrencyEndpoint
 	client := &http.Client{}
 	req, err := http.NewRequest("GET", CryptoEndpoint, nil)
@@ -171,9 +166,17 @@ func ListingCrypto(ctx context.Context, query url.Values) ([]*model.Cryptocurren
 		query.Add("listing_status", "active")
 	}
 
-	req.Header.Set("Accept", "application/json")
-	req.Header.Set("Accept-Encoding", "deflate,gzip")
+	if len(headers) == 0 {
+		req.Header.Set("Accept", "application/json")
+		req.Header.Add("Accept-Encoding", "'deflate,gzip'")
+	}
+
 	req.Header.Add("X-CMC_PRO_API_KEY", apiKey)
+
+	for k, v := range headers {
+		req.Header.Set(k, v[0])
+	}
+
 	req.URL.RawQuery = query.Encode()
 
 	resp, err := client.Do(req)
@@ -181,11 +184,17 @@ func ListingCrypto(ctx context.Context, query url.Values) ([]*model.Cryptocurren
 		return nil, err
 	}
 
-	respBody, _ := io.ReadAll(resp.Body)
-
-	if err = json.Unmarshal(respBody, cryptocurrencies); err != nil {
+	respBody, err := io.ReadAll(resp.Body)
+	if err != nil {
 		return nil, err
 	}
 
-	return cryptocurrencies, nil
+	defer resp.Body.Close()
+
+	var cryptocurrencies *model.CryptocurrencyData
+	if err = json.Unmarshal(respBody, &cryptocurrencies); err != nil {
+		return nil, err
+	}
+
+	return cryptocurrencies.Data, nil
 }

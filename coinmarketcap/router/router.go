@@ -11,4 +11,5 @@ func SetupRoutes(app *fiber.App) {
 
 	api.Get("/history", handler.GetHistory)
 	api.Get("/listing", handler.GetListing)
+	api.Get("/map", handler.GetAllCryptos)
 }

@@ -26,10 +26,12 @@ func GetHistory(c *fiber.Ctx) error {
 		q[k] = []string{v}
 	}
 
-	history, err := coinmarketcap.GetHistory(c.Context(), &q)
+	reqHeaders := c.GetReqHeaders()
+
+	history, err := coinmarketcap.GetHistory(c.Context(), q, reqHeaders)
 	if err != nil {
 		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err})
 	}
 
-	return c.JSON(&history)
+	return c.JSON(history)
 }
