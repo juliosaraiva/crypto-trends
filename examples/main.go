@@ -16,6 +16,7 @@ func main() {
 	var query url.Values = url.Values{}
 	query.Add("start", "1")
 	query.Add("limit", "5")
+	query.Add("sort", "cmc_rank")
 	var headers map[string][]string = map[string][]string{}
 	cryptocurrencies, _ := coinmarketcap.GetCrypto(ctx, query, headers)
 	var symbols string
@@ -38,27 +39,18 @@ func main() {
 
 	sliceSymbols := strings.Split(symbols, ",")
 
-	var crypto *model.Crypto = &model.Crypto{}
-	var sliceCrypto []*model.Crypto
+	var crypto model.Crypto = model.Crypto{}
+	var sliceCrypto []model.Crypto
 
 	for _, v := range sliceSymbols {
 		jsonCrypto, _ := json.Marshal(listing[v][0])
-		json.Unmarshal([]byte(jsonCrypto), crypto)
+		json.Unmarshal([]byte(jsonCrypto), &crypto)
 		if historical[v][0].Quotes != nil {
 			crypto.Historical = historical[v][0].Quotes
 		}
 		sliceCrypto = append(sliceCrypto, crypto)
-		jsonResult, _ := json.Marshal(crypto)
-		fmt.Println(string(jsonResult))
 	}
 
-	// 	query.Add("symbol", symbol)
-	// 	listing, _ := coinmarketcap.GetLatest(ctx, query, headers)
-	// 	historical, _ := coinmarketcap.GetHistory(ctx, query, headers)
-	// }
-	// if err != nil {
-	// 	log.Fatal(err.Error())
-	// }
-
-	// fmt.Println(string(JSONOutput))
+	jsonResult, _ := json.Marshal(sliceCrypto)
+	fmt.Println(string(jsonResult))
 }
