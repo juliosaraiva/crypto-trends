@@ -66,22 +66,30 @@ func main() {
 		}
 		cryptoList = append(cryptoList, cryptocurrency)
 	}
+	output, err := Gemini(cryptoList)
+	if err != nil {
+		fmt.Println(err.Error())
+	}
 
-	JSONMarshal, _ := json.Marshal(cryptoList)
+	JSONOutput, _ := json.Marshal(output)
 
+	fmt.Println(string(JSONOutput))
+}
+
+func Gemini(cryptoList []model.Cryptocurrency) (*genai.GenerateContentResponse, error) {
+	ctx := context.TODO()
+	cryptoMarshal, _ := json.Marshal(cryptoList)
 	client, err := genai.NewClient(ctx, option.WithAPIKey(os.Getenv("API_KEY")))
 	if err != nil {
 		log.Fatal(err.Error())
 	}
 
 	defer client.Close()
-	model := client.GenerativeModel("gemini-pro")
-	resp, err := model.GenerateContent(ctx, genai.Text("Based on the given JSON, I want you to do some analysis to identify trends in the cryptos listed in this JSON. Use the historical_data to identify high volumes and possible bullish trends in the bitcoin price."+string(JSONMarshal)))
+	aiModel := client.GenerativeModel("gemini-pro")
+	resp, err := aiModel.GenerateContent(ctx, genai.Text("Based on the given JSON, I want you to do some analysis to identify trends in the cryptos listed in this JSON. Use the historical_data to identify high volumes and possible bullish trends in the bitcoin price."+string(cryptoMarshal)))
 	if err != nil {
 		fmt.Println(err.Error())
 	}
 
-	JSONResult, _ := json.Marshal(resp)
-
-	fmt.Println(string(JSONResult))
+	return resp, nil
 }
