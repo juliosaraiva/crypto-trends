@@ -1,10 +1,12 @@
 package handler
 
 import (
+	"encoding/json"
 	"net/url"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/juliosaraiva/crypto-trends/coinmarketcap"
+	"github.com/juliosaraiva/crypto-trends/types"
 )
 
 type HistoricalQueryParam struct {
@@ -30,7 +32,9 @@ func GetCryptoHistoricalPrices(c *fiber.Ctx) error {
 
 	historicalPrices, err := coinmarketcap.GetHistoricalPrices(c.Context(), queryParams, reqHeaders)
 	if err != nil {
-		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err})
+		var jsonError types.JSONError
+		json.Unmarshal([]byte(err.Error()), &jsonError)
+		return c.Status(fiber.StatusBadRequest).JSON(jsonError)
 	}
 
 	return c.JSON(historicalPrices)

@@ -6,10 +6,8 @@ import (
 	"errors"
 	"fmt"
 	"io"
-	"log"
 	"net/http"
 	"net/url"
-	"os"
 	"strings"
 
 	"github.com/juliosaraiva/crypto-trends/coinmarketcap/model"
@@ -113,8 +111,7 @@ func GetHistoricalPrices(ctx context.Context, query url.Values, headers map[stri
 	client := &http.Client{}
 	req, err := http.NewRequest("GET", endpointURL, nil)
 	if err != nil {
-		log.Print(err)
-		os.Exit(1)
+		return nil, fmt.Errorf("%s", err.Error())
 	}
 
 	if len(headers) == 0 {
@@ -132,7 +129,7 @@ func GetHistoricalPrices(ctx context.Context, query url.Values, headers map[stri
 
 	resp, err := client.Do(req)
 	if err != nil {
-		return nil, err
+		return nil, fmt.Errorf("%s", err.Error())
 	}
 
 	respBody, err := io.ReadAll(resp.Body)
@@ -145,7 +142,7 @@ func GetHistoricalPrices(ctx context.Context, query url.Values, headers map[stri
 	h := model.CryptoHistoricalData{}
 	err = json.Unmarshal(respBody, &h)
 	if err != nil {
-		fmt.Print(err)
+		return nil, fmt.Errorf("%s", err.Error())
 	}
 
 	return h.Data, nil

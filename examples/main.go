@@ -4,11 +4,17 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"log"
 	"net/url"
+	"os"
+	"strconv"
 	"strings"
+	"time"
 
+	"github.com/google/generative-ai-go/genai"
 	"github.com/juliosaraiva/crypto-trends/coinmarketcap"
 	"github.com/juliosaraiva/crypto-trends/coinmarketcap/model"
+	"google.golang.org/api/option"
 )
 
 func main() {
@@ -30,12 +36,22 @@ func main() {
 		symbolList = symbolList + "," + crypto.Symbol
 	}
 
-	q := url.Values{}
+	queryListing := url.Values{}
+	queryHistorical := url.Values{}
 
-	q.Add("symbol", symbolList)
+	queryListing.Add("symbol", symbolList)
+	queryHistorical.Add("symbol", symbolList)
 
-	listing, _ := coinmarketcap.GetCrypto(ctx, q, reqHeaders)
-	historical, _ := coinmarketcap.GetHistoricalPrices(ctx, q, reqHeaders)
+	now := time.Now()
+	ninetyDaysAgo := now.AddDate(0, 0, -30)
+	unixTimestamp := ninetyDaysAgo.Unix()
+
+	timestampString := strconv.FormatInt(unixTimestamp, 10)
+
+	queryHistorical.Add("time_start", timestampString)
+
+	listing, _ := coinmarketcap.GetCrypto(ctx, queryListing, reqHeaders)
+	historical, _ := coinmarketcap.GetHistoricalPrices(ctx, queryHistorical, reqHeaders)
 
 	sliceSymbols := strings.Split(symbolList, ",")
 
@@ -51,6 +67,21 @@ func main() {
 		cryptoList = append(cryptoList, cryptocurrency)
 	}
 
-	parseJSON, _ := json.Marshal(cryptoList)
-	fmt.Println(string(parseJSON))
+	JSONMarshal, _ := json.Marshal(cryptoList)
+
+	client, err := genai.NewClient(ctx, option.WithAPIKey(os.Getenv("API_KEY")))
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+
+	defer client.Close()
+	model := client.GenerativeModel("gemini-pro")
+	resp, err := model.GenerateContent(ctx, genai.Text("Based on the given JSON, I want you to do some analysis to identify trends in the cryptos listed in this JSON"+string(JSONMarshal)))
+	if err != nil {
+		fmt.Println(err.Error())
+	}
+
+	JSONResult, _ := json.Marshal(resp)
+
+	fmt.Println(string(JSONResult))
 }
