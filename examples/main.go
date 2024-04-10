@@ -76,7 +76,7 @@ func main() {
 
 	defer client.Close()
 	model := client.GenerativeModel("gemini-pro")
-	resp, err := model.GenerateContent(ctx, genai.Text("Based on the given JSON, I want you to do some analysis to identify trends in the cryptos listed in this JSON"+string(JSONMarshal)))
+	resp, err := model.GenerateContent(ctx, genai.Text("Based on the given JSON, I want you to do some analysis to identify trends in the cryptos listed in this JSON. Use the historical_data to identify high volumes and possible bullish trends in the bitcoin price."+string(JSONMarshal)))
 	if err != nil {
 		fmt.Println(err.Error())
 	}
