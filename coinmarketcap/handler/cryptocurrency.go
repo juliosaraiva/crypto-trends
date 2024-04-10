@@ -7,7 +7,7 @@ import (
 	"github.com/juliosaraiva/crypto-trends/coinmarketcap"
 )
 
-func GetAllCryptos(c *fiber.Ctx) error {
+func ListCryptocurrencies(c *fiber.Ctx) error {
 	var q url.Values = url.Values{}
 	queries := c.Queries()
 

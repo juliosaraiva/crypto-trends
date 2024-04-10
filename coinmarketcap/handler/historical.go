@@ -18,20 +18,20 @@ type HistoricalQueryParam struct {
 	SkipInvalid bool
 }
 
-func GetHistory(c *fiber.Ctx) error {
-	q := url.Values{}
+func GetCryptoHistoricalPrices(c *fiber.Ctx) error {
+	queryParams := url.Values{}
 	queries := c.Queries()
 
 	for k, v := range queries {
-		q[k] = []string{v}
+		queryParams[k] = []string{v}
 	}
 
 	reqHeaders := c.GetReqHeaders()
 
-	history, err := coinmarketcap.GetHistory(c.Context(), q, reqHeaders)
+	historicalPrices, err := coinmarketcap.GetHistoricalPrices(c.Context(), queryParams, reqHeaders)
 	if err != nil {
 		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err})
 	}
 
-	return c.JSON(history)
+	return c.JSON(historicalPrices)
 }

@@ -20,19 +20,16 @@ type error interface {
 	Error() string
 }
 
-const (
-	URL = "https://pro-api.coinmarketcap.com"
-)
-
 var apiKey string = config.Config("COINMARKETCAP_API_KEY")
 
 const (
-	ListingLatestEndpoint   = "/v2/cryptocurrency/quotes/latest"
-	CategoriesEndpoint      = "/v1/cryptocurrency/categories"
-	TrendingLatestEndpoint  = "/v1/cryptocurrency/trending/latest"
-	CategoryEndpoint        = "/v1/cryptocurrency/category"
-	QuoteHistoricalEndpoint = "/v2/cryptocurrency/quotes/historical"
-	CryptoCurrencyEndpoint  = "/v1/cryptocurrency/map"
+	BaseURL = "https://pro-api.coinmarketcap.com"
+	// Endpoints
+	CryptoCategoriesEndpoint = "/v1/cryptocurrency/categories"
+	CryptoCategoryEndpoint   = "/v1/cryptocurrency/category"
+	ListCryptoEndpoint       = "/v1/cryptocurrency/map"
+	CryptoLatestEndpoint     = "/v2/cryptocurrency/quotes/latest"
+	CryptoHistoricalEndpoint = "/v2/cryptocurrency/quotes/historical"
 )
 
 func searchTags(tags []*model.Tags, k string) int {
@@ -60,11 +57,11 @@ func FilterByTag(categories map[string][]*model.Listing, filter string) ([]*mode
 	return filteredCategories, nil
 }
 
-func GetListing(ctx context.Context, query url.Values, headers map[string][]string) (map[string][]*model.Listing, error) {
-	ListingEndpoint := URL + ListingLatestEndpoint
+func GetCrypto(ctx context.Context, query url.Values, headers map[string][]string) (map[string][]*model.Listing, error) {
+	endpointURL := BaseURL + CryptoLatestEndpoint
 
 	client := &http.Client{}
-	req, err := http.NewRequest("GET", ListingEndpoint, nil)
+	req, err := http.NewRequest("GET", endpointURL, nil)
 	if err != nil {
 		return nil, err
 	}
@@ -111,10 +108,10 @@ func GetListing(ctx context.Context, query url.Values, headers map[string][]stri
 	return tokens.Data, nil
 }
 
-func GetHistory(ctx context.Context, query url.Values, headers map[string][]string) (map[string][]*model.CoinHistorical, error) {
-	HistoricalEndpoint := URL + QuoteHistoricalEndpoint
+func GetHistoricalPrices(ctx context.Context, query url.Values, headers map[string][]string) (map[string][]*model.CryptoHistorical, error) {
+	endpointURL := BaseURL + CryptoHistoricalEndpoint
 	client := &http.Client{}
-	req, err := http.NewRequest("GET", HistoricalEndpoint, nil)
+	req, err := http.NewRequest("GET", endpointURL, nil)
 	if err != nil {
 		log.Print(err)
 		os.Exit(1)
@@ -145,19 +142,19 @@ func GetHistory(ctx context.Context, query url.Values, headers map[string][]stri
 
 	defer resp.Body.Close()
 
-	hist := model.HistoricalData{}
-	err = json.Unmarshal(respBody, &hist)
+	h := model.CryptoHistoricalData{}
+	err = json.Unmarshal(respBody, &h)
 	if err != nil {
 		fmt.Print(err)
 	}
 
-	return hist.Data, nil
+	return h.Data, nil
 }
 
-func GetCrypto(ctx context.Context, query url.Values, headers map[string][]string) ([]*model.Cryptocurrency, error) {
-	CryptoEndpoint := URL + CryptoCurrencyEndpoint
+func ListCryptocurrencies(ctx context.Context, query url.Values, headers map[string][]string) ([]*model.Cryptocurrency, error) {
+	endpointURL := BaseURL + ListCryptoEndpoint
 	client := &http.Client{}
-	req, err := http.NewRequest("GET", CryptoEndpoint, nil)
+	req, err := http.NewRequest("GET", endpointURL, nil)
 	if err != nil {
 		return nil, err
 	}

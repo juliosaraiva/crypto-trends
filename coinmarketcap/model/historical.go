@@ -1,28 +1,28 @@
 package model
 
-type HistoricalData struct {
-	Data map[string][]*CoinHistorical `json:"data"`
+type CryptoHistoricalData struct {
+	Data map[string][]*CryptoHistorical `json:"data"`
 }
 
-type CoinHistorical struct {
+type CryptoHistorical struct {
 	ID       int                 `json:"id,omitempty"`
 	Name     string              `json:"name"`
 	Symbol   string              `json:"symbol"`
 	IsActive int                 `json:"is_active"`
 	IsFiat   int                 `json:"is_fiat"`
-	Quotes   []*HistoricalQuotes `json:"quotes"`
+	Quotes   []*HistoricalPrices `json:"quotes"`
 }
 
-type HistoricalQuotes struct {
+type HistoricalPrices struct {
 	Timestamp string `json:"timestamp"`
 	Quote     *USD   `json:"quote"`
 }
 
 type USD struct {
-	USD *USDQuoteHistorical `json:"USD"`
+	USD *HistoricalPriceSnapshot `json:"USD"`
 }
 
-type USDQuoteHistorical struct {
+type HistoricalPriceSnapshot struct {
 	Price             float64 `json:"price"`
 	Volume24h         float64 `json:"volume_24h"`
 	MarketCap         float64 `json:"market_cap"`

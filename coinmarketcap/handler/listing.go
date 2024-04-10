@@ -9,7 +9,7 @@ import (
 	"github.com/juliosaraiva/crypto-trends/types"
 )
 
-func GetListing(c *fiber.Ctx) error {
+func GetCrypto(c *fiber.Ctx) error {
 	var q url.Values = url.Values{}
 	queries := c.Queries()
 
@@ -18,7 +18,7 @@ func GetListing(c *fiber.Ctx) error {
 	}
 
 	reqHeaders := c.GetReqHeaders()
-	tokens, err := coinmarketcap.GetListing(c.Context(), q, reqHeaders)
+	tokens, err := coinmarketcap.GetCrypto(c.Context(), q, reqHeaders)
 	if err != nil {
 		var jsonError types.JSONError
 		json.Unmarshal([]byte(err.Error()), &jsonError)

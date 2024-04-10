@@ -9,7 +9,7 @@ import (
 func SetupRoutes(app *fiber.App) {
 	api := app.Group("/api", logger.New())
 
-	api.Get("/history", handler.GetHistory)
-	api.Get("/listing", handler.GetListing)
-	api.Get("/map", handler.GetAllCryptos)
+	api.Get("/historical", handler.GetCryptoHistoricalPrices)
+	api.Get("/crypto", handler.GetCrypto)
+	api.Get("/map", handler.ListCryptocurrencies)
 }

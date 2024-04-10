@@ -17,40 +17,40 @@ func main() {
 	query.Add("start", "1")
 	query.Add("limit", "5")
 	query.Add("sort", "cmc_rank")
-	var headers map[string][]string = map[string][]string{}
-	cryptocurrencies, _ := coinmarketcap.GetCrypto(ctx, query, headers)
-	var symbols string
+	var reqHeaders map[string][]string = map[string][]string{}
+	cryptocurrencies, _ := coinmarketcap.GetCrypto(ctx, query, reqHeaders)
+	var symbolList string
 
-	for _, c := range cryptocurrencies {
-		if len(symbols) == 0 {
-			symbols = c.Symbol
+	for _, crypto := range cryptocurrencies {
+		if len(symbolList) == 0 {
+			symbolList = crypto.Symbol
 			continue
 		}
 
-		symbols = symbols + "," + c.Symbol
+		symbolList = symbolList + "," + crypto.Symbol
 	}
 
 	q := url.Values{}
 
-	q.Add("symbol", symbols)
+	q.Add("symbol", symbolList)
 
-	listing, _ := coinmarketcap.GetListing(ctx, q, headers)
-	historical, _ := coinmarketcap.GetHistory(ctx, q, headers)
+	listing, _ := coinmarketcap.GetCrypto(ctx, q, reqHeaders)
+	historical, _ := coinmarketcap.GetHistoricalPrices(ctx, q, reqHeaders)
 
-	sliceSymbols := strings.Split(symbols, ",")
+	sliceSymbols := strings.Split(symbolList, ",")
 
-	var crypto model.Crypto = model.Crypto{}
-	var sliceCrypto []model.Crypto
+	var cryptocurrency model.Cryptocurrency = model.Cryptocurrency{}
+	var cryptoList []model.Cryptocurrency
 
-	for _, v := range sliceSymbols {
-		jsonCrypto, _ := json.Marshal(listing[v][0])
-		json.Unmarshal([]byte(jsonCrypto), &crypto)
-		if historical[v][0].Quotes != nil {
-			crypto.Historical = historical[v][0].Quotes
+	for _, symbol := range sliceSymbols {
+		parseJSON, _ := json.Marshal(listing[symbol][0])
+		json.Unmarshal([]byte(parseJSON), &cryptocurrency)
+		if historical[symbol][0].Quotes != nil {
+			cryptocurrency.Historical = historical[symbol][0].Quotes
 		}
-		sliceCrypto = append(sliceCrypto, crypto)
+		cryptoList = append(cryptoList, cryptocurrency)
 	}
 
-	jsonResult, _ := json.Marshal(sliceCrypto)
-	fmt.Println(string(jsonResult))
+	parseJSON, _ := json.Marshal(cryptoList)
+	fmt.Println(string(parseJSON))
 }
