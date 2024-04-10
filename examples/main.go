@@ -18,7 +18,7 @@ func main() {
 	query.Add("limit", "5")
 	query.Add("sort", "cmc_rank")
 	var reqHeaders map[string][]string = map[string][]string{}
-	cryptocurrencies, _ := coinmarketcap.GetCrypto(ctx, query, reqHeaders)
+	cryptocurrencies, _ := coinmarketcap.ListCryptocurrencies(ctx, query, reqHeaders)
 	var symbolList string
 
 	for _, crypto := range cryptocurrencies {
