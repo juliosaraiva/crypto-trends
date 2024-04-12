@@ -79,7 +79,7 @@ func main() {
 func Gemini(cryptoList []model.Cryptocurrency) (*genai.GenerateContentResponse, error) {
 	ctx := context.TODO()
 	cryptoMarshal, _ := json.Marshal(cryptoList)
-	client, err := genai.NewClient(ctx, option.WithAPIKey(os.Getenv("API_KEY")))
+	client, err := genai.NewClient(ctx, option.WithAPIKey(os.Getenv("GEMINI_API_KEY")))
 	if err != nil {
 		log.Fatal(err.Error())
 	}
