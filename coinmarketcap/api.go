@@ -14,20 +14,17 @@ import (
 	"github.com/juliosaraiva/crypto-trends/config"
 )
 
-type error interface {
-	Error() string
-}
-
 var apiKey string = config.Config("COINMARKETCAP_API_KEY")
 
 const (
 	BaseURL = "https://pro-api.coinmarketcap.com"
 	// Endpoints
-	CryptoCategoriesEndpoint = "/v1/cryptocurrency/categories"
-	CryptoCategoryEndpoint   = "/v1/cryptocurrency/category"
-	ListCryptoEndpoint       = "/v1/cryptocurrency/map"
-	CryptoLatestEndpoint     = "/v2/cryptocurrency/quotes/latest"
-	CryptoHistoricalEndpoint = "/v2/cryptocurrency/quotes/historical"
+	CryptoCategoriesEndpoint    = "/v1/cryptocurrency/categories"
+	CryptoCategoryEndpoint      = "/v1/cryptocurrency/category"
+	ListCryptoEndpoint          = "/v1/cryptocurrency/map"
+	CryptoLatestEndpoint        = "/v2/cryptocurrency/quotes/latest"
+	CryptoHistoricalEndpoint    = "/v2/cryptocurrency/quotes/historical"
+	CryptoOHLCVHistoricalPrices = "/v2/cryptocurrency/ohlcv/historical"
 )
 
 func searchTags(tags []*model.Tags, k string) int {
@@ -55,7 +52,7 @@ func FilterByTag(categories map[string][]*model.Listing, filter string) ([]*mode
 	return filteredCategories, nil
 }
 
-func GetCrypto(ctx context.Context, query url.Values, headers map[string][]string) (map[string][]*model.Listing, error) {
+func GetCrypto(ctx context.Context, query url.Values, headers map[string][]string) (map[string]*model.Listing, error) {
 	endpointURL := BaseURL + CryptoLatestEndpoint
 
 	client := &http.Client{}
@@ -88,6 +85,8 @@ func GetCrypto(ctx context.Context, query url.Values, headers map[string][]strin
 		return nil, err
 	} else if resp.StatusCode >= 400 {
 		respError, _ := io.ReadAll(resp.Body)
+		fmt.Println("Inside")
+		fmt.Println(string(respError))
 		return nil, errors.New(string(respError))
 	}
 
@@ -191,4 +190,45 @@ func ListCryptocurrencies(ctx context.Context, query url.Values, headers map[str
 	}
 
 	return cryptocurrencies.Data, nil
+}
+
+func GetOHLCVHistoricalPrices(ctx context.Context, query url.Values, reqHeaders map[string][]string) (*model.OHLCVHistorical, error) {
+	endpointURL := BaseURL + CryptoOHLCVHistoricalPrices
+	client := &http.Client{}
+	req, err := http.NewRequest("GET", endpointURL, nil)
+	if err != nil {
+		return nil, err
+	}
+
+	if len(reqHeaders) == 0 {
+		req.Header.Set("Accept", "application/json")
+		req.Header.Set("Accept-Encoding", "'deflate,gzip'")
+	}
+
+	req.Header.Add("X-CMC_PRO_API_KEY", apiKey)
+
+	for k, v := range reqHeaders {
+		req.Header.Add(k, v[0])
+	}
+
+	req.URL.RawQuery = query.Encode()
+
+	resp, err := client.Do(req)
+	if err != nil {
+		return nil, err
+	}
+
+	respBody, err := io.ReadAll(resp.Body)
+	if err != nil {
+		return nil, err
+	}
+
+	defer resp.Body.Close()
+
+	var ohlcvHistorical *model.OHLCVHistoricalData
+	if err = json.Unmarshal(respBody, &ohlcvHistorical); err != nil {
+		return nil, err
+	}
+
+	return ohlcvHistorical.Data, nil
 }

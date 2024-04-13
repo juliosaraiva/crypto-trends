@@ -39,3 +39,23 @@ func GetCryptoHistoricalPrices(c *fiber.Ctx) error {
 
 	return c.JSON(historicalPrices)
 }
+
+func GetOHLCVHistoricalPrices(c *fiber.Ctx) error {
+	queryParams := url.Values{}
+	queries := c.Queries()
+
+	for k, v := range queries {
+		queryParams[k] = []string{v}
+	}
+
+	reqHeaders := c.GetReqHeaders()
+
+	OHLCVHistoricalPrices, err := coinmarketcap.GetOHLCVHistoricalPrices(c.Context(), queryParams, reqHeaders)
+	if err != nil {
+		var jsonError types.JSONError
+		json.Unmarshal([]byte(err.Error()), &jsonError)
+		return c.Status(fiber.StatusBadRequest).JSON(jsonError)
+	}
+
+	return c.JSON(OHLCVHistoricalPrices)
+}

@@ -23,6 +23,22 @@ A bullish market means that prices of assets are rising or many people are buyin
 
 Within a trend can be several rallies, corrections, or pullbacks where it appears to reverse, only to resume the original trend after a period of time. After all, prices do not move in a straight line. Using crypto price analysis and chart patterns can reveal these potential changes in a trend on different time frames.
 
+## Volume
+![](https://blog.elearnmarkets.com/wp-content/uploads/2021/06/Up-volume-1024x550.png)
+
+
+![](./volume_trends.png)
+
+
+### Types of Volume Indicators
+
+#### On-Balance Indicator
+This indicator is calculated by adding the day’s volume to a cumulative total when the security’s price closes up, and subtracting the day’s volume when the security’s price closes down.
+
+- If today’s close is greater than yesterday’s close then: `OBV = Yesterday’s OBV + Today’s Volume`
+- If today’s close is less than yesterday’s close then: `OBV = Yesterday’s OBV – Today’s Volume`
+- If today’s close is equal to yesterday’s close then: `OBV = Yesterday’s OBV`
+
 ## Moving Averages
 Moving averages are often used together to provide a better indication of when a trend will reverse. The number of days used to calculate the moving average also differs.
 
