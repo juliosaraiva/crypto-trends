@@ -7,7 +7,7 @@ import (
 )
 
 // Config func to get env value
-func Config(key string) string {
+func GetConfig(key string) string {
 	// load .env file
 	_ = godotenv.Load(".env")
 	return os.Getenv(key)
