@@ -14,7 +14,7 @@ import (
 	"github.com/juliosaraiva/crypto-trends/config"
 )
 
-var apiKey string = config.Config("COINMARKETCAP_API_KEY")
+var apiKey string = config.GetConfig("COINMARKETCAP_API_KEY")
 
 const (
 	BaseURL = "https://pro-api.coinmarketcap.com"
