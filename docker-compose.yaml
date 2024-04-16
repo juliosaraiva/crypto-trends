@@ -9,3 +9,22 @@ services:
         - 15672:15672
     volumes:
         - .data/:/var/lib/rabbitmq/
+  
+  cryptor-trends-dataset:
+    image: cryptor-trends-dataset
+    container_name: 'cryptor-trends-dataset'
+    build:
+      context: ./src/cryptor-trends-dataset
+      dockerfile: Dockerfile
+    depends_on:
+      - rabbitmq
+    volumes:
+      - ./src/cryptor-trends-dataset:/app
+    env_file:
+      - src/cryptor-trends-dataset/.env
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_USER=guest
+      - RABBITMQ_PASSWORD=guest
+      - RABBITMQ_QUEUE_NAME=cryptor-trends-dataset

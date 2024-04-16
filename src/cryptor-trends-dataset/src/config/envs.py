@@ -1,0 +1,5 @@
+import os
+
+
+COINMARKETCAP_API_KEY=os.getenv("COINMARKETCAP_API_KEY")
+GEMINI_API_KEY=os.getenv("GEMINI_API_KEY")
