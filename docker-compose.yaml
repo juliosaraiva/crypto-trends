@@ -8,7 +8,15 @@ services:
         - 5672:5672
         - 15672:15672
     volumes:
-        - .data/:/var/lib/rabbitmq/
+        - .data/rabbit/:/var/lib/rabbitmq/
+
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - .data/mongo/:/data/db
   
   cryptor-trends-dataset:
     image: cryptor-trends-dataset
@@ -28,3 +36,26 @@ services:
       - RABBITMQ_USER=guest
       - RABBITMQ_PASSWORD=guest
       - RABBITMQ_QUEUE_NAME=cryptor-trends-dataset
+
+  cryptor-trends-coin-bot:
+    image: cryptor-trends-coin-bot
+    container_name: 'cryptor-trends-coin-bot'
+    build:
+      context: ./src/cryptor-trends-coin-bot
+      dockerfile: Dockerfile
+    depends_on:
+      - rabbitmq
+      - mongodb
+    env_file:
+      - src/cryptor-trends-coin-bot/.env
+    volumes:
+      - ./src/cryptor-trends-coin-bot:/app
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_USER=guest
+      - RABBITMQ_PASSWORD=guest
+      - RABBITMQ_QUEUE_NAME=cryptor-trends-coin-bot
+      - MONGO_HOST=mongodb
+      - MONGO_PORT=27017
+      - MONGO_DATABASE=cryptor-trends
