@@ -1,10 +1,8 @@
 class CryptorCoin:
     def __init__(self, coin_id, name, symbol, rank, 
-                 time_open, max_supply, circulating_supply,
-                 total_supply, price, volume_24h, volume_change_24h,
-                 time_close, time_high, time_low,
-                 open, high, low, close, volume,
-                 market_cap, timestamp) -> None:
+                 max_supply, circulating_supply, total_supply,
+                 price, volume_24h, volume_change_24h,
+                 historical) -> None:
         self.coin_id = coin_id
         self.name = name
         self.symbol = symbol
@@ -15,30 +13,9 @@ class CryptorCoin:
         self.price = price
         self.volume_24h = volume_24h
         self.volume_change_24h = volume_change_24h
-        self.time_open = time_open
-        self.time_close = time_close
-        self.time_high = time_high
-        self.time_low = time_low
-        self.open = open
-        self.high = high
-        self.low = low
-        self.close = close
-        self.volume = volume
-        self.market_cap = market_cap
-        self.timestamp = timestamp
+        self.historical = historical
 
         self.validate()
-
-    def __str__(self) -> str:
-        return f"{self.name} ({self.symbol}) - {self.close} USD"
-    
-    def __eq__(self, value: object) -> bool:
-        if not isinstance(value, CryptorCoin):
-            return False
-        return self.coin_id == value.coin_id
-    
-    def __hash__(self) -> int:
-        return hash(self.coin_id)
     
     def validate(self):
         empyt_fields = []
@@ -62,6 +39,30 @@ class CryptorCoin:
             empyt_fields.append('volume_24h')
         if not self.volume_change_24h:
             empyt_fields.append('volume_change_24h')
+        if not self.historical:
+            empyt_fields.append('historical')
+        if empyt_fields:
+            raise ValueError(f"Empty fields: {', '.join(empyt_fields)}")
+
+class CryptorCoinHistorical:
+    def __init__(self, time_open, time_close, time_high, time_low,
+                 open, high, low, close, volume, market_cap, timestamp) -> None:
+        self.time_open = time_open
+        self.time_close = time_close
+        self.time_high = time_high
+        self.time_low = time_low
+        self.open = open
+        self.high = high
+        self.low = low
+        self.close = close
+        self.volume = volume
+        self.market_cap = market_cap
+        self.timestamp = timestamp
+
+        self.validate()
+    
+    def validate(self):
+        empyt_fields = []
         if not self.time_open:
             empyt_fields.append('time_open')
         if not self.time_close:

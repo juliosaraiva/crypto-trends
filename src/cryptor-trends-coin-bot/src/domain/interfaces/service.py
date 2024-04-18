@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import List
+
 from domain.entity import CryptorCoin
 
 
@@ -9,5 +10,5 @@ class CryptorCoinService(ABC):
         pass
 
     @abstractmethod
-    def save_coin(self, coin: CryptorCoin) -> None:
+    def add_coin(self, collection_name: str, queue_name: str) -> None:
         pass
