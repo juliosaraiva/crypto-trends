@@ -1,4 +1,5 @@
 import pika
+import json
 
 from domain.interfaces.event import CryptorCoinEvent
 
@@ -23,7 +24,8 @@ class RabbitMQClient(CryptorCoinEvent):
         self.channel.queue_declare(queue=queue_name)
 
     def publish_message(self, queue_name, message):
-        self.channel.basic_publish(exchange='', routing_key=queue_name, body=message)
+        self.channel.basic_publish(exchange='', routing_key=queue_name, body=json.dumps(message))
+        print(f"Published message to {queue_name}")
 
     def close(self):
         if self.connection:

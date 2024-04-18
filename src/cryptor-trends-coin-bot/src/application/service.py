@@ -45,6 +45,8 @@ class CryptorCoinServiceImpl(CryptorCoinService):
                 coin_historical_entity.append(historical_entity)
         else:
             print("No historical data found")
+            return
+        
         coin_entity = {
             "coin_id": coin["id"],
             "name": coin["name"],
@@ -59,5 +61,6 @@ class CryptorCoinServiceImpl(CryptorCoinService):
             "historical": coin_historical_entity
         }
 
+        self.cryptor_coin_event.publish_message(queue_name, coin_entity)
         self.cryptor_coin_repository.insert_one(collection_name, coin_entity)
-        # self.cryptor_coin_event.publish_message(queue_name, coin)
+        

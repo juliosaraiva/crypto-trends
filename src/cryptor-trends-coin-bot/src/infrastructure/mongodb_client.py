@@ -21,6 +21,7 @@ class MongoDBClient(CryptorCoinRepository):
 
     def insert_one(self, collection, data):
         self.db[collection].insert_one(data)
+        print(f"Inserted data into {collection}")
 
     def find_all(self, collection):
         coins = []
