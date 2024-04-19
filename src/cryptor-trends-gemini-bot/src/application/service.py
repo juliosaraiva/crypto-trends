@@ -12,9 +12,21 @@ class CryptorCoinIAServiceImpl(CryptorCoinIAService):
     self.cryptor_coin_ia_event = cryptor_coin_ia_event
 
   def get_all_coins(self) -> List[CryptorCoinIA]:
-    pass
+    return self.cryptor_coin_ia_repository.find_all()
 
   def add_coin(self, collection_name: str, queue_name: str) -> None:
-    pass
-    # self.cryptor_coin_ia_event.publish_message(queue_name=queue_name, message={"message": "ok"})
-    # self.cryptor_coin_ia_repository.insert_one(collection=collection_name, data={"message": "ok"})
+    # TODO: get information form gemini
+    mock_data={
+      coin_id: 1,
+      name: "Bitcoin",
+      symbol: "BTC",
+      rank: 1,
+      price: 3000.000,
+      status: "high"
+    }
+    self.cryptor_coin_ia_event.publish_message(
+      queue_name=queue_name,
+      message=mock_data)
+    self.cryptor_coin_ia_repository.insert_one(
+      collection=collection_name,
+      data=mock_data)

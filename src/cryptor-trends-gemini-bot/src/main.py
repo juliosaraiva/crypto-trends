@@ -27,3 +27,6 @@ rabbitmq_client.declare_queue(settings.RABBITMQ_QUEUE_NAME)
 # CryptorCoinIAService instance
 cryptor_coin_ia_service = CryptorCoinIAServiceImpl(mongo_client, rabbitmq_client)
 cryptor_coin_ia_service.add_coin(settings.MONGO_DATABASE, settings.RABBITMQ_QUEUE_NAME)
+
+print("GET")
+cryptor_coin_ia_service.get_all_coins()

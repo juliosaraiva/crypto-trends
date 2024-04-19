@@ -61,24 +61,24 @@ services:
       - MONGO_DATABASE=cryptor-trends
 
   cryptor-trends-gemini-bot:
-    image: cryptor-gemini-coin-bot
-    container_name: 'cryptor-gemini-coin-bot'
+    image: cryptor-trends-gemini-bot
+    container_name: 'cryptor-trends-gemini-bot'
     build:
-      context: ./src/cryptor-gemini-coin-bot
+      context: ./src/cryptor-trends-gemini-bot
       dockerfile: Dockerfile
     depends_on:
       - rabbitmq
       - mongodb
     env_file:
-      - src/cryptor-gemini-coin-bot/.env
+      - src/cryptor-trends-gemini-bot/.env
     volumes:
-      - ./src/cryptor-gemini-coin-bot:/app
+      - ./src/cryptor-trends-gemini-bot:/app
     environment:
       - RABBITMQ_HOST=rabbitmq
       - RABBITMQ_PORT=5672
       - RABBITMQ_USER=guest
       - RABBITMQ_PASSWORD=guest
-      - RABBITMQ_QUEUE_NAME=cryptor-gemini-coin-bot
+      - RABBITMQ_QUEUE_NAME=cryptor-trends-gemini-bot
       - MONGO_HOST=mongodb
       - MONGO_PORT=27017
       - MONGO_DATABASE=cryptor-gemini
