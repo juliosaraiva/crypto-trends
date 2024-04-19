@@ -1,11 +1,13 @@
 from pymongo import MongoClient
+from typing import List
 
 from domain.interfaces.repository import CryptorCoinRepository
 from domain.entity import CryptorCoin
 
 
 class MongoDBClient(CryptorCoinRepository):
-    def __init__(self, host, port, username, password, database):
+    def __init__(self, host: str, port: str,
+                username: str, password: str, database: str):
         self.host = host
         self.port = port
         self.username = username
@@ -14,16 +16,12 @@ class MongoDBClient(CryptorCoinRepository):
         self.client = None
         self.db = None
 
-    def connect(self):
+    def connect(self) -> None:
         self.client = MongoClient(f"mongodb://{self.host}:{self.port}/")
         self.db = self.client[self.database]
         print(f"Connected to MongoDB server {self.host}:{self.port}")
 
-    def insert_one(self, collection, data):
-        self.db[collection].insert_one(data)
-        print(f"Inserted data into {collection}")
-
-    def find_all(self, collection):
+    def find_all(self, collection: str) -> List[CryptorCoin]:
         coins = []
         for coin_data in self.db[collection].find():
             coin = CryptorCoin(
@@ -52,6 +50,10 @@ class MongoDBClient(CryptorCoinRepository):
             coins.append(coin)
         return coins
 
-    def close(self):
+    def insert_one(self, collection: str, data: dict) -> None:
+      self.db[collection].insert_one(data)
+      print(f"Inserted data into {collection}")
+
+    def close(self) -> None:
         if self.client:
             self.client.close()

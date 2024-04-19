@@ -7,18 +7,18 @@ from libs.coinmarketcap import CoinMarketCap
 
 class CryptorCoinServiceImpl(CryptorCoinService):
     def __init__(
-            self, 
+            self,
             cryptor_coin_repository: CryptorCoinRepository,
             cryptor_coin_event: CryptorCoinEvent):
         self.cryptor_coin_repository = cryptor_coin_repository
         self.cryptor_coin_event = cryptor_coin_event
 
-    def get_all_coins(self):
+    def get_all_coins(self) -> List[CryptorCoin]:
         self.cryptor_coin_repository.get_all()
 
-    def add_coin(self, collection_name, queue_name):
+    def add_coin(self, collection_name: str, queue_name: str) -> None:
         coinmarketcap = CoinMarketCap()
-        
+
         # Coin data from CoinMarketCap
         coin_map = coinmarketcap.map()[0]
         coin_historical = coinmarketcap.ohlcv_historical(coin_map["id"])
@@ -46,7 +46,7 @@ class CryptorCoinServiceImpl(CryptorCoinService):
         else:
             print("No historical data found")
             return
-        
+
         coin_entity = {
             "coin_id": coin["id"],
             "name": coin["name"],
@@ -63,4 +63,3 @@ class CryptorCoinServiceImpl(CryptorCoinService):
 
         self.cryptor_coin_event.publish_message(queue_name, coin_entity)
         self.cryptor_coin_repository.insert_one(collection_name, coin_entity)
-        

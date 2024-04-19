@@ -11,10 +11,9 @@ class CryptorCoinEvent(ABC):
         pass
 
     @abstractmethod
-    def publish_message(self, queue_name: str, message: str) -> None:
+    def publish_message(self, queue_name: str, message: dict) -> None:
         pass
 
     @abstractmethod
     def close(self) -> None:
         pass
-    

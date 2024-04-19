@@ -4,7 +4,8 @@ import json
 from domain.interfaces.event import CryptorCoinEvent
 
 class RabbitMQClient(CryptorCoinEvent):
-    def __init__(self, host, port, username, password) -> None:
+    def __init__(self, host: str, port: str,
+                username: str, password: str) -> None:
         self.host = host
         self.port = port
         self.username = username
@@ -12,7 +13,7 @@ class RabbitMQClient(CryptorCoinEvent):
         self.connection = None
         self.channel = None
 
-    def connect(self):
+    def connect(self) -> None:
         credentials = pika.PlainCredentials(self.username, self.password)
         self.connection = pika.BlockingConnection(
             pika.ConnectionParameters(host=self.host, port=self.port, credentials=credentials)
@@ -20,13 +21,13 @@ class RabbitMQClient(CryptorCoinEvent):
         self.channel = self.connection.channel()
         print('Connected to RabbitMQ')
 
-    def declare_queue(self, queue_name):
+    def declare_queue(self, queue_name: str) -> None:
         self.channel.queue_declare(queue=queue_name)
 
-    def publish_message(self, queue_name, message):
+    def publish_message(self, queue_name: str, message: dict) -> None:
         self.channel.basic_publish(exchange='', routing_key=queue_name, body=json.dumps(message))
         print(f"Published message to {queue_name}")
 
-    def close(self):
+    def close(self) -> None:
         if self.connection:
             self.connection.close()

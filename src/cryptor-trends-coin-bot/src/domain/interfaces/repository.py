@@ -14,9 +14,9 @@ class CryptorCoinRepository(ABC):
         pass
 
     @abstractmethod
-    def insert_one(self, collection: str, data: CryptorCoin) -> None:
+    def insert_one(self, collection: str, data: dict) -> None:
         pass
-    
+
     @abstractmethod
     def close(self) -> None:
         pass
