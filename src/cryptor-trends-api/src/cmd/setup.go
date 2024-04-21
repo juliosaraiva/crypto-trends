@@ -1,7 +1,7 @@
 package main
 
 import (
-	"context"
+	"log"
 	"net/http"
 
 	"github.com/juliosaraiva/crypto-trends/src/config"
@@ -21,15 +21,17 @@ func setup() (*http.Server, error) {
 	if err != nil {
 		return nil, err
 	}
-	defer func(mongoClient *mongo.Client, mongoCtx context.Context) {
-		if err := mongoClient.Disconnect(mongoCtx); err != nil {
-			panic(err)
-		}
-	}(mongoClient, mongoCtx)
 
 	err = mongoClient.Ping(mongoCtx, readPref.Primary())
 	if err != nil {
 		panic(err)
+	}
+
+	log.Printf("Connected to MongoDB on %s:%s", settings.MongoDBHost, settings.MongoDBPort)
+
+	app := config.AppSettings{
+		MongoClient: mongoClient,
+		MongoCtx:    mongoCtx,
 	}
 
 	// create a new http server

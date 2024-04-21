@@ -1,6 +1,16 @@
 package config
 
-import "os"
+import (
+	"context"
+	"os"
+
+	"go.mongodb.org/mongo-driver/mongo"
+)
+
+type AppSettings struct {
+	MongoClient *mongo.Client
+	MongoCtx    context.Context
+}
 
 type Settings struct {
 	Domain        string
@@ -12,7 +22,8 @@ type Settings struct {
 	MongoDBPort string
 	// MongoDBUser     string
 	// MongoDBPassword string
-	MongoDBName string
+	MongoDBName       string
+	MongoDBCollection string
 	// RabbitMQ
 	RabbitMQHost                string
 	RabbitMQPort                string
@@ -33,7 +44,8 @@ func NewSettings() *Settings {
 		MongoDBPort: os.Getenv("MONGODB_PORT"),
 		// MongoDBUser:     "",
 		// MongoDBPassword: "",
-		MongoDBName: os.Getenv("MONGO_DATABASE"),
+		MongoDBName:       os.Getenv("MONGO_DATABASE"),
+		MongoDBCollection: os.Getenv("MONGO_COLLECTION"),
 		// RabbitMQ
 		RabbitMQHost:                os.Getenv("RABBITMQ_HOST"),
 		RabbitMQPort:                os.Getenv("RABBITMQ_PORT"),

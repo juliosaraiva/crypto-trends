@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/juliosaraiva/crypto-trends/src/config"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
@@ -17,4 +18,12 @@ func NewClient(config config.Settings) (*mongo.Client, error) {
 func Connect(client *mongo.Client) (context.Context, error) {
 	ctx, _ := context.WithTimeout(context.Background(), 20*time.Second)
 	return ctx, client.Connect(ctx)
+}
+
+func collection(client *mongo.Client, database, collection string) *mongo.Collection {
+	return client.Database(database).Collection(collection)
+}
+
+func Disconnect(ctx context.Context, client *mongo.Client) error {
+	return client.Disconnect(ctx)
 }

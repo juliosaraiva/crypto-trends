@@ -1,6 +1,13 @@
 package domain
 
+import (
+	"time"
+
+	"go.mongodb.org/mongo-driver/bson/primitive"
+)
+
 type Cryptocurrency struct {
+	ID          primitive.ObjectID `bson:"_id"`
 	CoinID      int
 	Name        string
 	Symbol      string
@@ -9,7 +16,7 @@ type Cryptocurrency struct {
 	Ciruclating int
 	TotalSupply int
 	Price       float64
-	TimeStamp   int
+	TimeStamp   time.Time
 	Trend       string
 }
 

@@ -1,32 +1,44 @@
 package infrastructure
 
 import (
+	"context"
+
 	"github.com/google/uuid"
-	"github.com/jinzhu/gorm"
+	"go.mongodb.org/mongo-driver/mongo"
 )
 
-type GormCryptocurrency struct {
-	db *gorm.DB
+type MongoCryptocurrency struct {
+	collection *mongo.Collection
 }
 
-func NewCryptocurrencyRepository(db *gorm.DB) *ICryptocurrencyRepository {
+func NewCryptocurrencyRepository(collection *mongo.Collection) *ICryptocurrencyRepository {
 	return &CryptocurrencyRepository{
-		db: db,
+		collection: collection,
 	}
 }
 
-func (r *CryptocurrencyRepository) FindAll() ([]*Cryptocurrency, error) {
+func (r *MongoCryptocurrency) FindAll(ctx context.Context) ([]*Cryptocurrency, error) {
 	var cryptocurrencies []*Cryptocurrency
+	filter := bson.D{{"name", "Bitcoin"}}
+	cryptocurrencies, err := r.collection.Find(ctx, filter)
 	if err := r.db.Find(&cryptocurrencies).Error; err != nil {
 		return nil, err
 	}
 	return cryptocurrencies, nil
 }
 
-func (r *CryptocurrencyRepository) FindByID(id uuid.UUID) (*Cryptocurrency, error) {
+func (r *MongoCryptocurrency) FindByID(id uuid.UUID) (*Cryptocurrency, error) {
 	var cryptocurrency Cryptocurrency
-	if err := r.db.Where("id = ?", id).First(&cryptocurrency).Error; err != nil {
+	if err := r.collection.Where("id = ?", id).First(&cryptocurrency).Error; err != nil {
 		return nil, err
 	}
 	return &cryptocurrency, nil
+}
+
+func (r *MongoCryptocurrency) Create(ctx context.Context, cryptocurrency *Cryptocurrency) error {
+	result, err := r.collection.InsertOne(ctx, cryptocurrency)
+	if err != nil {
+		return err
+	}
+	return nil
 }
