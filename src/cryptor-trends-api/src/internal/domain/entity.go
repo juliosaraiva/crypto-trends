@@ -1,9 +1,7 @@
 package domain
 
-import "github.com/google/uuid"
-
 type Cryptocurrency struct {
-	ID          uuid.UUID
+	CoinID      int
 	Name        string
 	Symbol      string
 	Rank        int

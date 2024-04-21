@@ -13,3 +13,7 @@ connect_gemini_bot:
 .PHONY: connect_coin_bot
 connect_coin_bot:
 	@docker-compose exec cryptor-trends-coin-bot sh
+
+.PHONY: connect_api
+connect_api:
+	@docker-compose exec cryptor-trends-api bash
