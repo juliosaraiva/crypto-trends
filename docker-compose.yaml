@@ -86,3 +86,27 @@ services:
       - MONGO_HOST=mongodb
       - MONGO_PORT=27017
       - MONGO_DATABASE=cryptor-gemini
+
+  cryptor-trends-api:
+    image: cryptor-trends-api
+    container_name: 'cryptor-trends-api'
+    build:
+      context: ./src/cryptor-trends-api
+      dockerfile: Dockerfile
+    depends_on:
+      - rabbitmq
+      - mongodb
+    env_file:
+      - src/cryptor-trends-api/.env
+    volumes:
+      - ./src/cryptor-trends-api:/app
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_USER=guest
+      - RABBITMQ_PASSWORD=guest
+      - RABBITMQ_CONSUME_QUEUE_NAME=cryptor-trends-gemini-bot
+      - RABBITMQ_CONSUME_DLQ_QUEUE_NAME=dlq-cryptor-trends-gemini-bot
+      - MONGO_HOST=mongodb
+      - MONGO_PORT=27017
+      - MONGO_DATABASE=cryptor-gemini
