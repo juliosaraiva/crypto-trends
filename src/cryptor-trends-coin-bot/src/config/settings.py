@@ -14,6 +14,7 @@ class Settings:
     RABBITMQ_HOST = os.getenv("RABBITMQ_HOST")
     RABBITMQ_PORT = os.getenv("RABBITMQ_PORT")
     RABBITMQ_QUEUE_NAME = os.getenv("RABBITMQ_QUEUE_NAME")
+    RABBITMQ_DLQ_QUEUE_NAME = os.getenv("RABBITMQ_DLQ_QUEUE_NAME")
 
     COINMARKETCAP_API_KEY = os.getenv("COINMARKETCAP_API_KEY")
     COINMARKETCAP_BASE_URL = "https://pro-api.coinmarketcap.com"

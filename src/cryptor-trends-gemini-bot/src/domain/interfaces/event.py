@@ -1,23 +1,39 @@
-from abc import ABC, abstractclassmethod
+from abc import ABC, abstractmethod
 
 
 class CryptorCoinIAEvent(ABC):
-  @abstractclassmethod
+  @abstractmethod
   def connect(self) -> None:
     pass
 
-  @abstractclassmethod
+  @abstractmethod
+  def add_callback(self, callback) -> None:
+    pass
+
+  @abstractmethod
   def declare_queue(self, queue_name: str) -> None:
     pass
 
-  @abstractclassmethod
-  def publish_message(self, queue_name: str, message: dict) -> None:
+  @abstractmethod
+  def publish_message(self, queue_name: str, message: dict, retry_count=0) -> None:
     pass
 
-  @abstractclassmethod
-  def consume_message(self, queue_name) -> str:
+  @abstractmethod
+  def publish_message_to_dlq(self, queue_name: str, message: dict, err: str, retry_count=0) -> None:
     pass
 
-  @abstractclassmethod
+  @abstractmethod
+  def consume_message(self, queue_name: str) -> str:
+    pass
+
+  @abstractmethod
+  def ack_message(self, delivery_tag: int) -> None:
+    pass
+
+  @abstractmethod
+  def nack_message(self, delivery_tag: int) -> None:
+    pass
+
+  @abstractmethod
   def close(self) -> None:
     pass

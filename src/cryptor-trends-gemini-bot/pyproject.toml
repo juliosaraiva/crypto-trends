@@ -1,16 +1,15 @@
 [tool.poetry]
-name = "cryptor-trends-coin-bot"
+name = "cryptor-trends-gemini-bot"
 version = "0.1.0"
 description = ""
-authors = ["Cryptor Trends"]
+authors = ["Devops"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-pymongo = "^4.6.3"
-pydantic = "^2.7.0"
-requests = "^2.31.0"
 pika = "^1.3.2"
+pymongo = "^4.6.3"
+google-generativeai = "^0.5.2"
 
 
 [build-system]

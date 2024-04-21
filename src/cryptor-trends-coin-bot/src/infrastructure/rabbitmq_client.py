@@ -22,10 +22,17 @@ class RabbitMQClient(CryptorCoinEvent):
         print('Connected to RabbitMQ')
 
     def declare_queue(self, queue_name: str) -> None:
-        self.channel.queue_declare(queue=queue_name)
+        self.channel.queue_declare(queue=queue_name, durable=True)
 
     def publish_message(self, queue_name: str, message: dict) -> None:
-        self.channel.basic_publish(exchange='', routing_key=queue_name, body=json.dumps(message))
+        self.channel.basic_publish(
+            exchange='',
+            routing_key=queue_name,
+            body=json.dumps(message),
+            properties=pika.BasicProperties(
+                delivery_mode=2,  # make message persistent
+                headers={'retry_count': 0}
+            ))
         print(f"Published message to {queue_name}")
 
     def close(self) -> None:

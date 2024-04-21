@@ -23,6 +23,7 @@ rabbitmq_client = RabbitMQClient(
 )
 rabbitmq_client.connect()
 rabbitmq_client.declare_queue(settings.RABBITMQ_QUEUE_NAME)
+rabbitmq_client.declare_queue(settings.RABBITMQ_DLQ_QUEUE_NAME)
 
 # CryptorCoinService instance
 cryptor_coin_service = CryptorCoinServiceImpl(mongo_client, rabbitmq_client)

@@ -5,7 +5,7 @@ from domain.entity import CryptorCoinIA
 
 
 class MongoDBClient(CryptorCoinIARepository):
-  def __init__(self, host, port, userame, password, database):
+  def __init__(self, host, port, username, password, database):
     self.host = host
     self.port = port
     self.username = username

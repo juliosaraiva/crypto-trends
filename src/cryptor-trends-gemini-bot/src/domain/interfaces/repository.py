@@ -1,19 +1,19 @@
 from typing import List
-from abc import ABC, abstractclassmethod
+from abc import ABC, abstractmethod
 
 from domain.entity import CryptorCoinIA
 
 
 class CryptorCoinIARepository(ABC):
-  @abstractclassmethod
+  @abstractmethod
   def connect(self) -> None:
     pass
 
-  @abstractclassmethod
+  @abstractmethod
   def find_all(self, collection: str) -> list[CryptorCoinIA]:
     pass
 
-  @abstractclassmethod
+  @abstractmethod
   def insert_one(self, collection: str, data: dict) -> None:
     pass
 

@@ -1,4 +1,6 @@
-from domain.entity import CryptorCoin, CryptorCoinHistorical
+from typing import List
+
+from domain.entity import CryptorCoin
 from domain.interfaces.service import CryptorCoinService
 from domain.interfaces.repository import CryptorCoinRepository
 from domain.interfaces.event import CryptorCoinEvent

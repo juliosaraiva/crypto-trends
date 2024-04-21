@@ -24,8 +24,8 @@ RUN apk add --no-cache \
 
 RUN pip install poetry
 
-# COPY poetry.lock pyproject.toml ./
-# RUN poetry install
+COPY poetry.lock pyproject.toml ./
+RUN poetry install
 COPY . /app
 
 CMD ["tail", "-f", "/dev/null"]
