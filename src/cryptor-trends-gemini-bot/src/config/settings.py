@@ -34,6 +34,34 @@ class Settings:
 
     Important: trend is enum with values: low, sideway, high. Only return a single piece of valid JSON text.
     From the next message I will start sending the historical data.
+
+    Example:
+    input:
+    {
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "historical":
+      [
+        {
+          "time_open": "2024-04-21T11:00:00.000Z",
+          "time_close": "2024-04-21T11:59:59.999Z",
+          "time_high": "2024-04-21T11:19:00.000Z",
+          "time_low": "2024-04-21T11:01:00.000Z",
+          "open": 64980.3767748907,
+          "high": 65436.24462599747,
+          "low": 64973.487256501605,
+          "close": 65269.81132717494,
+          "volume": 21997407809.39,
+          "market_cap": 1285040734835.02,
+          "timestamp": "2024-04-21T11:59:59.999Z"
+        }
+      ]
+    }
+
+    output:
+    {
+      "trend": "high"
+    }
     """
   )
 

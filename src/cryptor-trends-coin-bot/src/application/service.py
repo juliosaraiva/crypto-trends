@@ -27,25 +27,7 @@ class CryptorCoinServiceImpl(CryptorCoinService):
         coin_quotes = coinmarketcap.quotes_latest(coin_map["id"])
         coin = coinmarketcap.format_coin(coin_map, coin_historical, coin_quotes)
 
-        # Coin data from CoinEntity
-        coin_historical_entity = []
-        if len(coin['historical']) > 1:
-            for value in coin['historical']:
-                historical_entity = {
-                    "time_open": value["time_open"],
-                    "time_close": value["time_close"],
-                    "time_high": value["time_high"],
-                    "time_low": value["time_low"],
-                    "open": value["open"],
-                    "high": value["high"],
-                    "low": value["low"],
-                    "close": value["close"],
-                    "volume": value["volume"],
-                    "market_cap": value["market_cap"],
-                    "timestamp": value["timestamp"]
-                }
-                coin_historical_entity.append(historical_entity)
-        else:
+        if coin["historical"] is None:
             print("No historical data found")
             return
 
@@ -60,7 +42,7 @@ class CryptorCoinServiceImpl(CryptorCoinService):
             "price": coin["price"],
             "volume_24h": coin["volume_24h"],
             "volume_change_24h": coin["volume_change_24h"],
-            "historical": coin_historical_entity
+            "historical": coin["historical"]
         }
 
         self.cryptor_coin_event.publish_message(queue_name, coin_entity)

@@ -44,33 +44,27 @@ class CoinMarketCap:
         return coin_list
 
     def ohlcv_historical(self, coin_id: int):
-        time_end = int(datetime.now().timestamp())
-        time_start = int((datetime.now() - timedelta(minutes=220)).timestamp())
         payload = {
-            "id": [coin_id],
-            "time_start":time_start,
-            "time_end": time_end,
+            "id": coin_id,
+            "count": 1,
             "interval":"1h",
             "time_period":"hourly",
         }
         response = requests.get(self.url_ohlcv_historical, params=payload, headers=settings.HEADERS)
         coin_historical_dict = json.loads(response.text)
-        coin_historical_list = []
-        for quote in coin_historical_dict['data']['quotes']:
-            row = {
-                'time_open': quote['time_open'],
-                'time_close': quote['time_close'],
-                'time_high': quote['time_high'],
-                'time_low': quote['time_low'],
-                'open': quote['quote']['USD']['open'],
-                'high': quote['quote']['USD']['high'],
-                'low': quote['quote']['USD']['low'],
-                'close': quote['quote']['USD']['close'],
-                'volume': quote['quote']['USD']['volume'],
-                'market_cap': quote['quote']['USD']['market_cap'],
-                'timestamp': quote['quote']['USD']['timestamp']
-            }
-            coin_historical_list.append(row)
+        coin_historical_list = {
+            'time_open': coin_historical_dict['data']['quotes'][0]['time_open'],
+            'time_close': coin_historical_dict['data']['quotes'][0]['time_close'],
+            'time_high': coin_historical_dict['data']['quotes'][0]['time_high'],
+            'time_low': coin_historical_dict['data']['quotes'][0]['time_low'],
+            'open': coin_historical_dict['data']['quotes'][0]['quote']['USD']['open'],
+            'high': coin_historical_dict['data']['quotes'][0]['quote']['USD']['high'],
+            'low': coin_historical_dict['data']['quotes'][0]['quote']['USD']['low'],
+            'close': coin_historical_dict['data']['quotes'][0]['quote']['USD']['close'],
+            'volume': coin_historical_dict['data']['quotes'][0]['quote']['USD']['volume'],
+            'market_cap': coin_historical_dict['data']['quotes'][0]['quote']['USD']['market_cap'],
+            'timestamp': coin_historical_dict['data']['quotes'][0]['quote']['USD']['timestamp']
+        }
         return coin_historical_list
     
     def quotes_latest(self, coin_id: int):
