@@ -1,9 +1,8 @@
 import { Footer } from "@/components/Footer";
+import NavbarHeader from "@/components/Navbar";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./../../public/css/globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "Crypto Trends",
@@ -18,9 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={'dark text-foreground bg-background '}>
+        <Providers>
+        <NavbarHeader />
         {children}
         <Footer />
+        </Providers>
         </body>
     </html>
   );
