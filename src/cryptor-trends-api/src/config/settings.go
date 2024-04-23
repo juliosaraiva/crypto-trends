@@ -1,7 +1,6 @@
 package config
 
 import (
-	"context"
 	"os"
 
 	"go.mongodb.org/mongo-driver/mongo"
@@ -9,7 +8,6 @@ import (
 
 type AppSettings struct {
 	MongoClient *mongo.Client
-	MongoCtx    context.Context
 }
 
 type Settings struct {
@@ -37,11 +35,11 @@ func NewSettings() *Settings {
 	return &Settings{
 		Domain:        "http://localhost",
 		Version:       "v1.0.0",
-		WebServerPort: ":8080",
+		WebServerPort: ":8000",
 		Environment:   "development",
 		// MongoDB
-		MongoDBHost: os.Getenv("MONGODB_HOST"),
-		MongoDBPort: os.Getenv("MONGODB_PORT"),
+		MongoDBHost: os.Getenv("MONGO_HOST"),
+		MongoDBPort: os.Getenv("MONGO_PORT"),
 		// MongoDBUser:     "",
 		// MongoDBPassword: "",
 		MongoDBName:       os.Getenv("MONGO_DATABASE"),

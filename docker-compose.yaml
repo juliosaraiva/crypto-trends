@@ -5,10 +5,10 @@ services:
     image: rabbitmq:3-management-alpine
     container_name: 'rabbitmq'
     ports:
-        - 5672:5672
-        - 15672:15672
+      - 5672:5672
+      - 15672:15672
     volumes:
-        - .data/rabbit/:/var/lib/rabbitmq/
+      - .data/rabbit/:/var/lib/rabbitmq/
 
   mongodb:
     image: mongo
@@ -100,6 +100,8 @@ services:
       - src/cryptor-trends-api/.env
     volumes:
       - ./src/cryptor-trends-api:/app
+    ports:
+      - 8000:8000
     environment:
       - RABBITMQ_HOST=rabbitmq
       - RABBITMQ_PORT=5672
@@ -110,3 +112,4 @@ services:
       - MONGO_HOST=mongodb
       - MONGO_PORT=27017
       - MONGO_DATABASE=cryptor-gemini
+      - MONGO_COLLECTION=cryptor-trends

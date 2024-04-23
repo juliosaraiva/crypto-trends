@@ -5,21 +5,22 @@ import (
 	"log"
 	"runtime"
 
-	"github.com/juliosaraiva/crypto-trends/src/internal/infrastructure"
+	"github.com/juliosaraiva/crypto-trends/src/internal/infrastructure/repository"
+	"go.mongodb.org/mongo-driver/mongo"
 )
 
 func main() {
-	svc, err := setup()
+	settings, app, svc, err := setup()
 	if err != nil {
 		log.Fatalf("Error setting up the server: %v", err)
 	}
 	defer func(mongoClient *mongo.Client, mongoCtx context.Context) {
-		if err := infrastructure.Disconnect(mongoCtx, mongoClient); err != nil {
+		if err := repository.Disconnect(mongoCtx, mongoClient); err != nil {
 			log.Fatalf("Failed to disconnect from MongoDB: %v", err)
 		}
-	}(app.MongoClient, app.MongoCtx)
+	}(app.MongoClient, context.Background())
 
-	collection := infrastructure.Collection(mongoClient, settings.MongoDBName, settings.MongoDBCollection)
+	// collection := repository.Collection(app.MongoClient, settings.MongoDBName, settings.MongoDBCollection)
 
 	// print server info
 	log.Printf("******************************************")

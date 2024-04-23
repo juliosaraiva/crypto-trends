@@ -1,48 +1,44 @@
 package main
 
 import (
+	"context"
 	"log"
 	"net/http"
+	"time"
 
 	"github.com/juliosaraiva/crypto-trends/src/config"
-	"github.com/juliosaraiva/crypto-trends/src/internal/infrastructure"
+	"github.com/juliosaraiva/crypto-trends/src/internal/infrastructure/repository"
 )
 
-func setup() (*http.Server, error) {
+func setup() (*config.Settings, config.AppSettings, *http.Server, error) {
 	settings := config.NewSettings()
 
 	// MongoDB connection
-	mongoClient, err := infrastructure.NewClient(settings)
+	mongoClient, err := repository.NewClient(settings)
 	if err != nil {
-		return nil, err
+		log.Fatalf("Failed to connect to MongoDB: %v", err)
 	}
 
-	mongoCtx, err := infrastructure.Connect(mongoClient)
+	err = mongoClient.Ping(context.Background(), nil)
 	if err != nil {
-		return nil, err
-	}
-
-	err = mongoClient.Ping(mongoCtx, readPref.Primary())
-	if err != nil {
-		panic(err)
+		log.Fatalf("Failed to ping MongoDB: %v", err)
 	}
 
 	log.Printf("Connected to MongoDB on %s:%s", settings.MongoDBHost, settings.MongoDBPort)
 
 	app := config.AppSettings{
 		MongoClient: mongoClient,
-		MongoCtx:    mongoCtx,
 	}
 
 	// create a new http server
 	svc := &http.Server{
 		Addr:              settings.WebServerPort,
-		Handler:           nil,
-		IdleTimeout:       120,
-		ReadTimeout:       5,
-		WriteTimeout:      10,
-		ReadHeaderTimeout: 2,
+		Handler:           routes(),
+		IdleTimeout:       30 * time.Second,
+		ReadTimeout:       10 * time.Second,
+		ReadHeaderTimeout: 5 * time.Second,
+		WriteTimeout:      5 * time.Second,
 	}
 
-	return svc, nil
+	return settings, app, svc, nil
 }
