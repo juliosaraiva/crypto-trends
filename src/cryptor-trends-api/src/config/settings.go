@@ -7,7 +7,8 @@ import (
 )
 
 type AppSettings struct {
-	MongoClient *mongo.Client
+	MongoClient     *mongo.Client
+	MongoCollection *mongo.Collection
 }
 
 type Settings struct {

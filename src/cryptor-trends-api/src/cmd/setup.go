@@ -10,7 +10,7 @@ import (
 	"github.com/juliosaraiva/crypto-trends/src/internal/infrastructure/repository"
 )
 
-func setup() (*config.Settings, config.AppSettings, *http.Server, error) {
+func setup() (*config.Settings, *http.Server, error) {
 	settings := config.NewSettings()
 
 	// MongoDB connection
@@ -24,10 +24,13 @@ func setup() (*config.Settings, config.AppSettings, *http.Server, error) {
 		log.Fatalf("Failed to ping MongoDB: %v", err)
 	}
 
+	collection := repository.Collection(mongoClient, settings.MongoDBName, settings.MongoDBCollection)
+
 	log.Printf("Connected to MongoDB on %s:%s", settings.MongoDBHost, settings.MongoDBPort)
 
-	app := config.AppSettings{
-		MongoClient: mongoClient,
+	app = config.AppSettings{
+		MongoClient:     mongoClient,
+		MongoCollection: collection,
 	}
 
 	// create a new http server
@@ -40,5 +43,5 @@ func setup() (*config.Settings, config.AppSettings, *http.Server, error) {
 		WriteTimeout:      5 * time.Second,
 	}
 
-	return settings, app, svc, nil
+	return settings, svc, nil
 }

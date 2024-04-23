@@ -11,6 +11,8 @@ import (
 	"github.com/go-chi/cors"
 	"github.com/go-chi/render"
 
+	"github.com/juliosaraiva/crypto-trends/src/internal/domain/entities"
+	"github.com/juliosaraiva/crypto-trends/src/internal/infrastructure/repository"
 	"github.com/juliosaraiva/crypto-trends/src/types"
 )
 
@@ -30,6 +32,14 @@ func routes() http.Handler {
 
 	r.Route("/v1", func(r chi.Router) {
 		r.Get("/cryptocurrency", func(w http.ResponseWriter, r *http.Request) {
+			cryptorCurrencyRepository := repository.NewCryptocurrencyRepository(app.MongoCollection)
+			cryptoCurrent, err := cryptorCurrencyRepository.FindAll(r.Context())
+			if err != nil {
+				log.Printf("Failed to fetch cryptocurrencies: %v", err)
+				render.Status(r, http.StatusInternalServerError)
+				return
+			}
+			render.JSON(w, r, cryptoCurrent)
 			render.Status(r, http.StatusOK)
 		})
 		r.Get("/cryptocurrency/{coin_id}", nil)
@@ -41,7 +51,35 @@ func routes() http.Handler {
 			}
 			defer r.Body.Close()
 
-			fmt.Printf("Received params: %+v\n", params)
+			// fmt.Printf("Received params: %+v\n", params)
+
+			cryptorCurrencyEntity, err := entities.NewCryptocurrency(
+				params.CoinID,
+				params.Name,
+				params.Symbol,
+				params.Rank,
+				params.MaxSupply,
+				params.Ciruclating,
+				params.TotalSupply,
+				params.Price,
+				params.TimeStamp,
+				params.Trend,
+			)
+
+			if err != nil {
+				log.Printf("Failed to create cryptocurrency entity: %v", err)
+				render.Status(r, http.StatusInternalServerError)
+				return
+			}
+
+			fmt.Printf("Received entity: %+v\n", cryptorCurrencyEntity)
+
+			cryptorCurrencyRepository := repository.NewCryptocurrencyRepository(app.MongoCollection)
+			if err := cryptorCurrencyRepository.Create(r.Context(), cryptorCurrencyEntity); err != nil {
+				log.Printf("Failed to create cryptocurrency: %v", err)
+				render.Status(r, http.StatusInternalServerError)
+				return
+			}
 
 			render.Status(r, http.StatusCreated)
 		})

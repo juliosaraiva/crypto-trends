@@ -111,5 +111,5 @@ services:
       - RABBITMQ_CONSUME_DLQ_QUEUE_NAME=dlq-cryptor-trends-gemini-bot
       - MONGO_HOST=mongodb
       - MONGO_PORT=27017
-      - MONGO_DATABASE=cryptor-gemini
+      - MONGO_DATABASE=cryptor-api
       - MONGO_COLLECTION=cryptor-trends
