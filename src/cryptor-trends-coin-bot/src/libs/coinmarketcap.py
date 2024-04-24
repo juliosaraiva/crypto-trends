@@ -47,7 +47,7 @@ class CoinMarketCap:
         payload = {
             "id": coin_id,
             "count": 1,
-            "interval":"1h",
+            "interval":"2h",
             "time_period":"hourly",
         }
         response = requests.get(self.url_ohlcv_historical, params=payload, headers=settings.HEADERS)
