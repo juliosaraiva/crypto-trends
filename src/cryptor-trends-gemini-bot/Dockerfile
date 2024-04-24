@@ -28,4 +28,4 @@ COPY poetry.lock pyproject.toml ./
 RUN poetry install
 COPY . /app
 
-CMD ["tail", "-f", "/dev/null"]
+CMD ["poetry", "run", "python", "src/main.py"]

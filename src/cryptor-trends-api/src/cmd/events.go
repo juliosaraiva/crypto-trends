@@ -12,7 +12,6 @@ import (
 )
 
 func startConsumer() {
-	// -> setup handler
 	cryptorCurrencyRepository := infrastructure.NewCryptocurrencyRepository(app.MongoCollection)
 	cryptorCurrencyService := application.NewCryptocurrencyService(cryptorCurrencyRepository)
 

@@ -9,7 +9,7 @@ import (
 )
 
 type ICryptocurrencyService interface {
-	FindAll(ctx context.Context) ([]*domain.Cryptocurrency, error)
+	FindAll(ctx context.Context) ([]*types.CryptorcurrencyParamsOut, error)
 	Create(ctx context.Context, params types.CryptocurrencyParams) error
 }
 
@@ -23,13 +23,29 @@ func NewCryptocurrencyService(repository infrastructure.ICryptocurrencyRepositor
 	}
 }
 
-func (c *CryptocurrencyService) FindAll(ctx context.Context) ([]*domain.Cryptocurrency, error) {
+func (c *CryptocurrencyService) FindAll(ctx context.Context) ([]*types.CryptorcurrencyParamsOut, error) {
+	var cryptorCurrencyParamsOut []*types.CryptorcurrencyParamsOut
 	cryptorCurrencyRepository, err := c.repository.FindAll(ctx)
 	if err != nil {
 		return nil, err
 	}
 
-	return cryptorCurrencyRepository, nil
+	for _, cryptorCurrency := range cryptorCurrencyRepository {
+		cryptorCurrencyParamsOut = append(cryptorCurrencyParamsOut, &types.CryptorcurrencyParamsOut{
+			CoinID:      cryptorCurrency.CoinID,
+			Name:        cryptorCurrency.Name,
+			Symbol:      cryptorCurrency.Symbol,
+			Rank:        cryptorCurrency.Rank,
+			MaxSupply:   cryptorCurrency.MaxSupply,
+			Ciruclating: cryptorCurrency.Ciruclating,
+			TotalSupply: cryptorCurrency.TotalSupply,
+			Price:       cryptorCurrency.Price,
+			TimeStamp:   cryptorCurrency.TimeStamp,
+			Trend:       cryptorCurrency.Trend,
+		})
+	}
+
+	return cryptorCurrencyParamsOut, nil
 }
 
 func (c *CryptocurrencyService) Create(ctx context.Context, params types.CryptocurrencyParams) error {
