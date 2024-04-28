@@ -18,12 +18,55 @@ services:
     volumes:
       - .data/mongo/:/data/db
 
+  cryptor-trends-dataset:
+    image: cryptor-trends-dataset
+    container_name: 'cryptor-trends-dataset'
+    build:
+      context: ./src/cryptor-trends-dataset
+      dockerfile: Dockerfile.local
+    depends_on:
+      - rabbitmq
+    volumes:
+      - ./src/cryptor-trends-dataset:/app
+    env_file:
+      - src/cryptor-trends-dataset/.env
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_USER=guest
+      - RABBITMQ_PASSWORD=guest
+      - RABBITMQ_QUEUE_NAME=cryptor-trends-dataset
+
+  cryptor-trends-coin-bot:
+    image: cryptor-trends-coin-bot
+    container_name: 'cryptor-trends-coin-bot'
+    build:
+      context: ./src/cryptor-trends-coin-bot
+      dockerfile: Dockerfile.local
+    depends_on:
+      - rabbitmq
+      - mongodb
+    env_file:
+      - src/cryptor-trends-coin-bot/.env
+    volumes:
+      - ./src/cryptor-trends-coin-bot:/app
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_USER=guest
+      - RABBITMQ_PASSWORD=guest
+      - RABBITMQ_QUEUE_NAME=cryptor-trends-coin-bot
+      - RABBITMQ_DLQ_QUEUE_NAME=dlq-cryptor-trends-coin-bot
+      - MONGO_HOST=mongodb
+      - MONGO_PORT=27017
+      - MONGO_DATABASE=cryptor-trends
+
   cryptor-trends-gemini-bot:
     image: cryptor-trends-gemini-bot
     container_name: 'cryptor-trends-gemini-bot'
     build:
       context: ./src/cryptor-trends-gemini-bot
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.local
     depends_on:
       - rabbitmq
       - mongodb
@@ -49,12 +92,14 @@ services:
     container_name: 'cryptor-trends-api'
     build:
       context: ./src/cryptor-trends-api
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.local
     depends_on:
       - rabbitmq
       - mongodb
     env_file:
       - src/cryptor-trends-api/.env
+    volumes:
+      - ./src/cryptor-trends-api:/app
     ports:
       - 8000:8000
     environment:
@@ -68,27 +113,3 @@ services:
       - MONGO_PORT=27017
       - MONGO_DATABASE=cryptor-api
       - MONGO_COLLECTION=cryptor-trends
-
-  cryptor-trends-coin-bot:
-    image: cryptor-trends-coin-bot
-    container_name: 'cryptor-trends-coin-bot'
-    build:
-      context: ./src/cryptor-trends-coin-bot
-      dockerfile: Dockerfile
-    depends_on:
-      - rabbitmq
-      - mongodb
-    env_file:
-      - src/cryptor-trends-coin-bot/.env
-    volumes:
-      - ./src/cryptor-trends-coin-bot:/app
-    environment:
-      - RABBITMQ_HOST=rabbitmq
-      - RABBITMQ_PORT=5672
-      - RABBITMQ_USER=guest
-      - RABBITMQ_PASSWORD=guest
-      - RABBITMQ_QUEUE_NAME=cryptor-trends-coin-bot
-      - RABBITMQ_DLQ_QUEUE_NAME=dlq-cryptor-trends-coin-bot
-      - MONGO_HOST=mongodb
-      - MONGO_PORT=27017
-      - MONGO_DATABASE=cryptor-trends

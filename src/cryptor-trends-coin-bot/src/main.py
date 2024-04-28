@@ -1,3 +1,6 @@
+import schedule
+import time
+
 from infrastructure.mongodb_client import MongoDBClient
 from infrastructure.rabbitmq_client import RabbitMQClient
 from application.service import CryptorCoinServiceImpl
@@ -27,4 +30,13 @@ rabbitmq_client.declare_queue(settings.RABBITMQ_DLQ_QUEUE_NAME)
 
 # CryptorCoinService instance
 cryptor_coin_service = CryptorCoinServiceImpl(mongo_client, rabbitmq_client)
-cryptor_coin_service.add_coin(settings.MONGO_DATABASE, settings.RABBITMQ_QUEUE_NAME)
+
+def job():
+    cryptor_coin_service.add_coin(settings.MONGO_DATABASE, settings.RABBITMQ_QUEUE_NAME)
+
+schedule.every().hour.do(job)
+
+while True:
+    schedule.run_pending()
+    time.sleep(1)
+

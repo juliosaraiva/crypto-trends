@@ -1,12 +1,17 @@
-package repository
+package infrastructure
 
 import (
 	"context"
 
-	"github.com/juliosaraiva/crypto-trends/src/internal/domain/entities"
+	"github.com/juliosaraiva/crypto-trends/src/internal/domain"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 )
+
+type ICryptocurrencyRepository interface {
+	FindAll(ctx context.Context) ([]*domain.Cryptocurrency, error)
+	Create(ctx context.Context, cryptocurrency *domain.Cryptocurrency) error
+}
 
 type MongoCryptocurrency struct {
 	collection *mongo.Collection
@@ -18,8 +23,8 @@ func NewCryptocurrencyRepository(collection *mongo.Collection) *MongoCryptocurre
 	}
 }
 
-func (r *MongoCryptocurrency) FindAll(ctx context.Context) ([]*entities.Cryptocurrency, error) {
-	var cryptocurrencies []*entities.Cryptocurrency
+func (r *MongoCryptocurrency) FindAll(ctx context.Context) ([]*domain.Cryptocurrency, error) {
+	var cryptocurrencies []*domain.Cryptocurrency
 	filter := bson.D{{}}
 
 	cursor, err := r.collection.Find(ctx, filter)
@@ -29,7 +34,7 @@ func (r *MongoCryptocurrency) FindAll(ctx context.Context) ([]*entities.Cryptocu
 	defer cursor.Close(ctx)
 
 	for cursor.Next(ctx) {
-		var cryptocurrency entities.Cryptocurrency
+		var cryptocurrency domain.Cryptocurrency
 		if err := cursor.Decode(&cryptocurrency); err != nil {
 			return nil, err
 		}
@@ -43,15 +48,7 @@ func (r *MongoCryptocurrency) FindAll(ctx context.Context) ([]*entities.Cryptocu
 	return cryptocurrencies, nil
 }
 
-// func (r *MongoCryptocurrency) FindByID(id uuid.UUID) (*Cryptocurrency, error) {
-// 	var cryptocurrency Cryptocurrency
-// 	if err := r.collection.Where("id = ?", id).First(&cryptocurrency).Error; err != nil {
-// 		return nil, err
-// 	}
-// 	return &cryptocurrency, nil
-// }
-
-func (r *MongoCryptocurrency) Create(ctx context.Context, cryptocurrency *entities.Cryptocurrency) error {
+func (r *MongoCryptocurrency) Create(ctx context.Context, cryptocurrency *domain.Cryptocurrency) error {
 	_, err := r.collection.InsertOne(ctx, cryptocurrency)
 	if err != nil {
 		return err

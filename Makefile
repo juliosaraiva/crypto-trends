@@ -17,3 +17,7 @@ connect_coin_bot:
 .PHONY: connect_api
 connect_api:
 	@docker-compose exec cryptor-trends-api bash
+
+.PHONY: ps
+ps:
+	@docker compose ps

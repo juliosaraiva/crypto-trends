@@ -1,4 +1,4 @@
-package entities
+package domain
 
 import (
 	"time"
@@ -20,9 +20,10 @@ type Cryptocurrency struct {
 	Trend       string             `bson:"trend"`
 }
 
-func NewCryptocurrency(id, name, symbol string, rank, maxSupply, circulating, totalSupply int, price float64, timestamp time.Time, trend string) (*Cryptocurrency, error) {
+func NewCryptocurrency(coinID int, name, symbol string, rank, maxSupply, circulating, totalSupply int, price float64, timestamp time.Time, trend string) (*Cryptocurrency, error) {
 	c := &Cryptocurrency{
 		ID:          primitive.NewObjectID(),
+		CoinID:      coinID,
 		Name:        name,
 		Symbol:      symbol,
 		Rank:        rank,

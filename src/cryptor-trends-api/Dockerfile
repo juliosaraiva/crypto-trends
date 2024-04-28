@@ -1,9 +1,13 @@
-FROM golang:latest
+FROM golang:latest as builder
 
 WORKDIR /app
 
-COPY . /app
+COPY . .
 
-EXPOSE 8000
+RUN GOOS=linux CGO_ENABLED=0 go build -ldflags="-w -s" -o server ./src/cmd/*
 
-CMD [ "tail", "-f", "/dev/null" ]
+FROM scratch
+
+COPY --from=builder /app/server .
+
+CMD ["./server"]

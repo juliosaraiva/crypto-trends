@@ -3,11 +3,16 @@ package config
 import (
 	"os"
 
+	amqp "github.com/rabbitmq/amqp091-go"
 	"go.mongodb.org/mongo-driver/mongo"
 )
 
 type AppSettings struct {
-	MongoClient *mongo.Client
+	MongoClient     *mongo.Client
+	MongoCollection *mongo.Collection
+	RabbitMQClient  *amqp.Connection
+	RabbitMQChannel *amqp.Channel
+	RabbitMQQueue   amqp.Queue
 }
 
 type Settings struct {
