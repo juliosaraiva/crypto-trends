@@ -24,7 +24,7 @@ export async function GET() {
       total_supply: 18750375,
       price: 45000.00,
       timestamp: new Date("2024-04-22"),
-      trend: "Stable"
+      trend: "Neutral"
     },
     {
       coin_id: "ethereum_id",
@@ -36,7 +36,19 @@ export async function GET() {
       total_supply: 116018364,
       price: 3000.00,
       timestamp: new Date("2024-04-22"),
-      trend: "Growing"
+      trend: "High"
+    },
+    {
+      coin_id: "moeda_id",
+      name: "Moeda",
+      symbol: "MOED",
+      rank: 3,
+      max_supply: 116018364,
+      circulating_supply: 116018364,
+      total_supply: 116018364,
+      price: 3000.00,
+      timestamp: new Date("2024-04-23"),
+      trend: "Low"
     },
   ];
 

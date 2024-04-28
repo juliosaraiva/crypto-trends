@@ -1,17 +1,10 @@
-import { Link, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle } from "@nextui-org/react";
+import { Image, Link, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle } from "@nextui-org/react";
 
 export default function NavbarHeader() {
   const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
+    "Trends",
+    "About",
+    "Contacts",
   ];
 
   return (
@@ -22,23 +15,23 @@ export default function NavbarHeader() {
 
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand>
-          {/* <AcmeLogo /> */}
+          <Image src='/images/logo-cryptotrends.svg' alt="" width={50} height={50} />
           <p className="font-bold text-inherit">Crypto Trends</p>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarBrand>
-          {/* <AcmeLogo /> */}
+        <Image src='/images/logo-cryptotrends.svg' alt="" width={50} height={50} />
           <p className="font-bold text-inherit">Crypto Trends</p>
         </NavbarBrand>
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Home
+          <Link color="foreground" href="/#trends">
+            Trends
           </Link>
         </NavbarItem>
         <NavbarItem >
-          <Link href="#" color="foreground" aria-current="page" >
+          <Link href="/about" color="foreground" aria-current="page" >
             About
           </Link>
         </NavbarItem>

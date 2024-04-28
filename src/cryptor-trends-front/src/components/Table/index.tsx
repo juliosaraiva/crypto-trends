@@ -1,11 +1,18 @@
 "use client"
-import { Chip, ChipProps, Spinner, Table, TableBody, TableCell, TableColumn, TableHeader, TableRow, } from "@nextui-org/react";
+import Loading from "@/app/loading";
+import {
+  Autocomplete, AutocompleteItem, Button, Chip, ChipProps, Dropdown, DropdownItem, DropdownMenu,
+  DropdownTrigger,
+  Pagination,
+  Table, TableBody, TableCell, TableColumn, TableHeader, TableRow
+} from "@nextui-org/react";
+import { CaretDown, Ranking } from '@phosphor-icons/react';
 import { useAsyncList } from "@react-stately/data";
 import React from "react";
 const statusColorMap: Record<string, ChipProps["color"]>  = {
-  Stable: "success",
-  Growing: "danger",
-  // vacation: "warning",
+  High: "success",
+  Low: "danger",
+  Neutral: "warning",
 };
 
 export function TableList() {
@@ -44,6 +51,40 @@ export function TableList() {
   });
 
   return (
+    <div className="max-w-7xl flex flex-col items-center w-full">
+    <div className="flex justify-between items-center w-full my-4" id="trends">
+  <div>
+    <Autocomplete label="Search by name" className="max-w-xs">
+      {list.items.map((coin: any) => (
+        <AutocompleteItem key={coin.value} value={coin.value}>
+          {coin.name}
+        </AutocompleteItem>
+      ))}
+    </Autocomplete>
+  </div>
+  <div>
+    <Dropdown>
+      <DropdownTrigger className="flex">
+        <Button variant="flat" endContent={<CaretDown size={14} weight="bold" />}>
+          Trends
+        </Button>
+      </DropdownTrigger>
+      <DropdownMenu
+        disallowEmptySelection
+        aria-label="Table Columns"
+        closeOnSelect={false}
+        selectionMode="multiple"
+      >
+        {list.items.map((coin: any) => (
+          <DropdownItem key={coin.coin_id} className="capitalize">
+            {coin.trend}
+          </DropdownItem>
+        ))}
+      </DropdownMenu>
+    </Dropdown>
+  </div>
+</div>
+
     <Table
       aria-label="Cryptocurrency Table"
       sortDescriptor={list.sortDescriptor}
@@ -53,29 +94,17 @@ export function TableList() {
       }}
     >
       <TableHeader>
+      <TableColumn key="rank" allowsSorting>
+      <Ranking size={24} weight="light" />Rank
+        </TableColumn>
         <TableColumn key="name" allowsSorting>
           Name
-        </TableColumn>
-        <TableColumn key="symbol" allowsSorting>
-          Symbol
-        </TableColumn>
-        <TableColumn key="rank" allowsSorting>
-          Rank
-        </TableColumn>
-        <TableColumn key="max_supply" allowsSorting>
-          Max Supply
         </TableColumn>
         <TableColumn key="circulating_supply" allowsSorting>
           Circulating Supply
         </TableColumn>
-        <TableColumn key="total_supply" allowsSorting>
-          Total Supply
-        </TableColumn>
         <TableColumn key="price" allowsSorting>
           Price
-        </TableColumn>
-        <TableColumn key="timestamp" allowsSorting>
-          Timestamp
         </TableColumn>
         <TableColumn key="trend" allowsSorting>
           Trend
@@ -84,19 +113,15 @@ export function TableList() {
       <TableBody
         items={list.items}
         isLoading={isLoading}
-        loadingContent={<Spinner label="Loading..." />}
+        loadingContent={<Loading />}
       >
         {(item: any) => (
           <TableRow key={item.coin_id}>
+            <TableCell className="text-yellow-500">{item.rank}</TableCell>
             <TableCell>{item.name}</TableCell>
-            <TableCell>{item.symbol}</TableCell>
-            <TableCell>{item.rank}</TableCell>
-            <TableCell>{item.max_supply}</TableCell>
-            <TableCell>{item.circulating_supply}</TableCell>
-            <TableCell>{item.total_supply}</TableCell>
-            <TableCell>{item.price}</TableCell>
-            <TableCell>{new Date(item.timestamp).toLocaleString()}</TableCell>
-            <TableCell>{}
+            <TableCell>${item.circulating_supply}</TableCell>
+            <TableCell>${item.price}</TableCell>
+            <TableCell>
             <Chip className="capitalize" color={statusColorMap[item.trend]} size="sm" variant="flat">
             {item.trend}
           </Chip>
@@ -105,5 +130,11 @@ export function TableList() {
         )}
       </TableBody>
     </Table>
+    <Pagination
+      showControls
+      total={5}
+      className="my-4"
+    />
+    </div>
   );
 }
