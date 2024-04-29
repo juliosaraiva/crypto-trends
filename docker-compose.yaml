@@ -1,18 +1,23 @@
-version: "3.2"
-
 services:
   rabbitmq:
     image: rabbitmq:3-management-alpine
     container_name: 'rabbitmq'
+    restart: always
+    healthcheck:
+      test: rabbitmq-diagnostics -q ping
+      interval: 30s
+      timeout: 30s
+      retries: 3
     ports:
-      - 5672:5672
-      - 15672:15672
+      - "5672:5672"
+      - "15672:15672"
     volumes:
       - .data/rabbit/:/var/lib/rabbitmq/
 
   mongodb:
     image: mongo
     container_name: mongodb
+    restart: always
     ports:
       - "27017:27017"
     volumes:
@@ -25,8 +30,10 @@ services:
       context: ./src/cryptor-trends-gemini-bot
       dockerfile: Dockerfile
     depends_on:
-      - rabbitmq
-      - mongodb
+      rabbitmq:
+        condition: service_healthy
+      mongodb:
+        condition: service_started
     env_file:
       - src/cryptor-trends-gemini-bot/.env
     volumes:
@@ -43,6 +50,7 @@ services:
       - MONGO_HOST=mongodb
       - MONGO_PORT=27017
       - MONGO_DATABASE=cryptor-gemini
+      - GEMINI_MODEL_NAME=gemini-1.0-pro
 
   cryptor-trends-api:
     image: cryptor-trends-api
@@ -51,8 +59,10 @@ services:
       context: ./src/cryptor-trends-api
       dockerfile: Dockerfile
     depends_on:
-      - rabbitmq
-      - mongodb
+      rabbitmq:
+        condition: service_healthy
+      mongodb:
+        condition: service_started
     env_file:
       - src/cryptor-trends-api/.env
     ports:
@@ -76,8 +86,10 @@ services:
       context: ./src/cryptor-trends-coin-bot
       dockerfile: Dockerfile
     depends_on:
-      - rabbitmq
-      - mongodb
+      rabbitmq:
+        condition: service_healthy
+      mongodb:
+        condition: service_started
     env_file:
       - src/cryptor-trends-coin-bot/.env
     volumes:
