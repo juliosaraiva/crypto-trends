@@ -10,9 +10,9 @@ import { CaretDown, Ranking } from '@phosphor-icons/react';
 import { useAsyncList } from "@react-stately/data";
 import React from "react";
 const statusColorMap: Record<string, ChipProps["color"]>  = {
-  High: "success",
-  Low: "danger",
-  Neutral: "warning",
+  high: "success",
+  low: "danger",
+  neutral: "warning",
 };
 
 export function TableList() {
