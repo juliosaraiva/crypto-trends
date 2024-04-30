@@ -30,6 +30,7 @@ func startConsumer() {
 
 	var forever chan struct{}
 
+	// Add logic to consume messages if message is wrong
 	go func() {
 		for m := range msg {
 			var params types.CryptocurrencyParams
@@ -43,6 +44,7 @@ func startConsumer() {
 				log.Printf("Failed to create cryptocurrency: %v", err)
 				continue
 			}
+			// TODO: Implement ack message
 			log.Printf("Received a message: %s", m.Body)
 		}
 	}()
