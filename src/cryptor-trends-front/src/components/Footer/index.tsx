@@ -1,3 +1,4 @@
+import { Link } from "@nextui-org/react";
 import { DropdownLanguage } from "../DropdownLanguage";
 
 export function Footer() {
@@ -12,16 +13,16 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-white">Services</h3>
             <ul className="mt-2 text-gray-400">
-            <li className="mt-1">API</li>
-              <li className="mt-1">BOT Telegram</li>
+            <li className="mt-1" ><Link href={process.env.NEXT_PUBLIC_API_URL}>API</Link></li>
+            <li className="mt-1" ><Link href={process.env.NEXT_PUBLIC_TELEGRAM_URL}>BOT Telegram</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold text-white">Links</h3>
             <ul className="mt-2 text-gray-400">
-              <li className="mt-1">Trends</li>
-              <li className="mt-1">About</li>
-              <li className="mt-1">Contact</li>
+              <li className="mt-1"><Link href="/#trends">Trends</Link></li>
+              <li className="mt-1"><Link href="/about">About</Link></li>
+              <li className="mt-1"><Link href="/contact">Contact</Link></li>
             </ul>
           </div>
           <div >
