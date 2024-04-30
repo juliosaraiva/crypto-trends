@@ -8,7 +8,6 @@ import { Button, Chip, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, In
 import { CaretDown, MagnifyingGlass, Ranking } from '@phosphor-icons/react';
 import { useAsyncList } from '@react-stately/data';
 import { useEffect, useMemo, useState } from 'react';
-
 const statusColorMap: ColorMap = {
   high: "success",
   low: "danger",
@@ -26,7 +25,7 @@ export function TableList() {
     async load({ signal }) {
       try {
         setIsLoading(true);
-        const res = await fetch("/api", { signal });
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}`, { signal });
         const json = await res.json();
         setIsLoading(false);
         return { items: json };
