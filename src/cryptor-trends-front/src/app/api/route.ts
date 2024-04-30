@@ -24,7 +24,7 @@ export async function GET() {
       total_supply: 18750375,
       price: 45000.00,
       timestamp: new Date("2024-04-22"),
-      trend: "Neutral"
+      trend: "neutral"
     },
     {
       coin_id: "ethereum_id",
@@ -36,7 +36,7 @@ export async function GET() {
       total_supply: 116018364,
       price: 3000.00,
       timestamp: new Date("2024-04-22"),
-      trend: "High"
+      trend: "high"
     },
     {
       coin_id: "moeda_id",
@@ -48,7 +48,7 @@ export async function GET() {
       total_supply: 116018364,
       price: 3000.00,
       timestamp: new Date("2024-04-23"),
-      trend: "Low"
+      trend: "low"
     },
     {
       coin_id: "1",
@@ -60,7 +60,7 @@ export async function GET() {
       total_supply: 116018364,
       price: 3000.00,
       timestamp: new Date("2024-04-23"),
-      trend: "Low"
+      trend: "low"
     },
     {
       coin_id: "2",
@@ -72,7 +72,7 @@ export async function GET() {
       total_supply: 116018364,
       price: 3000.00,
       timestamp: new Date("2024-04-23"),
-      trend: "Low"
+      trend: "low"
     },
     {
       coin_id: "3",
@@ -84,7 +84,7 @@ export async function GET() {
       total_supply: 116018364,
       price: 3000.00,
       timestamp: new Date("2024-04-23"),
-      trend: "Low"
+      trend: "low"
     },
     {
       coin_id: "4",
@@ -96,7 +96,7 @@ export async function GET() {
       total_supply: 116018364,
       price: 3000.00,
       timestamp: new Date("2024-04-23"),
-      trend: "Low"
+      trend: "low"
     },
     {
       coin_id: "5",
@@ -108,7 +108,7 @@ export async function GET() {
       total_supply: 116018364,
       price: 3000.00,
       timestamp: new Date("2024-04-23"),
-      trend: "Low"
+      trend: "low"
     },
     {
       coin_id: "6",
@@ -120,7 +120,7 @@ export async function GET() {
       total_supply: 116018364,
       price: 3000.00,
       timestamp: new Date("2024-04-23"),
-      trend: "Low"
+      trend: "low"
     },
     {
       coin_id: "7",
@@ -132,7 +132,7 @@ export async function GET() {
       total_supply: 116018364,
       price: 3000.00,
       timestamp: new Date("2024-04-23"),
-      trend: "Low"
+      trend: "low"
     },
     {
       coin_id: "8",
@@ -144,7 +144,7 @@ export async function GET() {
       total_supply: 116018364,
       price: 3000.00,
       timestamp: new Date("2024-04-23"),
-      trend: "Low"
+      trend: "low"
     },
     {
       coin_id: "9",
@@ -156,7 +156,7 @@ export async function GET() {
       total_supply: 116018364,
       price: 3000.00,
       timestamp: new Date("2024-04-23"),
-      trend: "Low"
+      trend: "low"
     },
   ];
 
