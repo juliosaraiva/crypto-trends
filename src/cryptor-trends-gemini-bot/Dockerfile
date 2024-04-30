@@ -22,10 +22,10 @@ RUN apk add --no-cache \
     musl-dev \
     linux-headers
 
-RUN pip install poetry
-
 COPY poetry.lock pyproject.toml ./
-RUN poetry install
+
+RUN pip install poetry && poetry install
+ 
 COPY . /app
 
 CMD ["poetry", "run", "python", "src/main.py"]
