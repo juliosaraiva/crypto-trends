@@ -36,7 +36,7 @@ export function TableList() {
         return { items: [] };
       }
     },
-    async sort({ items, sortDescriptor }: { items: any[]; sortDescriptor: any }) {
+    async sort({ items, sortDescriptor }: { items: Coin[]; sortDescriptor: any }) {
       return {
         items: items.sort((a: any, b: any) => {
           let first = a[sortDescriptor.column];
