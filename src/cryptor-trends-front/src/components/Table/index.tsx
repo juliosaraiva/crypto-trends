@@ -22,7 +22,7 @@ export function TableList() {
     async load({signal}) {
       try {
         setIsLoading(true);
-        const res = await fetch('/api', { signal });
+        const res = await fetch('http://localhost:8000/v1/cryptocurrency', { signal });
         const json = await res.json();
         setIsLoading(false);
         return { items: json };

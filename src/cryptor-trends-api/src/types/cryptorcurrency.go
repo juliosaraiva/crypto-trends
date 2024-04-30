@@ -10,7 +10,7 @@ type CryptocurrencyParams struct {
 	Symbol      string    `json:"symbol"`
 	Rank        int       `json:"rank"`
 	MaxSupply   int       `json:"max_supply"`
-	Ciruclating int       `json:"circulating_supply"`
+	Ciruclating float64       `json:"circulating_supply"`
 	TotalSupply int       `json:"total_supply"`
 	Price       float64   `json:"price"`
 	TimeStamp   time.Time `json:"timestamp"`
@@ -23,7 +23,7 @@ type CryptorcurrencyParamsOut struct {
 	Symbol      string    `bson:"symbol" json:"symbol"`
 	Rank        int       `bson:"rank" json:"rank"`
 	MaxSupply   int       `bson:"max_supply" json:"max_supply"`
-	Ciruclating int       `bson:"circulating_supply" json:"circulating_supply"`
+	Ciruclating float64       `bson:"circulating_supply" json:"circulating_supply"`
 	TotalSupply int       `bson:"total_supply" json:"total_supply"`
 	Price       float64   `bson:"price" json:"price"`
 	TimeStamp   time.Time `bson:"timestamp" json:"timestamp"`

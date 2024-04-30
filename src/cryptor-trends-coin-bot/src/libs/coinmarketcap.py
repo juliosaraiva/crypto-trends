@@ -28,7 +28,7 @@ class CoinMarketCap:
     def map(self):
         payload = {
             "sort": "cmc_rank",
-            "limit": 1,
+            "limit": 10,
         }
         response = requests.get(self.url_map, params=payload, headers=settings.HEADERS)
         coin_dict = json.loads(response.text)

@@ -1,10 +1,12 @@
 .PHONY: up
 up:
-	@docker-compose up -d
+	@docker compose up -d
 
 .PHONY: down
 down:
-	@docker-compose down
+	@docker compose down
+	@docker system prune --all
+	@sudo rm -rf .data/
 
 .PHONY: connect_gemini_bot
 connect_gemini_bot:
