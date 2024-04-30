@@ -1,39 +1,28 @@
 "use client"
-import Loading from "@/app/loading";
-import {
-  Button,
-  Chip,
-  ChipProps,
-  Dropdown,
-  DropdownItem,
-  DropdownMenu,
-  DropdownTrigger,
-  Input,
-  Pagination,
-  Table,
-  TableBody,
-  TableCell,
-  TableColumn,
-  TableHeader,
-  TableRow,
-} from "@nextui-org/react";
-import { CaretDown, MagnifyingGlass, Ranking } from "@phosphor-icons/react";
-import { useAsyncList } from "@react-stately/data";
-import { useState } from "react";
+import Loading from '@/app/loading';
+import { Coin } from '@/types/coin';
+import { ColorMap } from '@/types/statusColorMap';
+import { capitalize } from '@/utils/capitalize';
+import { removeDuplicates } from '@/utils/removeDuplicates';
+import { Button, Chip, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Input, Pagination, Table, TableBody, TableCell, TableColumn, TableHeader, TableRow } from '@nextui-org/react';
+import { CaretDown, MagnifyingGlass, Ranking } from '@phosphor-icons/react';
+import { useAsyncList } from '@react-stately/data';
+import { useEffect, useMemo, useState } from 'react';
 
-const statusColorMap: Record<string, ChipProps["color"]> = {
+const statusColorMap: ColorMap = {
   high: "success",
   low: "danger",
   neutral: "warning",
 };
 
 export function TableList() {
-  const [isLoading, setIsLoading] = useState(true);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [searchValue, setSearchValue] = useState("");
-  const itemsPerPage = 10;
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [searchValue, setSearchValue] = useState<string>("");
+  const [selectedTrends, setSelectedTrends] = useState<string[]>([]);
+  const itemsPerPage: number = 10;
 
-  let list = useAsyncList({
+  let list = useAsyncList<Coin>({
     async load({ signal }) {
       try {
         setIsLoading(true);
@@ -64,21 +53,38 @@ export function TableList() {
     },
   });
 
-  const filteredItems = list.items.filter((item: any) =>
-    item.name.toLowerCase().includes(searchValue.toLowerCase())
-  );
+  useEffect(() => {
+    // Select all trends initially
+    const allTrends = removeDuplicates(list.items.map((coin: Coin) => coin.trend));
+    setSelectedTrends(allTrends);
+  }, [list.items]);
 
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-  const paginatedItems = filteredItems.slice(startIndex, endIndex);
+  const filteredItems = useMemo(() => {
+    return list.items.filter((item: Coin) =>
+      item.name.toLowerCase().includes(searchValue.toLowerCase()) &&
+      selectedTrends.includes(item.trend) // Filter based on selected trends
+    );
+  }, [list.items, searchValue, selectedTrends]);
 
-  const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
+  const startIndex: number = (currentPage - 1) * itemsPerPage;
+  const endIndex: number = startIndex + itemsPerPage;
+  const paginatedItems: Coin[] = filteredItems.slice(startIndex, endIndex);
+
+  const totalPages: number = Math.ceil(filteredItems.length / itemsPerPage);
+
+  const handleToggleTrend = (trend: string) => {
+    if (selectedTrends.includes(trend)) {
+      setSelectedTrends(selectedTrends.filter(item => item !== trend));
+    } else {
+      setSelectedTrends([...selectedTrends, trend]);
+    }
+  };
 
   return (
     <div className="max-w-7xl flex flex-col items-center w-full">
       <div className="flex justify-between items-center w-full my-4" id="trends">
         <div>
-        <Input
+          <Input
             isClearable
             className="w-full "
             placeholder="Search by name..."
@@ -100,10 +106,15 @@ export function TableList() {
               aria-label="Table Columns"
               closeOnSelect={false}
               selectionMode="multiple"
+              selectedKeys={selectedTrends}
             >
-              {list.items.map((coin: any) => (
-                <DropdownItem key={coin.coin_id} className="capitalize">
-                  {coin.trend}
+              {removeDuplicates(list.items.map((coin: Coin) => coin.trend)).map((uniqueTrend: string, index: number) => (
+                <DropdownItem
+                  key={uniqueTrend}
+                  className="capitalize"
+                  onClick={() => handleToggleTrend(uniqueTrend)}
+                >
+                  {capitalize(uniqueTrend)}
                 </DropdownItem>
               ))}
             </DropdownMenu>
@@ -138,7 +149,7 @@ export function TableList() {
           </TableColumn>
         </TableHeader>
         <TableBody isLoading={isLoading} loadingContent={<Loading />}>
-          {paginatedItems.map((item: any) => (
+          {paginatedItems.map((item: Coin) => (
             <TableRow key={item.coin_id}>
               <TableCell className="text-yellow-500">{item.rank}</TableCell>
               <TableCell>{item.name}</TableCell>
