@@ -24,7 +24,7 @@ export async function GET() {
       total_supply: 18750375,
       price: 45000.00,
       timestamp: new Date("2024-04-22"),
-      trend: "neutral"
+      trend: "sideway"
     },
     {
       coin_id: "ethereum_id",

@@ -12,7 +12,7 @@ import { useEffect, useMemo, useState } from 'react';
 const statusColorMap: ColorMap = {
   high: "success",
   low: "danger",
-  neutral: "warning",
+  sideway: "warning",
 };
 
 export function TableList() {
@@ -26,7 +26,8 @@ export function TableList() {
     async load({ signal }) {
       try {
         setIsLoading(true);
-        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}`, { signal });
+        const res = await fetch(`http://localhost:8000/v1/cryptocurrency`, { signal });
+        console.log("API URL", process.env.NEXT_PUBLIC_API_URL);
         const json = await res.json();
         setIsLoading(false);
         return { items: json };

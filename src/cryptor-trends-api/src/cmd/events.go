@@ -45,7 +45,7 @@ func startConsumer() {
 				continue
 			}
 			// TODO: Implement ack message
-			log.Printf("Received a message: %s", m.Body)
+			// log.Printf("Received a message: %s", m.Body)
 		}
 	}()
 	<-forever

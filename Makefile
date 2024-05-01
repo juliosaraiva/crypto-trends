@@ -10,6 +10,10 @@ up_dev:
 down:
 	@docker compose down
 
+.PHONY: down_dev
+down_dev:
+	@docker compose -f docker-compose.local.yaml down
+
 .PHONY: down_with_clean
 down_with_clean:
 	@docker compose down
