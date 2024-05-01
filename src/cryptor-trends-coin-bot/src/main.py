@@ -34,6 +34,8 @@ cryptor_coin_service = CryptorCoinServiceImpl(mongo_client, rabbitmq_client)
 def job():
     cryptor_coin_service.add_coin(settings.MONGO_DATABASE, settings.RABBITMQ_QUEUE_NAME)
 
+job()
+
 schedule.every().hour.do(job)
 
 while True:
