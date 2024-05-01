@@ -26,7 +26,7 @@ export function TableList() {
     async load({ signal }) {
       try {
         setIsLoading(true);
-        const res = await fetch(`http://34.30.161.217:8000/v1/cryptocurrency`, { signal });
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL }`, { signal });
         const json = await res.json();
         setIsLoading(false);
         if (json === null || json === undefined) {
