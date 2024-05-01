@@ -3,6 +3,7 @@ import Loading from '@/app/loading';
 import { Coin } from '@/types/coin';
 import { ColorMap } from '@/types/statusColorMap';
 import { capitalize } from '@/utils/capitalize';
+import { formatFloat } from '@/utils/formatFloat';
 import { removeDuplicates } from '@/utils/removeDuplicates';
 import { Button, Chip, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Input, Pagination, Table, TableBody, TableCell, TableColumn, TableHeader, TableRow } from '@nextui-org/react';
 import { CaretDown, MagnifyingGlass, Ranking } from '@phosphor-icons/react';
@@ -152,8 +153,8 @@ export function TableList() {
             <TableRow key={item.coin_id}>
               <TableCell className="text-yellow-500">{item.rank}</TableCell>
               <TableCell>{item.name}</TableCell>
-              <TableCell>${item.circulating_supply}</TableCell>
-              <TableCell>${item.price}</TableCell>
+              <TableCell>${formatFloat(item.circulating_supply)}</TableCell>
+              <TableCell>${formatFloat(item.price)}</TableCell>
               <TableCell>
                 <Chip className="capitalize" color={statusColorMap[item.trend]} size="sm" variant="flat">
                   {item.trend}
