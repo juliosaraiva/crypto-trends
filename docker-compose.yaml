@@ -36,8 +36,6 @@ services:
         condition: service_started
     env_file:
       - src/cryptor-trends-gemini-bot/.env
-    volumes:
-      - ./src/cryptor-trends-gemini-bot:/app
     environment:
       - RABBITMQ_HOST=rabbitmq
       - RABBITMQ_PORT=5672
@@ -92,8 +90,6 @@ services:
         condition: service_started
     env_file:
       - src/cryptor-trends-coin-bot/.env
-    volumes:
-      - ./src/cryptor-trends-coin-bot:/app
     environment:
       - RABBITMQ_HOST=rabbitmq
       - RABBITMQ_PORT=5672

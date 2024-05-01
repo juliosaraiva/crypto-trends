@@ -119,13 +119,14 @@ services:
     container_name: 'cryptor-trends-front'
     build:
       context: ./src/cryptor-trends-front
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.local
     depends_on:
-      cryptor-trends-api:
-        condition: service_started
+      - cryptor-trends-api
+    volumes:
+      - ./src/cryptor-trends-front:/app
     restart: always
     ports:
       - "3000:3000"
     environment:
-      - NEXT_PUBLIC_API_URL = http://localhost:8000/v1/cryptocurrency
+      - NEXT_PUBLIC_API_URL = http://cryptor-trends-api:8000/v1/cryptocurrency
       - NEXT_PUBLIC_TELEGRAM_URL= https://t.me/Crypto_Trends_Robot_bot
