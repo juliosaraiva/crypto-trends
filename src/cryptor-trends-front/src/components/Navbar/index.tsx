@@ -4,7 +4,7 @@ export default function NavbarHeader() {
   const menuItems = [
     "Trends",
     "About",
-    "Contacts",
+    "Teams",
   ];
 
   return (
@@ -40,8 +40,8 @@ export default function NavbarHeader() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/contact">
-            Contact
+          <Link color="foreground" href="/team">
+            Team
           </Link>
         </NavbarItem>
       </NavbarContent>
@@ -59,8 +59,8 @@ export default function NavbarHeader() {
             </Link>
           </NavbarItem>
         <NavbarItem>
-            <Link color="foreground" href="/contact">
-              Contact
+            <Link color="foreground" href="/team">
+              Team
             </Link>
           </NavbarItem>
       </NavbarMenu>

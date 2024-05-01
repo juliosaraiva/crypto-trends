@@ -22,7 +22,7 @@ export function Footer() {
             <ul className="mt-2 text-gray-400">
               <li className="mt-1"><Link href="/#trends">Trends</Link></li>
               <li className="mt-1"><Link href="/about">About</Link></li>
-              <li className="mt-1"><Link href="/contact">Contact</Link></li>
+              <li className="mt-1"><Link href="/team">Team</Link></li>
             </ul>
           </div>
           <div >
