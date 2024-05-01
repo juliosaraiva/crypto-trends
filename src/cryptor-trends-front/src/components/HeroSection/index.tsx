@@ -20,7 +20,7 @@ export function HeroSection(){
               <Image src="/images/logo-cryptotrends.svg" alt="Hero" className="text-center" width={100} height={100} />
             </div>
             <h2 className="text-3xl font-bold text-primary text-center md:text-left">Welcome to <span className="text-white">Crypto Trends</span></h2>
-            <p className="mt-4 text-gray-400 text-center md:text-left">Your gateway to exploring the dynamic world of cryptocurrencies. Our platform harnesses the power of cutting-edge artificial intelligence to provide insights into the latest trends shaping the crypto landscape.</p>
+            <p className="mt-4 text-gray-400 text-center md:text-left">The easiest way to quick identify trends in cryptocurrencies. Our platform harnesses the power of cutting-edge artificial intelligence to provide insights into the latest trends shaping the crypto landscape.</p>
             <div className="flex justify-center md:justify-start mt-6">
               <Link className="mr-4 flex-1" href="/about">
                 <Button className="flex-1" color="primary" variant="shadow">

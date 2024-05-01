@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-y-6">
           <div className="col-span-2 md:col-span-1 md:mx-2">
             <h3 className="text-lg font-semibold text-white">About</h3>
-            <p className="mt-2 text-gray-400 text-justify">Welcome to Crypto Trends, your gateway to exploring the dynamic world of cryptocurrencies. Our platform harnesses the power of cutting-edge artificial intelligence to provide insights into the latest trends shaping the crypto landscape. However, it&apos;s important to note that while our platform offers valuable analysis, we do not provide financial advice. As you navigate through Crypto Trends, keep in mind the volatile nature of cryptocurrency markets and the importance of conducting your own research before making any investment decisions.</p>
+            <p className="mt-2 text-gray-400 text-justify">The easiest way to quick identify trends in cryptocurrencies. Our platform harnesses the power of cutting-edge artificial intelligence to provide insights into the latest trends shaping the crypto landscape. However, it&apos;s important to note that while our platform offers valuable analysis, we do not provide financial advice. As you navigate through Crypto Trends, keep in mind the volatile nature of cryptocurrency markets and the importance of conducting your own research before making any investment decisions.</p>
           </div>
           <div>
             <h3 className="text-lg font-semibold text-white">Services</h3>

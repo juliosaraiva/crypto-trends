@@ -26,9 +26,14 @@ export function TableList() {
     async load({ signal }) {
       try {
         setIsLoading(true);
-        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}`, { signal });
+        const res = await fetch(`/api`, { signal });
         const json = await res.json();
         setIsLoading(false);
+        if (json === null || json === undefined) {
+          console.error("Failed to fetch data: Unable to retrieve data");
+          return { items: [] };
+        }
+
         return { items: json };
       } catch (error) {
         console.error("Failed to fetch data:", error);
