@@ -27,6 +27,7 @@ export function TableList() {
       try {
         setIsLoading(true);
         const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL }`, { signal });
+        console.log(process.env.NEXT_PUBLIC_API_URL)
         const json = await res.json();
         setIsLoading(false);
         if (json === null || json === undefined) {

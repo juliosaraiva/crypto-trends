@@ -114,5 +114,5 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - NEXT_PUBLIC_API_URL= http://34.30.161.217:8000/v1/cryptocurrency
+      - NEXT_PUBLIC_API_URL= http://crypto-trends.juliosaraiva.com:8000/v1/cryptocurrency
       - NEXT_PUBLIC_TELEGRAM_URL= https://t.me/Crypto_Trends_Robot_bot
